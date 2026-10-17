@@ -1,7 +1,7 @@
 {
   "analysis_date": "2026-10-04",
-  "data_cutoff_date": "2026-10-03",
-  "price_date": "2026-10-03",
+  "data_cutoff_date": "2026-10-16",
+  "price_date": "2026-10-16",
   "return_type": "price_return_split_bonus_adjusted_dividends_excluded",
   "currency": "INR",
   "benchmarks": [
