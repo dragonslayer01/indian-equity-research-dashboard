@@ -1,0 +1,91 @@
+{
+  "variables": [
+    {
+      "name": "Real GDP growth",
+      "current": "Reported fact: real GDP grew 7.8% year-on-year in Q1 FY2026-27 under MoSPI's 2022-23-base series.",
+      "direction": "Firm",
+      "outlook_6_12m": "Our analysis: domestic activity should remain supportive, but the unusually strong first-quarter pace should not be extrapolated mechanically.",
+      "earnings_impact": "Supports revenue growth for domestically exposed lenders, consumer franchises and project suppliers; operating leverage depends on input costs.",
+      "sector_market_impact": "Positive for banks, NBFCs and capital goods; neutral-to-positive for discretionary demand, subject to affordability.",
+      "source": "MoSPI, Quarterly Estimates of GDP for Q1 FY2026-27",
+      "as_of": "2026-08-31"
+    },
+    {
+      "name": "Consumer inflation",
+      "current": "Reported fact: headline CPI inflation was 4.82% year-on-year in August 2026 (provisional); food inflation was 5.95%.",
+      "direction": "Rising versus early FY2026-27 readings",
+      "outlook_6_12m": "Our analysis: food-price volatility keeps the disinflation path uneven; September data were not yet released at the cutoff.",
+      "earnings_impact": "Higher food inflation can weaken real household purchasing power and complicate gross-margin recovery for consumer companies.",
+      "sector_market_impact": "Mixed for FMCG and discretionary; supportive of select pricing-power franchises but a risk to mass-market volumes.",
+      "source": "MoSPI, CPI Press Release for August 2026",
+      "as_of": "2026-09-14"
+    },
+    {
+      "name": "Monetary policy and rates",
+      "current": "Reported fact: the RBI kept the repo rate at 5.25% and retained a neutral stance at its August 2026 meeting.",
+      "direction": "Stable",
+      "outlook_6_12m": "Our analysis: future action is data-dependent; inflation persistence limits confidence in rapid easing.",
+      "earnings_impact": "Stable funding costs help planning, while transmission and deposit competition remain important for lender margins.",
+      "sector_market_impact": "Balanced for banks and NBFCs; rate-sensitive realty and autos benefit only if borrowing costs ease without a growth shock.",
+      "source": "Reserve Bank of India, MPC Resolution August 3-5 2026",
+      "as_of": "2026-08-05"
+    },
+    {
+      "name": "System liquidity",
+      "current": "Reported fact: RBI daily operations showed net liquidity absorption on September 30, 2026.",
+      "direction": "Surplus/absorptive at the observation date",
+      "outlook_6_12m": "Our analysis: liquidity can change quickly with government balances, currency demand and RBI operations; one-day data are not a durable trend.",
+      "earnings_impact": "Adequate liquidity can reduce funding stress, though deposit pricing and asset-liability mix drive lender-level outcomes.",
+      "sector_market_impact": "Constructive for financial conditions; monitor for volatility rather than treating the observation as a directional call.",
+      "source": "Reserve Bank of India, Money Market Operations",
+      "as_of": "2026-09-30"
+    },
+    {
+      "name": "Fiscal impulse and public capex",
+      "current": "Reported fact: Union Budget FY2026-27 targets a 4.3% fiscal deficit and ₹12.22 lakh crore of capital expenditure.",
+      "direction": "Consolidating deficit with elevated capex",
+      "outlook_6_12m": "Our analysis: execution quality and the crowding-in of private investment matter more than budgeted outlays alone.",
+      "earnings_impact": "Order inflows and utilization can support capital-goods earnings; fiscal consolidation helps macro stability.",
+      "sector_market_impact": "Positive for infrastructure, industrials, defence and power equipment; execution delays are the key transmission risk.",
+      "source": "Government of India, Union Budget 2026-27 FRBM Statement and Expenditure Budget",
+      "as_of": "2026-02-01"
+    },
+    {
+      "name": "Crude oil",
+      "current": "Data unavailable from reliable sources.",
+      "direction": "Unverified at cutoff",
+      "outlook_6_12m": "Our analysis: treat oil as a two-sided external-balance and margin risk; no spot-price assumption is embedded.",
+      "earnings_impact": "Higher crude can pressure inflation, transport costs, working capital and margins for oil-consuming businesses.",
+      "sector_market_impact": "Negative sensitivity for OMCs, aviation, paints and logistics; upstream producers may benefit, subject to policy and realizations.",
+      "source": "U.S. Energy Information Administration, petroleum market data (exact cutoff value not verified)",
+      "as_of": "2026-10-03"
+    },
+    {
+      "name": "INR and external conditions",
+      "current": "Data unavailable from reliable sources.",
+      "direction": "Unverified at cutoff",
+      "outlook_6_12m": "Our analysis: global yields, oil and portfolio flows remain the main transmission channels; no FX target is assumed.",
+      "earnings_impact": "Currency weakness can aid exporter revenue translation but raises imported-input costs and foreign-currency liabilities.",
+      "sector_market_impact": "Mixed-positive for IT and pharma exporters; negative for import-intensive consumer, auto and energy users.",
+      "source": "Reserve Bank of India, Database on Indian Economy (exact cutoff value not verified)",
+      "as_of": "2026-10-03"
+    },
+    {
+      "name": "Global demand and risk appetite",
+      "current": "Data unavailable from reliable sources.",
+      "direction": "Mixed",
+      "outlook_6_12m": "Our analysis: slower external demand and volatile global discount rates argue for selectivity rather than a broad beta call.",
+      "earnings_impact": "Exporters face discretionary-spending and pricing risk; domestic earners have lower direct sensitivity.",
+      "sector_market_impact": "Cautious for IT and metals; supports a relative preference for domestic financials, healthcare and execution-led industrials.",
+      "source": "IMF World Economic Outlook and RBI Monetary Policy Report (no single verified cutoff figure used)",
+      "as_of": "2026-10-03"
+    }
+  ],
+  "transmission_narrative": [
+    "Our analysis: resilient domestic growth and public capex support demand and order books.",
+    "Reported inflation and a neutral RBI stance constrain the speed of monetary easing and keep funding-cost relief uncertain.",
+    "Food and imported-input volatility transmit into household purchasing power and corporate margins.",
+    "These channels favor balance-sheet strength, pricing power and execution visibility over indiscriminate cyclicality.",
+    "Valuation support requires earnings delivery; price weakness alone is not treated as evidence of undervaluation."
+  ]
+}

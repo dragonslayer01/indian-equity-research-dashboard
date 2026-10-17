@@ -1,0 +1,14 @@
+{
+  "analysis_date": "2026-10-04",
+  "data_cutoff_date": "2026-10-03",
+  "price_date": "2026-10-03",
+  "return_type": "price_return_split_bonus_adjusted_dividends_excluded",
+  "currency": "INR",
+  "benchmarks": [
+    "Nifty 50",
+    "Nifty 500"
+  ],
+  "research_status": "Stage 1 final",
+  "research_as_of": "2026-10-04",
+  "integrity_note": "Market fields are retained from the existing Yahoo-derived dataset; authored research does not overwrite prices, returns, price dates or market sources."
+}

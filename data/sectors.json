@@ -1,0 +1,641 @@
+{
+  "sectors": [
+    {
+      "id": "banks",
+      "name": "Banks",
+      "stance": "OW",
+      "attractiveness_score": 69.9,
+      "factor_scores": {
+        "demand": 8,
+        "earnings_growth": 8,
+        "earnings_revision": 5,
+        "margins": 7,
+        "balance_sheet": 8,
+        "valuation": 7,
+        "policy": 7,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 4,
+        "macro_sensitivity": 7,
+        "downside_risk": 7
+      },
+      "representative_index": "^NSEBANK",
+      "performance": {
+        "1D": -0.3337,
+        "1W": -1.7817,
+        "1M": -5.1539,
+        "3M": -6.1706,
+        "6M": 5.6296,
+        "1Y": -1.621,
+        "YTD": -8.8104,
+        "3Y_cagr": 6.8761,
+        "5Y_cagr": 7.9037
+      },
+      "thesis": [
+        "Our analysis: firm domestic activity supports credit demand, while large diversified banks retain funding and risk-management advantages.",
+        "A neutral policy stance makes deposit pricing, asset quality and margin discipline more important than a simple rate-cut thesis.",
+        "Prefer scaled franchises and improving challengers; avoid treating all lenders as homogeneous."
+      ],
+      "expectation_gaps": {
+        "positive": [
+          "Credit costs stay benign while growth remains broad-based."
+        ],
+        "negative": [
+          "Deposit competition or unsecured stress weakens margins and asset quality."
+        ]
+      },
+      "price": 54450.75,
+      "price_date": "2026-10-03",
+      "source": "Yahoo Finance (index)",
+      "weights": {
+        "demand": 12,
+        "earnings_growth": 12,
+        "earnings_revision": 7,
+        "margins": 8,
+        "balance_sheet": 10,
+        "valuation": 10,
+        "policy": 8,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 7,
+        "macro_sensitivity": 6,
+        "downside_risk": 6
+      },
+      "score_methodology": "Our analysis: 1-10 factor scores; weighted sum divided by 10 gives a 0-100 attractiveness score. Downside-risk score is higher when downside protection is stronger."
+    },
+    {
+      "id": "it",
+      "name": "Information Technology",
+      "stance": "Neutral",
+      "attractiveness_score": 61.5,
+      "factor_scores": {
+        "demand": 5,
+        "earnings_growth": 5,
+        "earnings_revision": 4,
+        "margins": 7,
+        "balance_sheet": 9,
+        "valuation": 7,
+        "policy": 5,
+        "competitive_structure": 8,
+        "capital_cycle": 8,
+        "price_momentum": 3,
+        "macro_sensitivity": 5,
+        "downside_risk": 8
+      },
+      "representative_index": "^CNXIT",
+      "performance": {
+        "1D": 2.1653,
+        "1W": 0.3398,
+        "1M": -10.1344,
+        "3M": 4.9681,
+        "6M": -7.0192,
+        "1Y": -16.5181,
+        "YTD": -25.8486,
+        "3Y_cagr": -3.7836,
+        "5Y_cagr": -4.0374
+      },
+      "thesis": [
+        "Our analysis: sector balance sheets and cash generation are strong, but global discretionary demand visibility remains uneven.",
+        "Price correction improves the setup selectively; it does not substitute for verified earnings revisions.",
+        "Prefer vendors with differentiated digital, engineering or platform capabilities and resilient client relationships."
+      ],
+      "expectation_gaps": {
+        "positive": [
+          "AI-led transformation spending converts to scalable revenue faster than feared."
+        ],
+        "negative": [
+          "Pricing pressure and automation reduce labor-arbitrage growth before new demand scales."
+        ]
+      },
+      "price": 28304.69921875,
+      "price_date": "2026-10-03",
+      "source": "Yahoo Finance (index)",
+      "weights": {
+        "demand": 12,
+        "earnings_growth": 12,
+        "earnings_revision": 7,
+        "margins": 8,
+        "balance_sheet": 10,
+        "valuation": 10,
+        "policy": 8,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 7,
+        "macro_sensitivity": 6,
+        "downside_risk": 6
+      },
+      "score_methodology": "Our analysis: 1-10 factor scores; weighted sum divided by 10 gives a 0-100 attractiveness score. Downside-risk score is higher when downside protection is stronger."
+    },
+    {
+      "id": "auto",
+      "name": "Automobiles",
+      "stance": "Neutral",
+      "attractiveness_score": 57.6,
+      "factor_scores": {
+        "demand": 6,
+        "earnings_growth": 6,
+        "earnings_revision": 4,
+        "margins": 6,
+        "balance_sheet": 8,
+        "valuation": 5,
+        "policy": 6,
+        "competitive_structure": 7,
+        "capital_cycle": 6,
+        "price_momentum": 3,
+        "macro_sensitivity": 5,
+        "downside_risk": 6
+      },
+      "representative_index": "^CNXAUTO",
+      "performance": {
+        "1D": "Data unavailable from reliable sources.",
+        "1W": "Data unavailable from reliable sources.",
+        "1M": "Data unavailable from reliable sources.",
+        "3M": "Data unavailable from reliable sources.",
+        "6M": "Data unavailable from reliable sources.",
+        "1Y": "Data unavailable from reliable sources.",
+        "YTD": "Data unavailable from reliable sources.",
+        "3Y_cagr": "Data unavailable from reliable sources.",
+        "5Y_cagr": "Data unavailable from reliable sources."
+      },
+      "thesis": [
+        "Our analysis: premiumization and product cycles support leaders, while affordability and financing costs constrain mass demand.",
+        "Commodity and currency volatility can reverse margin gains.",
+        "EV transition creates opportunities but raises capital-allocation and competitive risks."
+      ],
+      "expectation_gaps": {
+        "positive": [
+          "Replacement demand and premium mix remain stronger than expected."
+        ],
+        "negative": [
+          "Affordability pressure, discounting or transition spending dilute returns."
+        ]
+      },
+      "price": 25384.94921875,
+      "price_date": "2026-10-03",
+      "source": "Yahoo Finance (index)",
+      "weights": {
+        "demand": 12,
+        "earnings_growth": 12,
+        "earnings_revision": 7,
+        "margins": 8,
+        "balance_sheet": 10,
+        "valuation": 10,
+        "policy": 8,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 7,
+        "macro_sensitivity": 6,
+        "downside_risk": 6
+      },
+      "score_methodology": "Our analysis: 1-10 factor scores; weighted sum divided by 10 gives a 0-100 attractiveness score. Downside-risk score is higher when downside protection is stronger.",
+      "performance_note": "Representative-index return history is incomplete in the retained market dataset; do not infer momentum from missing periods."
+    },
+    {
+      "id": "fmcg",
+      "name": "FMCG",
+      "stance": "Moderate OW",
+      "attractiveness_score": 65.7,
+      "factor_scores": {
+        "demand": 6,
+        "earnings_growth": 6,
+        "earnings_revision": 4,
+        "margins": 6,
+        "balance_sheet": 9,
+        "valuation": 7,
+        "policy": 5,
+        "competitive_structure": 9,
+        "capital_cycle": 9,
+        "price_momentum": 3,
+        "macro_sensitivity": 7,
+        "downside_risk": 8
+      },
+      "representative_index": "^CNXFMCG",
+      "performance": {
+        "1D": "Data unavailable from reliable sources.",
+        "1W": "Data unavailable from reliable sources.",
+        "1M": "Data unavailable from reliable sources.",
+        "3M": "Data unavailable from reliable sources.",
+        "6M": "Data unavailable from reliable sources.",
+        "1Y": "Data unavailable from reliable sources.",
+        "YTD": "Data unavailable from reliable sources.",
+        "3Y_cagr": "Data unavailable from reliable sources.",
+        "5Y_cagr": "Data unavailable from reliable sources."
+      },
+      "thesis": [
+        "Our analysis: strong franchises offer balance-sheet resilience and pricing power in a volatile macro environment.",
+        "Food inflation is a near-term risk to rural real incomes and input costs, so volume recovery should not be assumed.",
+        "The trailing correction improves selectivity, especially where execution and distribution remain strong."
+      ],
+      "expectation_gaps": {
+        "positive": [
+          "Rural volumes recover while input costs stabilize."
+        ],
+        "negative": [
+          "Food inflation persists and price increases weaken volumes."
+        ]
+      },
+      "price": 43789.8515625,
+      "price_date": "2026-10-03",
+      "source": "Yahoo Finance (index)",
+      "weights": {
+        "demand": 12,
+        "earnings_growth": 12,
+        "earnings_revision": 7,
+        "margins": 8,
+        "balance_sheet": 10,
+        "valuation": 10,
+        "policy": 8,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 7,
+        "macro_sensitivity": 6,
+        "downside_risk": 6
+      },
+      "score_methodology": "Our analysis: 1-10 factor scores; weighted sum divided by 10 gives a 0-100 attractiveness score. Downside-risk score is higher when downside protection is stronger.",
+      "performance_note": "Representative-index return history is incomplete in the retained market dataset; do not infer momentum from missing periods."
+    },
+    {
+      "id": "pharma",
+      "name": "Pharmaceuticals and Healthcare",
+      "stance": "OW",
+      "attractiveness_score": 71.0,
+      "factor_scores": {
+        "demand": 7,
+        "earnings_growth": 8,
+        "earnings_revision": 5,
+        "margins": 7,
+        "balance_sheet": 8,
+        "valuation": 6,
+        "policy": 6,
+        "competitive_structure": 7,
+        "capital_cycle": 8,
+        "price_momentum": 8,
+        "macro_sensitivity": 8,
+        "downside_risk": 7
+      },
+      "representative_index": "^CNXPHARMA",
+      "performance": {
+        "1D": -0.4783,
+        "1W": -2.6533,
+        "1M": -1.7956,
+        "3M": 3.9617,
+        "6M": 20.6487,
+        "1Y": 21.0645,
+        "YTD": 15.7893,
+        "3Y_cagr": 19.4455,
+        "5Y_cagr": 12.5225
+      },
+      "thesis": [
+        "Our analysis: diversified healthcare demand and exporter characteristics provide defensive growth and currency diversification.",
+        "Regulatory compliance, product concentration and US pricing remain company-specific risks.",
+        "Prefer businesses with specialty, domestic brand or hospital execution rather than undifferentiated exposure."
+      ],
+      "expectation_gaps": {
+        "positive": [
+          "Specialty launches and domestic demand sustain growth beyond current expectations."
+        ],
+        "negative": [
+          "Regulatory actions or price erosion offset operating leverage."
+        ]
+      },
+      "price": 26311.55078125,
+      "price_date": "2026-10-03",
+      "source": "Yahoo Finance (index)",
+      "weights": {
+        "demand": 12,
+        "earnings_growth": 12,
+        "earnings_revision": 7,
+        "margins": 8,
+        "balance_sheet": 10,
+        "valuation": 10,
+        "policy": 8,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 7,
+        "macro_sensitivity": 6,
+        "downside_risk": 6
+      },
+      "score_methodology": "Our analysis: 1-10 factor scores; weighted sum divided by 10 gives a 0-100 attractiveness score. Downside-risk score is higher when downside protection is stronger."
+    },
+    {
+      "id": "metals",
+      "name": "Metals and Mining",
+      "stance": "UW",
+      "attractiveness_score": 45.6,
+      "factor_scores": {
+        "demand": 5,
+        "earnings_growth": 4,
+        "earnings_revision": 4,
+        "margins": 5,
+        "balance_sheet": 6,
+        "valuation": 6,
+        "policy": 5,
+        "competitive_structure": 4,
+        "capital_cycle": 4,
+        "price_momentum": 4,
+        "macro_sensitivity": 3,
+        "downside_risk": 3
+      },
+      "representative_index": "^CNXMETAL",
+      "performance": {
+        "1D": "Data unavailable from reliable sources.",
+        "1W": "Data unavailable from reliable sources.",
+        "1M": "Data unavailable from reliable sources.",
+        "3M": "Data unavailable from reliable sources.",
+        "6M": "Data unavailable from reliable sources.",
+        "1Y": "Data unavailable from reliable sources.",
+        "YTD": "Data unavailable from reliable sources.",
+        "3Y_cagr": "Data unavailable from reliable sources.",
+        "5Y_cagr": "Data unavailable from reliable sources."
+      },
+      "thesis": [
+        "Our analysis: earnings remain highly sensitive to global demand, commodity prices and supply responses.",
+        "Domestic infrastructure demand is supportive but may not offset weak external pricing.",
+        "Balance-sheet quality and cost position matter more than spot momentum."
+      ],
+      "expectation_gaps": {
+        "positive": [
+          "Supply discipline and domestic demand tighten balances."
+        ],
+        "negative": [
+          "Global slowdown or new capacity drives price and margin compression."
+        ]
+      },
+      "price": 12460.7001953125,
+      "price_date": "2026-10-03",
+      "source": "Yahoo Finance (index)",
+      "weights": {
+        "demand": 12,
+        "earnings_growth": 12,
+        "earnings_revision": 7,
+        "margins": 8,
+        "balance_sheet": 10,
+        "valuation": 10,
+        "policy": 8,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 7,
+        "macro_sensitivity": 6,
+        "downside_risk": 6
+      },
+      "score_methodology": "Our analysis: 1-10 factor scores; weighted sum divided by 10 gives a 0-100 attractiveness score. Downside-risk score is higher when downside protection is stronger.",
+      "performance_note": "Representative-index return history is incomplete in the retained market dataset; do not infer momentum from missing periods."
+    },
+    {
+      "id": "energy",
+      "name": "Energy and Utilities",
+      "stance": "Neutral",
+      "attractiveness_score": 55.8,
+      "factor_scores": {
+        "demand": 6,
+        "earnings_growth": 6,
+        "earnings_revision": 4,
+        "margins": 6,
+        "balance_sheet": 7,
+        "valuation": 6,
+        "policy": 7,
+        "competitive_structure": 6,
+        "capital_cycle": 5,
+        "price_momentum": 3,
+        "macro_sensitivity": 4,
+        "downside_risk": 5
+      },
+      "representative_index": "^CNXENERGY",
+      "performance": {
+        "1D": "Data unavailable from reliable sources.",
+        "1W": "Data unavailable from reliable sources.",
+        "1M": "Data unavailable from reliable sources.",
+        "3M": "Data unavailable from reliable sources.",
+        "6M": "Data unavailable from reliable sources.",
+        "1Y": "Data unavailable from reliable sources.",
+        "YTD": "Data unavailable from reliable sources.",
+        "3Y_cagr": "Data unavailable from reliable sources.",
+        "5Y_cagr": "Data unavailable from reliable sources."
+      },
+      "thesis": [
+        "Our analysis: regulated utilities offer visibility while upstream and refining earnings remain commodity- and policy-sensitive.",
+        "Energy-transition capex expands opportunity but can depress free cash flow if returns are weak.",
+        "Use a barbell of regulated cash flows and disciplined integrated operators."
+      ],
+      "expectation_gaps": {
+        "positive": [
+          "Power demand and regulated asset growth exceed expectations."
+        ],
+        "negative": [
+          "Commodity volatility, policy intervention or low-return capex erodes cash generation."
+        ]
+      },
+      "price": 36388.1484375,
+      "price_date": "2026-10-03",
+      "source": "Yahoo Finance (index)",
+      "weights": {
+        "demand": 12,
+        "earnings_growth": 12,
+        "earnings_revision": 7,
+        "margins": 8,
+        "balance_sheet": 10,
+        "valuation": 10,
+        "policy": 8,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 7,
+        "macro_sensitivity": 6,
+        "downside_risk": 6
+      },
+      "score_methodology": "Our analysis: 1-10 factor scores; weighted sum divided by 10 gives a 0-100 attractiveness score. Downside-risk score is higher when downside protection is stronger.",
+      "performance_note": "Representative-index return history is incomplete in the retained market dataset; do not infer momentum from missing periods."
+    },
+    {
+      "id": "financials_nbfc",
+      "name": "Financial Services and NBFC",
+      "stance": "Moderate OW",
+      "attractiveness_score": 65.2,
+      "factor_scores": {
+        "demand": 8,
+        "earnings_growth": 8,
+        "earnings_revision": 5,
+        "margins": 7,
+        "balance_sheet": 7,
+        "valuation": 6,
+        "policy": 6,
+        "competitive_structure": 7,
+        "capital_cycle": 6,
+        "price_momentum": 4,
+        "macro_sensitivity": 6,
+        "downside_risk": 6
+      },
+      "representative_index": "^CNXFIN",
+      "performance": {
+        "1D": "Data unavailable from reliable sources.",
+        "1W": "Data unavailable from reliable sources.",
+        "1M": "Data unavailable from reliable sources.",
+        "3M": "Data unavailable from reliable sources.",
+        "6M": "Data unavailable from reliable sources.",
+        "1Y": "Data unavailable from reliable sources.",
+        "YTD": "Data unavailable from reliable sources.",
+        "3Y_cagr": "Data unavailable from reliable sources.",
+        "5Y_cagr": "Data unavailable from reliable sources."
+      },
+      "thesis": [
+        "Our analysis: formalization and underpenetrated credit/insurance support structural growth.",
+        "Funding access, underwriting discipline and liability duration separate durable compounders from fragile growth.",
+        "Prefer diversified lenders and insurers with distribution advantages."
+      ],
+      "expectation_gaps": {
+        "positive": [
+          "Operating leverage and cross-sell improve without credit normalization."
+        ],
+        "negative": [
+          "Funding spreads or unsecured stress expose aggressive underwriting."
+        ]
+      },
+      "price": 26434.75,
+      "price_date": "2026-10-03",
+      "source": "Yahoo Finance (index)",
+      "weights": {
+        "demand": 12,
+        "earnings_growth": 12,
+        "earnings_revision": 7,
+        "margins": 8,
+        "balance_sheet": 10,
+        "valuation": 10,
+        "policy": 8,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 7,
+        "macro_sensitivity": 6,
+        "downside_risk": 6
+      },
+      "score_methodology": "Our analysis: 1-10 factor scores; weighted sum divided by 10 gives a 0-100 attractiveness score. Downside-risk score is higher when downside protection is stronger.",
+      "performance_note": "Representative-index return history is incomplete in the retained market dataset; do not infer momentum from missing periods."
+    },
+    {
+      "id": "capital_goods_infra",
+      "name": "Capital Goods and Infrastructure",
+      "stance": "OW",
+      "attractiveness_score": 72.2,
+      "factor_scores": {
+        "demand": 9,
+        "earnings_growth": 8,
+        "earnings_revision": 6,
+        "margins": 7,
+        "balance_sheet": 8,
+        "valuation": 5,
+        "policy": 9,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 6,
+        "macro_sensitivity": 7,
+        "downside_risk": 6
+      },
+      "representative_index": "^CNXINFRA",
+      "performance": {
+        "1D": "Data unavailable from reliable sources.",
+        "1W": "Data unavailable from reliable sources.",
+        "1M": "Data unavailable from reliable sources.",
+        "3M": "Data unavailable from reliable sources.",
+        "6M": "Data unavailable from reliable sources.",
+        "1Y": "Data unavailable from reliable sources.",
+        "YTD": "Data unavailable from reliable sources.",
+        "3Y_cagr": "Data unavailable from reliable sources.",
+        "5Y_cagr": "Data unavailable from reliable sources."
+      },
+      "thesis": [
+        "Reported budget policy sustains a large public-capex envelope; our analysis favors firms with execution capacity and order quality.",
+        "Private-capex crowding-in is upside, but should not be assumed without evidence.",
+        "Valuation discipline is essential because expectations for order growth are elevated."
+      ],
+      "expectation_gaps": {
+        "positive": [
+          "Private capex broadens and execution converts backlog into cash flow."
+        ],
+        "negative": [
+          "Project delays, working-capital stress or margin dilution disappoint elevated expectations."
+        ]
+      },
+      "price": 8605.150390625,
+      "price_date": "2026-10-03",
+      "source": "Yahoo Finance (index)",
+      "weights": {
+        "demand": 12,
+        "earnings_growth": 12,
+        "earnings_revision": 7,
+        "margins": 8,
+        "balance_sheet": 10,
+        "valuation": 10,
+        "policy": 8,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 7,
+        "macro_sensitivity": 6,
+        "downside_risk": 6
+      },
+      "score_methodology": "Our analysis: 1-10 factor scores; weighted sum divided by 10 gives a 0-100 attractiveness score. Downside-risk score is higher when downside protection is stronger.",
+      "performance_note": "Representative-index return history is incomplete in the retained market dataset; do not infer momentum from missing periods."
+    },
+    {
+      "id": "realty_consumer_disc",
+      "name": "Realty and Consumer Discretionary",
+      "stance": "Neutral",
+      "attractiveness_score": 55.3,
+      "factor_scores": {
+        "demand": 6,
+        "earnings_growth": 6,
+        "earnings_revision": 4,
+        "margins": 6,
+        "balance_sheet": 7,
+        "valuation": 5,
+        "policy": 5,
+        "competitive_structure": 7,
+        "capital_cycle": 6,
+        "price_momentum": 4,
+        "macro_sensitivity": 4,
+        "downside_risk": 5
+      },
+      "representative_index": "^CNXREALTY",
+      "performance": {
+        "1D": "Data unavailable from reliable sources.",
+        "1W": "Data unavailable from reliable sources.",
+        "1M": "Data unavailable from reliable sources.",
+        "3M": "Data unavailable from reliable sources.",
+        "6M": "Data unavailable from reliable sources.",
+        "1Y": "Data unavailable from reliable sources.",
+        "YTD": "Data unavailable from reliable sources.",
+        "3Y_cagr": "Data unavailable from reliable sources.",
+        "5Y_cagr": "Data unavailable from reliable sources."
+      },
+      "thesis": [
+        "Our analysis: premium formal-sector demand remains an opportunity, but affordability and rates constrain broad-based upside.",
+        "Realty and discretionary businesses require company-level assessment of inventory, leverage and brand strength.",
+        "The representative Realty index is a thin proxy for this combined sector and does not cover all discretionary exposures."
+      ],
+      "expectation_gaps": {
+        "positive": [
+          "Premium demand and consolidation remain resilient despite macro volatility."
+        ],
+        "negative": [
+          "Affordability weakens, inventory rises or competitive intensity increases."
+        ]
+      },
+      "price": 835.0,
+      "price_date": "2026-10-03",
+      "source": "Yahoo Finance (index)",
+      "weights": {
+        "demand": 12,
+        "earnings_growth": 12,
+        "earnings_revision": 7,
+        "margins": 8,
+        "balance_sheet": 10,
+        "valuation": 10,
+        "policy": 8,
+        "competitive_structure": 7,
+        "capital_cycle": 7,
+        "price_momentum": 7,
+        "macro_sensitivity": 6,
+        "downside_risk": 6
+      },
+      "score_methodology": "Our analysis: 1-10 factor scores; weighted sum divided by 10 gives a 0-100 attractiveness score. Downside-risk score is higher when downside protection is stronger.",
+      "performance_note": "Representative-index return history is incomplete in the retained market dataset; do not infer momentum from missing periods."
+    }
+  ]
+}

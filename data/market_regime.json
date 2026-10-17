@@ -1,0 +1,30 @@
+{
+  "label": "Mid Cycle / Valuation Compression",
+  "evidence": [
+    "Reported fact: Q1 FY2026-27 real GDP growth was firm, indicating that the domestic cycle had not entered a broad contraction.",
+    "Reported fact: August CPI inflation moved close to the RBI's medium-term target area but food inflation remained higher than headline inflation.",
+    "Reported fact: the RBI held the repo rate at 5.25% with a neutral stance in August 2026, leaving the path of further easing data-dependent.",
+    "Market data: Nifty 50 and Nifty 500 price returns were negative over 1Y at the October 3, 2026 cutoff in the retained Yahoo-derived dataset.",
+    "Market data: sector leadership was narrow; pharma was resilient while IT and several domestic sectors showed weak trailing returns.",
+    "Our analysis: the combination of firm activity, uneven inflation and falling equity prices is more consistent with de-rating/earnings scrutiny than recession."
+  ],
+  "earnings": "Data unavailable from reliable sources. Our analysis: verified aggregate forward earnings and revision breadth were not available; sector selection therefore emphasizes demand visibility, balance sheets and execution rather than unsupported consensus forecasts.",
+  "valuation": "Data unavailable from reliable sources. Our analysis: no verified index forward P/E series is used. The regime label relies on observed price weakness alongside firm reported activity, not on an invented valuation multiple.",
+  "flows": "Data unavailable from reliable sources. Our analysis: no cutoff-consistent FPI/DII flow series was verified, so flows are not used as a scoring input.",
+  "major_risks": [
+    "Food or oil inflation delays easing and compresses consumer purchasing power.",
+    "Global risk-off conditions tighten financial conditions and pressure the rupee.",
+    "Public and private capex execution misses elevated expectations.",
+    "Earnings disappointments prolong de-rating in crowded quality and growth franchises."
+  ],
+  "market_expectation_gaps": {
+    "positive": [
+      "Domestic growth may prove more durable than weak trailing equity returns imply.",
+      "Selective margin recovery could emerge if input inflation moderates without demand damage."
+    ],
+    "negative": [
+      "Markets may still be underpricing food/oil inflation persistence and the limits to rate cuts.",
+      "Without verified earnings revisions, apparent price correction may not equal valuation support."
+    ]
+  }
+}

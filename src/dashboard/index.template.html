@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Indian equity research dashboard">
+  <title>India Equity Research</title>
+  <style>/*__INLINE_CSS__*/</style>
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-mark">IR</span>
+      <div><strong>India Research</strong><small>Equity Strategy</small></div>
+    </div>
+    <nav aria-label="Research sections">
+      <p class="nav-label">Dashboard</p>
+      <a href="#/overview">Overview</a>
+      <a href="#/macro">Macro Scorecard</a>
+      <a href="#/regime">Market Regime</a>
+      <a href="#/sector-rankings">Sector Rankings</a>
+      <a href="#/sector-performance">Sector Performance</a>
+      <a href="#/companies">Companies</a>
+      <a href="#/new-age">New-Age Companies</a>
+      <a href="#/portfolio-stance">Portfolio Stance</a>
+      <a href="#/sources">Sources</a>
+      <p class="nav-label">Stage gates</p>
+      <a href="#/deep-dives">Sector Deep Dives <span>2</span></a>
+      <a href="#/analyst">Analyst View <span>2</span></a>
+      <a href="#/valuation">Valuation <span>2</span></a>
+      <a href="#/portfolio">Full Portfolio <span>4</span></a>
+    </nav>
+  </aside>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="menu-button" id="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div>
+        <p class="eyebrow">Institutional research dashboard</p>
+        <h1 id="page-title">Overview</h1>
+      </div>
+      <div class="date-strip" aria-label="Research dates">
+        <div><span>Analysis</span><strong id="analysis-date" data-bind="analysis_date">—</strong></div>
+        <div><span>Data cutoff</span><strong id="data-cutoff-date" data-bind="data_cutoff_date">—</strong></div>
+        <div><span>Prices</span><strong id="price-date" data-bind="price_date">—</strong></div>
+      </div>
+    </header>
+
+    <section class="methodology-bar">
+      <strong>Return methodology:</strong>
+      <span id="return-methodology">Price return, split/bonus adjusted; dividends excluded.</span>
+    </section>
+
+    <section class="kpi-strip" id="kpi-strip" aria-label="Key indicators"></section>
+    <main id="page-root" tabindex="-1"></main>
+    <footer>
+      <span id="cutoff-note">Data shown as of the stated cutoff date.</span>
+      <span>Research use only · Not investment advice</span>
+    </footer>
+  </div>
+
+  <script>/*__RESEARCH_DATA__*/</script>
+  <script>/*__INLINE_JS__*/</script>
+</body>
+</html>

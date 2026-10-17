@@ -1,0 +1,69 @@
+{
+  "items": [
+    {
+      "title": "Yahoo Finance market prices",
+      "url_or_publisher": "https://finance.yahoo.com/",
+      "as_of": "2026-10-03",
+      "notes": "Close-price history fetched by yfinance; retained unchanged. Price returns are split/bonus adjusted and exclude dividends."
+    },
+    {
+      "title": "MoSPI CPI Press Release for August 2026",
+      "url_or_publisher": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1789381904344_6c792dcf-8a9f-4fca-93d3-99d833bdb358_Press_Release_of_CPI_for_August_2026.pdf",
+      "as_of": "2026-09-14",
+      "notes": "Official headline and food CPI inflation; August figures provisional."
+    },
+    {
+      "title": "MoSPI Quarterly GDP Estimates, Q1 FY2026-27",
+      "url_or_publisher": "https://www.mospi.gov.in/uploads/latestreleasesfiles/1788174301107-Press%20Note%20on%20GDP%20Estimates%20for%20Q1%202026-27.pdf",
+      "as_of": "2026-08-31",
+      "notes": "Official real and nominal GDP estimates under the 2022-23-base series."
+    },
+    {
+      "title": "RBI MPC Resolution, August 3-5 2026",
+      "url_or_publisher": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63403",
+      "as_of": "2026-08-05",
+      "notes": "Official repo-rate decision and monetary-policy stance."
+    },
+    {
+      "title": "RBI Money Market Operations",
+      "url_or_publisher": "https://rbi.org.in/ScriptS/BS_ViewMMO.aspx",
+      "as_of": "2026-09-30",
+      "notes": "Daily liquidity operations; a point-in-time observation, not a structural trend."
+    },
+    {
+      "title": "Union Budget 2026-27 FRBM Statement",
+      "url_or_publisher": "https://www.indiabudget.gov.in/doc/frbm1.pdf",
+      "as_of": "2026-02-01",
+      "notes": "Official fiscal-deficit and effective-capex framework."
+    },
+    {
+      "title": "Union Budget 2026-27 Expenditure Budget",
+      "url_or_publisher": "https://www.indiabudget.gov.in/doc/eb/stat16.pdf",
+      "as_of": "2026-02-01",
+      "notes": "Official expenditure and capital-expenditure budget estimates."
+    },
+    {
+      "title": "RBI Database on Indian Economy",
+      "url_or_publisher": "https://dbie.rbi.org.in/",
+      "as_of": "2026-10-03",
+      "notes": "Reference source for external-sector series; no unverified cutoff value used."
+    },
+    {
+      "title": "U.S. EIA Petroleum Data",
+      "url_or_publisher": "https://www.eia.gov/petroleum/",
+      "as_of": "2026-10-03",
+      "notes": "Reference source for crude markets; no unverified cutoff price used."
+    },
+    {
+      "title": "NSE Indices",
+      "url_or_publisher": "https://www.niftyindices.com/",
+      "as_of": "2026-10-03",
+      "notes": "Reference for index definitions; Nifty India Digital history was not reliably resolved."
+    }
+  ],
+  "methodology_notes": [
+    "Research judgments are explicitly labeled as Our analysis; official releases are labeled as Reported fact.",
+    "No aggregate consensus earnings, valuation multiple, or institutional-flow number is supplied where a cutoff-consistent public series was not verified.",
+    "Company classifications and profitability stages are qualitative analytical labels, not investment recommendations."
+  ]
+}
