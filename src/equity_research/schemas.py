@@ -107,6 +107,74 @@ def validate_sources(data: dict[str, Any]) -> None:
         _require_keys(item, _SOURCE_ITEM_KEYS, f"sources.items[{i}]")
 
 
+_DEEP_DIVE_INDEX_ENTRY_KEYS = ("sector_id", "name", "status", "as_of")
+_DEEP_DIVE_PACK_KEYS = (
+    "sector_id",
+    "name",
+    "as_of",
+    "stance_summary",
+    "overview",
+    "sub_themes",
+    "drivers",
+    "risks",
+    "expectation_gaps",
+    "shortlist",
+    "methodology_notes",
+    "sources",
+)
+_DEEP_DIVE_SHORTLIST_KEYS = (
+    "ticker",
+    "name",
+    "priority",
+    "role_in_sector",
+    "thesis",
+    "why_now",
+    "key_risks",
+    "classification",
+    "open_questions",
+)
+_DEEP_DIVE_SUBTHEME_KEYS = ("id", "title", "summary")
+_PUBLISHED = "published"
+_COMING_NEXT = "coming_next"
+
+
+def validate_deep_dive_index(data: dict[str, Any]) -> None:
+    _require_keys(data, ("entries",), "deep_dives.index")
+    if not isinstance(data["entries"], list) or not data["entries"]:
+        raise ValueError("deep_dives.index.entries must be a non-empty list")
+    for i, entry in enumerate(data["entries"]):
+        _require_keys(entry, _DEEP_DIVE_INDEX_ENTRY_KEYS, f"deep_dives.index.entries[{i}]")
+        if entry["status"] not in (_PUBLISHED, _COMING_NEXT):
+            raise ValueError(
+                f"deep_dives.index.entries[{i}].status must be '{_PUBLISHED}' or '{_COMING_NEXT}'"
+            )
+
+
+def validate_deep_dive_pack(pack: dict[str, Any], companies_by_sector: dict[str, Any]) -> None:
+    _require_keys(pack, _DEEP_DIVE_PACK_KEYS, "deep_dive.pack")
+    sector_id = pack["sector_id"]
+    universe = companies_by_sector.get(sector_id)
+    if not isinstance(universe, list):
+        raise ValueError(f"no companies.by_sector[{sector_id!r}] for deep-dive pack")
+    tickers = {row.get("ticker") for row in universe}
+    shortlist = pack["shortlist"]
+    if not isinstance(shortlist, list) or not (1 <= len(shortlist) <= 6):
+        raise ValueError("deep_dive.pack.shortlist must contain 1–6 names")
+    for j, item in enumerate(shortlist):
+        _require_keys(item, _DEEP_DIVE_SHORTLIST_KEYS, f"deep_dive.pack.shortlist[{j}]")
+        if item["ticker"] not in tickers:
+            raise ValueError(
+                f"deep_dive.pack.shortlist[{j}] ticker {item['ticker']} "
+                f"not in companies.by_sector[{sector_id}]"
+            )
+    gaps = pack["expectation_gaps"]
+    _require_keys(gaps, ("positive", "negative"), "deep_dive.pack.expectation_gaps")
+    for i, theme in enumerate(pack["sub_themes"]):
+        _require_keys(theme, _DEEP_DIVE_SUBTHEME_KEYS, f"deep_dive.pack.sub_themes[{i}]")
+    for i, src in enumerate(pack["sources"]):
+        _require_keys(src, _SOURCE_ITEM_KEYS, f"deep_dive.pack.sources[{i}]")
+
+
 _VALIDATORS = {
     "meta": validate_meta,
     "macro": validate_macro,
