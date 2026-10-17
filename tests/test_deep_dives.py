@@ -1,3 +1,4 @@
+from copy import deepcopy
 import json
 from pathlib import Path
 
@@ -47,6 +48,18 @@ _MIN_PACK = {
 }
 
 
+_COMPANIES_BY_SECTOR = {
+    "pharma": [
+        {
+            "ticker": "SUNPHARMA.NS",
+            "name": "Sun Pharmaceutical Industries",
+            "classification": "Sector Leader",
+            "performance": {},
+        }
+    ]
+}
+
+
 def test_validate_index_ok():
     validate_deep_dive_index(
         {
@@ -72,6 +85,59 @@ def test_validate_pack_rejects_unknown_ticker():
     companies = {"by_sector": {"pharma": [{"ticker": "OTHER.NS", "name": "X", "classification": "Y", "performance": {}}]}}
     with pytest.raises(ValueError, match="SUNPHARMA"):
         validate_deep_dive_pack(_MIN_PACK, companies["by_sector"])
+
+
+@pytest.mark.parametrize("key", tuple(_MIN_PACK))
+def test_validate_pack_rejects_missing_required_pack_key(key):
+    pack = deepcopy(_MIN_PACK)
+    del pack[key]
+
+    with pytest.raises(ValueError, match="missing required keys"):
+        validate_deep_dive_pack(pack, _COMPANIES_BY_SECTOR)
+
+
+@pytest.mark.parametrize("key", tuple(_MIN_PACK["shortlist"][0]))
+def test_validate_pack_rejects_missing_required_shortlist_key(key):
+    pack = deepcopy(_MIN_PACK)
+    del pack["shortlist"][0][key]
+
+    with pytest.raises(ValueError, match="missing required keys"):
+        validate_deep_dive_pack(pack, _COMPANIES_BY_SECTOR)
+
+
+@pytest.mark.parametrize("key", ("positive", "negative"))
+def test_validate_pack_rejects_missing_expectation_gap_key(key):
+    pack = deepcopy(_MIN_PACK)
+    del pack["expectation_gaps"][key]
+
+    with pytest.raises(ValueError, match="missing required keys"):
+        validate_deep_dive_pack(pack, _COMPANIES_BY_SECTOR)
+
+
+@pytest.mark.parametrize(
+    ("path", "invalid_value"),
+    [
+        (("overview",), "not-a-list"),
+        (("drivers",), [1]),
+        (("risks",), None),
+        (("methodology_notes",), {}),
+        (("expectation_gaps", "positive"), "not-a-list"),
+        (("expectation_gaps", "negative"), [False]),
+        (("shortlist", 0, "thesis"), "not-a-list"),
+        (("shortlist", 0, "why_now"), [1]),
+        (("shortlist", 0, "key_risks"), None),
+        (("shortlist", 0, "open_questions"), {}),
+    ],
+)
+def test_validate_pack_rejects_non_string_lists(path, invalid_value):
+    pack = deepcopy(_MIN_PACK)
+    target = pack
+    for part in path[:-1]:
+        target = target[part]
+    target[path[-1]] = invalid_value
+
+    with pytest.raises(ValueError, match="must be a list of strings"):
+        validate_deep_dive_pack(pack, _COMPANIES_BY_SECTOR)
 
 
 def test_validate_pack_ok_against_repo_universe():
