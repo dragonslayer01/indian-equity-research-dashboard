@@ -326,7 +326,8 @@
         toolbar +
         '<section class="gate coming-next"><p class="eyebrow">Coming next</p><h2>' +
         escapeHtml(entry.name) +
-        "</h2><p>Banks deep dive is scheduled after Pharmaceuticals and Healthcare ships.</p>" +
+        "</h2><p>" + escapeHtml(entry.name) +
+        " deep dive is scheduled after Pharmaceuticals and Healthcare ships.</p>" +
         '<a class="button-link" href="#/companies">View company universe</a></section>' +
         renderPageCutoff();
     }
@@ -349,7 +350,7 @@
       const performance = market.performance || {};
       const strip = ["1M", "3M", "YTD", "1Y"].map(function (period) {
         return "<span><em>" + period + "</em><strong>" +
-          formatNumber(performance[period], 2) + "%</strong></span>";
+          formatReturn(performance[period]) + "</strong></span>";
       }).join("");
       return '<article class="deep-dive-card">' +
         '<div class="card-head"><div><span class="ticker">' + escapeHtml(item.ticker) +
@@ -384,7 +385,7 @@
       '<section class="panel"><h3>Shortlist</h3><div class="deep-dive-grid">' +
       cards + "</div></section>" +
       panel("Methodology", list(pack.methodology_notes)) +
-      renderPageCutoff();
+      renderDeepDiveCutoff(pack.as_of);
   }
 
   function renderSources() {
@@ -555,6 +556,12 @@
   function renderPageCutoff() {
     return '<p class="page-cutoff">Data cutoff: ' + escapeHtml(valueAt(DATA, "meta.data_cutoff_date", "Unavailable")) +
       ". Prices as of " + escapeHtml(valueAt(DATA, "meta.price_date", "Unavailable")) + ".</p>";
+  }
+
+  function renderDeepDiveCutoff(packAsOf) {
+    return '<p class="page-cutoff">Pack as of ' + formatDate(packAsOf) +
+      ". Data cutoff: " + formatDate(valueAt(DATA, "meta.data_cutoff_date", null)) +
+      ". Prices as of " + formatDate(valueAt(DATA, "meta.price_date", null)) + ".</p>";
   }
 
   function initialize() {

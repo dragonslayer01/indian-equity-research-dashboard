@@ -49,6 +49,11 @@ def _require_keys(obj: dict[str, Any], keys: tuple[str, ...], label: str) -> Non
         raise ValueError(f"{label} missing required keys: {', '.join(missing)}")
 
 
+def _require_str_list(value: Any, label: str) -> None:
+    if not isinstance(value, list) or not all(isinstance(item, str) for item in value):
+        raise ValueError(f"{label} must be a list of strings")
+
+
 def validate_meta(meta: dict[str, Any]) -> None:
     _require_keys(meta, _META_KEYS, "meta")
 
@@ -152,6 +157,8 @@ def validate_deep_dive_index(data: dict[str, Any]) -> None:
 
 def validate_deep_dive_pack(pack: dict[str, Any], companies_by_sector: dict[str, Any]) -> None:
     _require_keys(pack, _DEEP_DIVE_PACK_KEYS, "deep_dive.pack")
+    for key in ("overview", "drivers", "risks", "methodology_notes"):
+        _require_str_list(pack[key], f"deep_dive.pack.{key}")
     sector_id = pack["sector_id"]
     universe = companies_by_sector.get(sector_id)
     if not isinstance(universe, list):
@@ -162,6 +169,11 @@ def validate_deep_dive_pack(pack: dict[str, Any], companies_by_sector: dict[str,
         raise ValueError("deep_dive.pack.shortlist must contain 1–6 names")
     for j, item in enumerate(shortlist):
         _require_keys(item, _DEEP_DIVE_SHORTLIST_KEYS, f"deep_dive.pack.shortlist[{j}]")
+        for key in ("thesis", "why_now", "key_risks", "open_questions"):
+            _require_str_list(
+                item[key],
+                f"deep_dive.pack.shortlist[{j}].{key}",
+            )
         if item["ticker"] not in tickers:
             raise ValueError(
                 f"deep_dive.pack.shortlist[{j}] ticker {item['ticker']} "
@@ -169,6 +181,11 @@ def validate_deep_dive_pack(pack: dict[str, Any], companies_by_sector: dict[str,
             )
     gaps = pack["expectation_gaps"]
     _require_keys(gaps, ("positive", "negative"), "deep_dive.pack.expectation_gaps")
+    for key in ("positive", "negative"):
+        _require_str_list(
+            gaps[key],
+            f"deep_dive.pack.expectation_gaps.{key}",
+        )
     sub_themes = pack["sub_themes"]
     if not isinstance(sub_themes, list):
         raise ValueError("deep_dive.pack.sub_themes must be a list")
