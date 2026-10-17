@@ -52,3 +52,7 @@ def test_javascript_defines_public_dashboard_functions():
 
     assert "const ROUTES" in javascript
     assert '"sector-select"' in javascript
+    assert "function renderDeepDives(" in javascript
+    assert "ROUTES" in javascript
+    assert "renderDeepDives" in javascript
+    assert javascript.count('return renderGate("Sector Deep Dives"') == 0

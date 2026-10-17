@@ -11,3 +11,5 @@ def test_build_embeds_data(tmp_path):
     assert "window.RESEARCH_DATA" in text
     assert "Data unavailable from reliable sources." in text or "analysis_date" in text
     assert "cdn.jsdelivr" not in text
+    assert '"deep_dives"' in text or "deep_dives" in text
+    assert "SUNPHARMA.NS" in text
