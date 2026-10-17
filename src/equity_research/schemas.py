@@ -192,6 +192,33 @@ _VALIDATORS = {
 }
 
 
+def load_deep_dives(data_dir: Path, companies: dict[str, Any]) -> dict[str, Any]:
+    index_path = data_dir / "deep_dives" / "index.json"
+    if not index_path.is_file():
+        raise ValueError("missing required data file: deep_dives/index.json")
+    index_payload = json.loads(index_path.read_text(encoding="utf-8"))
+    validate_deep_dive_index(index_payload)
+    packs: dict[str, Any] = {}
+    by_sector = companies["by_sector"]
+    for entry in index_payload["entries"]:
+        if entry["status"] != _PUBLISHED:
+            continue
+        sector_id = entry["sector_id"]
+        pack_path = data_dir / "deep_dives" / f"{sector_id}.json"
+        if not pack_path.is_file():
+            raise ValueError(f"missing published deep-dive pack: {pack_path.name}")
+        pack = json.loads(pack_path.read_text(encoding="utf-8"))
+        if pack.get("sector_id") != sector_id:
+            raise ValueError(f"pack sector_id mismatch for {pack_path.name}")
+        validate_deep_dive_pack(pack, by_sector)
+        if not (4 <= len(pack["shortlist"]) <= 6):
+            raise ValueError(
+                f"published pack {sector_id} shortlist must contain 4–6 names"
+            )
+        packs[sector_id] = pack
+    return {"index": index_payload["entries"], "packs": packs}
+
+
 def load_all_data(data_dir: Path) -> dict[str, Any]:
     if not data_dir.is_dir():
         raise ValueError(f"data directory not found: {data_dir}")
@@ -210,4 +237,5 @@ def load_all_data(data_dir: Path) -> dict[str, Any]:
     if missing:
         raise ValueError(f"loaded data missing required keys: {', '.join(missing)}")
 
+    loaded["deep_dives"] = load_deep_dives(data_dir, loaded["companies"])
     return loaded

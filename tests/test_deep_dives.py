@@ -4,6 +4,7 @@ from pathlib import Path
 import pytest
 
 from equity_research.schemas import (
+    load_all_data,
     validate_companies,
     validate_deep_dive_index,
     validate_deep_dive_pack,
@@ -77,3 +78,12 @@ def test_validate_pack_ok_against_repo_universe():
     companies = json.loads((ROOT / "data" / "companies.json").read_text())
     validate_companies(companies)
     validate_deep_dive_pack(_MIN_PACK, companies["by_sector"])
+
+
+def test_load_all_data_includes_pharma_pack():
+    data = load_all_data(ROOT / "data")
+    assert "deep_dives" in data
+    assert data["deep_dives"]["packs"]["pharma"]["sector_id"] == "pharma"
+    assert 4 <= len(data["deep_dives"]["packs"]["pharma"]["shortlist"]) <= 6
+    banks = next(e for e in data["deep_dives"]["index"] if e["sector_id"] == "banks")
+    assert banks["status"] == "coming_next"
