@@ -1,0 +1,183 @@
+{
+  "sector_id": "pharma",
+  "name": "Pharmaceuticals and Healthcare",
+  "as_of": "2026-10-18",
+  "stance_summary": "Maintain Stage 1 OW: diversified healthcare demand and exporter characteristics support defensive growth; prefer specialty, domestic brand, and hospital execution over undifferentiated US generics exposure.",
+  "overview": [
+    "India healthcare combines structural domestic demand (chronic therapies, hospitals) with export earnings that diversify currency and cycle exposure.",
+    "Company outcomes remain highly idiosyncratic: US FDA inspection outcomes, product concentration, and pricing can dominate sector beta.",
+    "Stage 1 scorecard rated the sector OW (attractiveness ~71); this pack does not change stance—it sharpens implementation via a five-name shortlist.",
+    "Capital allocation within the sector should favour franchise quality and visible domestic/hospital growth over pure commodity generics."
+  ],
+  "sub_themes": [
+    {
+      "id": "specialty_chronic",
+      "title": "Specialty and chronic franchises",
+      "summary": "Leaders with specialty pipelines and chronic brand strength tend to show more durable mix than pure acute/generics books."
+    },
+    {
+      "id": "hospitals",
+      "title": "Hospital delivery",
+      "summary": "Organised hospital platforms monetise rising procedure volumes and payor mix; execution and capital intensity differ by chain."
+    },
+    {
+      "id": "exports_api",
+      "title": "Exports and complex manufacturing",
+      "summary": "US/EU exposure and complex chemistry can add growth but raise regulatory and pricing risk—stock selection matters more than sector beta."
+    }
+  ],
+  "drivers": [
+    "Domestic chronic and specialty volume growth",
+    "Hospital capacity and occupancy recovery / expansion",
+    "INR earnings diversification from export-oriented businesses where compliance is strong"
+  ],
+  "risks": [
+    "US FDA warning letters, import alerts, and remediation costs",
+    "US generics price erosion and channel inventory swings",
+    "Input-cost and API supply shocks for manufacturing-heavy names",
+    "Hospital regulatory, land, and doctor-engagement execution risk"
+  ],
+  "expectation_gaps": {
+    "positive": [
+      "Street may under-appreciate durability of domestic brand franchises versus headline US generics noise",
+      "Hospital structural growth can compound longer than cyclical pharma sentiment implies"
+    ],
+    "negative": [
+      "Consensus may be slow to price inspection or product-concentration setbacks",
+      "Undifferentiated generics exposure can look cheap on earnings that are not high quality"
+    ]
+  },
+  "shortlist": [
+    {
+      "ticker": "SUNPHARMA.NS",
+      "name": "Sun Pharmaceutical Industries",
+      "priority": 1,
+      "role_in_sector": "Diversified specialty / chronic leader",
+      "thesis": [
+        "Broad specialty and chronic franchise with scale advantages versus mid-tier peers.",
+        "Diversified geography reduces single-market binary outcomes relative to pure US generics names."
+      ],
+      "why_now": [
+        "Fits Stage 1 preference for specialty/domestic-quality over undifferentiated exposure.",
+        "OW sector stance is best expressed through leaders with multiple earnings engines."
+      ],
+      "key_risks": [
+        "Any major US regulatory setback can re-rate the whole complex.",
+        "Specialty concentration in key products remains a company-specific watchpoint."
+      ],
+      "classification": "Sector Leader",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ]
+    },
+    {
+      "ticker": "DRREDDY.NS",
+      "name": "Dr. Reddy's Laboratories",
+      "priority": 2,
+      "role_in_sector": "High-quality compounder with US/complex generics capability",
+      "thesis": [
+        "Quality compounder profile with mix of complex generics and branded businesses.",
+        "Balance-sheet and execution culture historically support navigating regulatory cycles better than weaker peers."
+      ],
+      "why_now": [
+        "Useful core holding when expressing Pharma OW without relying only on hospital names."
+      ],
+      "key_risks": [
+        "US pricing and approval timing can swing near-term earnings.",
+        "Pipeline concentration risk on key launches."
+      ],
+      "classification": "High-Quality Compounder",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ]
+    },
+    {
+      "ticker": "CIPLA.NS",
+      "name": "Cipla",
+      "priority": 3,
+      "role_in_sector": "Domestic brand strength with respiratory franchise",
+      "thesis": [
+        "Strong domestic branded franchise, notably respiratory, aligns with defensive India demand.",
+        "Mix improvement narrative is more domestic-led than pure exporter beta."
+      ],
+      "why_now": [
+        "Domestic brand quality matches the Stage 1 sector thesis preference."
+      ],
+      "key_risks": [
+        "South Africa / US pockets still matter for consolidated growth.",
+        "Competitive intensity in key domestic therapies."
+      ],
+      "classification": "High-Quality Compounder",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ]
+    },
+    {
+      "ticker": "APOLLOHOSP.NS",
+      "name": "Apollo Hospitals Enterprise",
+      "priority": 4,
+      "role_in_sector": "Hospital platform sector leader",
+      "thesis": [
+        "Organised hospital delivery captures structural procedure and diagnostics demand.",
+        "Pharmacy and digital adjacencies diversify the hospital earnings story when executed well."
+      ],
+      "why_now": [
+        "Hospital theme is under-served if Pharma OW is implemented only via drug manufacturers."
+      ],
+      "key_risks": [
+        "Capital intensity and occupancy/ARPOB execution risk.",
+        "Regulatory and competitive intensity in metro markets."
+      ],
+      "classification": "Sector Leader",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ]
+    },
+    {
+      "ticker": "TORNTPHARM.NS",
+      "name": "Torrent Pharmaceuticals",
+      "priority": 5,
+      "role_in_sector": "Domestic-focused compounder",
+      "thesis": [
+        "Domestic-heavy branded business fits the preference for India franchise quality.",
+        "More focused profile than the largest diversified majors—useful satellite to core holdings."
+      ],
+      "why_now": [
+        "Complements leaders with a cleaner domestic compounder expression."
+      ],
+      "key_risks": [
+        "Brazil / other international pockets can add volatility.",
+        "Scale disadvantage versus the largest Indian majors on specialty BD."
+      ],
+      "classification": "High-Quality Compounder",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ]
+    }
+  ],
+  "methodology_notes": [
+    "No sell-side EPS, target prices, or PE multiples were verified for this pack; numerical valuation fields are omitted by design.",
+    "Shortlist is a research preference ranking within the existing Stage 1 Pharma universe—not a portfolio weight recommendation.",
+    "Price and return figures must be read from companies.by_sector.pharma at render time, not copied into this pack."
+  ],
+  "sources": [
+    {
+      "title": "Stage 1 Pharmaceuticals sector thesis and scorecard",
+      "url_or_publisher": "data/sectors.json",
+      "as_of": "2026-10-04",
+      "notes": "Stance, factor scores, and thesis bullets used as baseline."
+    },
+    {
+      "title": "Stage 1 Pharma company universe",
+      "url_or_publisher": "data/companies.json",
+      "as_of": "2026-10-04",
+      "notes": "Classification labels and ticker list for shortlist eligibility."
+    },
+    {
+      "title": "Yahoo Finance NSE prices",
+      "url_or_publisher": "https://finance.yahoo.com/",
+      "as_of": "2026-10-16",
+      "notes": "Performance joined at dashboard build/render from refreshed company rows."
+    }
+  ]
+}

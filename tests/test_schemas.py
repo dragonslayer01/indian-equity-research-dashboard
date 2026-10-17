@@ -17,6 +17,7 @@ def test_load_all_data_from_repo():
         "companies",
         "new_age",
         "sources",
+        "deep_dives",
     }
 
 

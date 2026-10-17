@@ -77,7 +77,9 @@ def main() -> int:
 
     meta_path = args.data_dir / "meta.json"
     meta = _read(meta_path)
-    price_date = args.price_date or meta.get("price_date") or (
+    # Default to yesterday so refresh pulls the latest available closes,
+    # not a stale meta.price_date from a prior run.
+    price_date = args.price_date or (
         date.today() - timedelta(days=1)
     ).isoformat()
     end = (pd.Timestamp(price_date) + pd.Timedelta(days=1)).date().isoformat()

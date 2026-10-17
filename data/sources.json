@@ -1,12 +1,6 @@
 {
   "items": [
     {
-      "title": "Yahoo Finance market prices",
-      "url_or_publisher": "https://finance.yahoo.com/",
-      "as_of": "2026-10-03",
-      "notes": "Close-price history fetched by yfinance; retained unchanged. Price returns are split/bonus adjusted and exclude dividends."
-    },
-    {
       "title": "MoSPI CPI Press Release for August 2026",
       "url_or_publisher": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1789381904344_6c792dcf-8a9f-4fca-93d3-99d833bdb358_Press_Release_of_CPI_for_August_2026.pdf",
       "as_of": "2026-09-14",
@@ -59,6 +53,12 @@
       "url_or_publisher": "https://www.niftyindices.com/",
       "as_of": "2026-10-03",
       "notes": "Reference for index definitions; Nifty India Digital history was not reliably resolved."
+    },
+    {
+      "title": "Yahoo Finance market prices",
+      "url_or_publisher": "https://finance.yahoo.com/",
+      "as_of": "2026-10-16",
+      "notes": "Close-price history fetched by yfinance. All requested symbols returned data."
     }
   ],
   "methodology_notes": [

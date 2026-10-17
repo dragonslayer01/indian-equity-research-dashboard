@@ -13,7 +13,7 @@
     "new-age": renderNewAge,
     "portfolio-stance": renderPortfolioStance,
     sources: renderSources,
-    "deep-dives": function () { return renderGate("Sector Deep Dives", "Stage 2"); },
+    "deep-dives": function () { return renderDeepDives(); },
     analyst: function () { return renderGate("Analyst & Street View", "Stage 2"); },
     valuation: function () { return renderGate("Valuation & Scenarios", "Stage 2"); },
     portfolio: function () { return renderGate("Full Portfolio", "Stage 4"); },
@@ -302,6 +302,91 @@
       renderPageCutoff();
   }
 
+  function renderDeepDives(selectedSectorId) {
+    const index = valueAt(DATA, "deep_dives.index", []);
+    if (!index.length) {
+      return pageHeader("Stage 2", "Sector Deep Dives", "No deep-dive index is available.") +
+        emptyState("Deep-dive catalog is empty.");
+    }
+    const published = index.filter(function (entry) { return entry.status === "published"; });
+    const defaultId = selectedSectorId || (published[0] && published[0].sector_id) || index[0].sector_id;
+    const entry = index.find(function (candidate) { return candidate.sector_id === defaultId; }) || index[0];
+    const options = index.map(function (candidate) {
+      const label = candidate.status === "coming_next" ? candidate.name + " (coming next)" : candidate.name;
+      return '<option value="' + escapeHtml(candidate.sector_id) + '"' +
+        (candidate.sector_id === entry.sector_id ? " selected" : "") + ">" +
+        escapeHtml(label) + "</option>";
+    }).join("");
+    const toolbar = '<div class="toolbar"><label>Sector<select id="deep-dive-select">' +
+      options + "</select></label></div>";
+
+    if (entry.status === "coming_next") {
+      return pageHeader("Stage 2", "Sector Deep Dives",
+        "Published packs unlock here; remaining sectors stay gated until authored.") +
+        toolbar +
+        '<section class="gate coming-next"><p class="eyebrow">Coming next</p><h2>' +
+        escapeHtml(entry.name) +
+        "</h2><p>Banks deep dive is scheduled after Pharmaceuticals and Healthcare ships.</p>" +
+        '<a class="button-link" href="#/companies">View company universe</a></section>' +
+        renderPageCutoff();
+    }
+
+    const pack = valueAt(DATA, "deep_dives.packs." + entry.sector_id, null);
+    if (!pack) {
+      return pageHeader("Stage 2", "Sector Deep Dives", "") + toolbar +
+        emptyState("Published pack file is missing for " + entry.sector_id + ".");
+    }
+
+    const universe = valueAt(DATA, "companies.by_sector." + pack.sector_id, []);
+    const byTicker = {};
+    universe.forEach(function (row) { byTicker[row.ticker] = row; });
+    const shortlist = (pack.shortlist || []).slice().sort(function (a, b) {
+      return (a.priority || 99) - (b.priority || 99);
+    });
+
+    const cards = shortlist.map(function (item) {
+      const market = byTicker[item.ticker] || {};
+      const performance = market.performance || {};
+      const strip = ["1M", "3M", "YTD", "1Y"].map(function (period) {
+        return "<span><em>" + period + "</em><strong>" +
+          formatNumber(performance[period], 2) + "%</strong></span>";
+      }).join("");
+      return '<article class="deep-dive-card">' +
+        '<div class="card-head"><div><span class="ticker">' + escapeHtml(item.ticker) +
+        "</span><h3>" + escapeHtml(item.name) + '</h3><p class="muted">' +
+        escapeHtml(item.role_in_sector) + " · " + escapeHtml(item.classification) +
+        '</p></div><span class="priority">#' + escapeHtml(item.priority) +
+        "</span></div>" +
+        "<h4>Thesis</h4>" + list(item.thesis) +
+        "<h4>Why now</h4>" + list(item.why_now) +
+        "<h4>Key risks</h4>" + list(item.key_risks) +
+        "<h4>Open questions</h4>" + list(item.open_questions) +
+        '<div class="perf-strip" aria-label="Selected returns">' + strip + "</div>" +
+        '<p class="muted">Price as of ' + formatDate(market.price_date) +
+        (market.price != null ? " · " + formatNumber(market.price, 2) : "") +
+        "</p></article>";
+    }).join("");
+
+    const themes = (pack.sub_themes || []).map(function (theme) {
+      return "<article><h3>" + escapeHtml(theme.title) + "</h3><p>" +
+        escapeHtml(theme.summary) + "</p></article>";
+    }).join("");
+    const expectationGaps = pack.expectation_gaps || {};
+
+    return pageHeader("Stage 2", pack.name + " deep dive", pack.stance_summary) +
+      toolbar +
+      panel("Overview", list(pack.overview)) +
+      '<section class="subtheme-grid">' + themes + "</section>" +
+      panel("Drivers", list(pack.drivers)) +
+      panel("Risks", list(pack.risks)) +
+      panel("Expectation gaps — positive", list(expectationGaps.positive)) +
+      panel("Expectation gaps — negative", list(expectationGaps.negative)) +
+      '<section class="panel"><h3>Shortlist</h3><div class="deep-dive-grid">' +
+      cards + "</div></section>" +
+      panel("Methodology", list(pack.methodology_notes)) +
+      renderPageCutoff();
+  }
+
   function renderSources() {
     const sources = valueAt(DATA, "sources.items", []);
     const rows = sources.map(function (source) {
@@ -311,10 +396,28 @@
       return "<tr><td><strong>" + escapeHtml(source.title) + "</strong></td><td>" + publisher +
         "</td><td>" + formatDate(source.as_of) + "</td><td>" + escapeHtml(source.notes) + "</td></tr>";
     }).join("");
+    const diveSources = [];
+    valueAt(DATA, "deep_dives.index", []).forEach(function (entry) {
+      if (entry.status !== "published") return;
+      const pack = valueAt(DATA, "deep_dives.packs." + entry.sector_id, null);
+      (pack && pack.sources || []).forEach(function (source) {
+        diveSources.push(Object.assign({ pack: pack.name }, source));
+      });
+    });
+    const diveRows = diveSources.map(function (source) {
+      const isUrl = /^https?:\/\//.test(source.url_or_publisher || "");
+      const publisher = isUrl ? '<a href="' + escapeHtml(source.url_or_publisher) +
+        '" target="_blank" rel="noopener noreferrer">Open source ↗</a>' : escapeHtml(source.url_or_publisher);
+      return "<tr><td><strong>" + escapeHtml(source.title) + "</strong></td><td>" +
+        escapeHtml(source.pack) + "</td><td>" + publisher + "</td><td>" +
+        formatDate(source.as_of) + "</td><td>" + escapeHtml(source.notes) + "</td></tr>";
+    }).join("");
     return pageHeader("Audit trail", "Sources and methodology",
       "Primary sources, market-data references and explicit methodology limitations.") +
       panel("Source register", '<div class="table-wrap"><table><thead><tr><th>Source</th><th>Link / publisher</th><th>As of</th><th>Usage note</th></tr></thead><tbody>' +
         rows + "</tbody></table></div>") +
+      panel("Deep-dive sources", '<div class="table-wrap"><table><thead><tr><th>Source</th><th>Pack</th><th>Link / publisher</th><th>As of</th><th>Usage note</th></tr></thead><tbody>' +
+        diveRows + "</tbody></table></div>") +
       panel("Methodology notes", list(valueAt(DATA, "sources.methodology_notes", []))) + renderPageCutoff();
   }
 
@@ -425,6 +528,7 @@
         bindPageEvents("new-age");
       });
     }
+    bindDeepDiveSelect();
     const search = document.getElementById("entity-search");
     if (search) search.addEventListener("input", function () { filterEntities(search.value); });
     document.querySelectorAll(".returns-table th.sortable").forEach(function (header, columnIndex) {
@@ -436,6 +540,15 @@
           activate();
         }
       });
+    });
+  }
+
+  function bindDeepDiveSelect() {
+    const select = document.getElementById("deep-dive-select");
+    if (!select) return;
+    select.addEventListener("change", function () {
+      document.getElementById("page-root").innerHTML = renderDeepDives(select.value);
+      bindDeepDiveSelect();
     });
   }
 

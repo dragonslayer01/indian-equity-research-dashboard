@@ -51,3 +51,9 @@ If `pytest` is not on your PATH, use `PYTHONPATH=src python3 -m pytest -v` inste
 **Stage 1 (shipped)** covers overview KPIs, macro, market regime, sector rankings and performance, conventional and New-Age universes, portfolio stance, and sources — all navigable via hash routes in the built HTML.
 
 **Stop line for research:** Stage 1 is complete when this dashboard is built and reviewed. The **next research action** is to **choose a sector** and begin **Stage 2** sector deep dives (company-level thesis, analyst view, valuation). In the UI, routes such as *Sector Deep Dives*, *Analyst & Street View*, and *Valuation & Scenarios* intentionally show Stage 2 gate pages until that work is authored into JSON and the gates are lifted.
+
+## Stage 2 (in progress)
+
+- **Pharmaceuticals and Healthcare** deep dive + shortlist is live at `#/deep-dives`.
+- **Banks** is next (`coming_next` in `data/deep_dives/index.json`).
+- Analyst View, Valuation, and Full Portfolio remain gated.
