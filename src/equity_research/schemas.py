@@ -169,9 +169,15 @@ def validate_deep_dive_pack(pack: dict[str, Any], companies_by_sector: dict[str,
             )
     gaps = pack["expectation_gaps"]
     _require_keys(gaps, ("positive", "negative"), "deep_dive.pack.expectation_gaps")
-    for i, theme in enumerate(pack["sub_themes"]):
+    sub_themes = pack["sub_themes"]
+    if not isinstance(sub_themes, list):
+        raise ValueError("deep_dive.pack.sub_themes must be a list")
+    for i, theme in enumerate(sub_themes):
         _require_keys(theme, _DEEP_DIVE_SUBTHEME_KEYS, f"deep_dive.pack.sub_themes[{i}]")
-    for i, src in enumerate(pack["sources"]):
+    sources = pack["sources"]
+    if not isinstance(sources, list):
+        raise ValueError("deep_dive.pack.sources must be a list")
+    for i, src in enumerate(sources):
         _require_keys(src, _SOURCE_ITEM_KEYS, f"deep_dive.pack.sources[{i}]")
 
 

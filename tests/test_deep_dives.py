@@ -1,9 +1,10 @@
+import json
 from pathlib import Path
 
 import pytest
 
 from equity_research.schemas import (
-    load_all_data,
+    validate_companies,
     validate_deep_dive_index,
     validate_deep_dive_pack,
 )
@@ -73,11 +74,6 @@ def test_validate_pack_rejects_unknown_ticker():
 
 
 def test_validate_pack_ok_against_repo_universe():
-    companies = load_all_data(ROOT / "data")["companies"]
-    # Until Task 2 adds files, this may fail on load_all_data deep_dives —
-    # use companies only:
-    from equity_research.schemas import validate_companies
-    import json
     companies = json.loads((ROOT / "data" / "companies.json").read_text())
     validate_companies(companies)
     validate_deep_dive_pack(_MIN_PACK, companies["by_sector"])
