@@ -92,8 +92,8 @@ Stage 1 sector objects stay lean for rankings/heatmaps. Deep-dive narrative is l
 }
 ```
 
-- **`index`:** drives the UI dropdown (published vs coming_next). Authored in a small `data/deep_dives/index.json` **or** derived at load time from files on disk + a fixed “planned” list. Prefer **`data/deep_dives/index.json`** for explicit Banks placeholder without requiring an empty banks file.
-- **`packs[sector_id]`:** loaded from `data/deep_dives/{sector_id}.json` when `status == published`.
+- **`index`:** drives the UI dropdown (published vs coming_next). Authored only in `data/deep_dives/index.json` (includes Banks as `coming_next` without a banks pack file).
+- **`packs[sector_id]`:** loaded from `data/deep_dives/{sector_id}.json` when that index entry has `status == published`.
 
 ### Pharma pack schema (`data/deep_dives/pharma.json`)
 
