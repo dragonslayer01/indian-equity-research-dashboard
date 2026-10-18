@@ -2,9 +2,17 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Publish Banks on `#/deep-dives` with a five-name shortlist and hybrid KPI strips, pushing commits directly to `main`.
+**Goal:** Publish Banks on `#/deep-dives` with a **10-name** shortlist, hybrid KPI strips, and an **18-name** banks universe, pushing commits directly to `main`.
 
-**Architecture:** Reuse Pharma deep-dive loader/UI. Extend shortlist validation with optional `kpis`. Add `data/deep_dives/banks.json`, flip Banks to `published` in `index.json`, render a KPI strip when present.
+**Architecture:** Reuse Pharma deep-dive loader/UI. Extend shortlist validation with optional `kpis` and published length **4–10**. Expand `companies.by_sector.banks` (+6 tickers + fetch). Add `data/deep_dives/banks.json`, flip Banks to `published`, render KPI strip.
+
+## Amendment (2026-10-18, user option C)
+
+- Universe adds: `PNB.NS`, `UNIONBANK.NS`, `INDIANB.NS`, `YESBANK.NS`, `RBLBANK.NS`, `KARURVYSYA.NS`
+- Shortlist (10): HDFC, ICICI, SBI, Kotak, Axis, Bank of Baroda, Federal, IDFC First, AU SFB, IndusInd
+- Schema: pack shortlist max **10**; published **4–10** (Pharma stays at 5)
+- New Task 0 before Task 1: add universe rows + `fetch_market_data` refresh
+- Task 2 banks.json must include all 10 shortlist entries with KPIs (not only the original five)
 
 **Tech Stack:** Python 3 / pytest, vanilla JS/CSS, existing `build_dashboard.py` / Netlify pipeline.
 
@@ -13,7 +21,8 @@
 ## Global Constraints
 
 - Never invent financial/market/consensus/analyst data; missing → exact string `Data unavailable from reliable sources.`
-- Shortlist tickers must exist in `companies.by_sector.banks`.
+- Shortlist tickers must exist in `companies.by_sector.banks` (18 names after Task 0).
+- Published Banks shortlist length **10**; global published shortlist allowed range **4–10**.
 - KPI `qualitative` ∈ {`strong`,`adequate`,`watch`,`weak`}; `id` ∈ {`nim`,`asset_quality`,`liability_franchise`,`credit_cost`}.
 - If KPI `value` is not null, it must be a number and both `as_of` and `source` are required.
 - Pharma packs without `kpis` must keep passing validation.

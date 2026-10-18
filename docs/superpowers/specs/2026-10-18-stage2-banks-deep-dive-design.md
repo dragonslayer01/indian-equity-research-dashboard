@@ -1,13 +1,13 @@
-# Stage 2 — Banks Sector Deep Dive + Shortlist + Hybrid KPIs
+# Stage 2 — Banks Sector Deep Dive + Expanded Universe + Hybrid KPIs
 
 **Date:** 2026-10-18  
-**Status:** Approved design (awaiting user review of this written spec)  
+**Status:** Approved (amended: larger universe + 10-name shortlist)  
 **Location:** `personal_projects/indian-equity-research-dashboard/`  
 **Prior art:**
 - Stage 1: `docs/superpowers/specs/2026-10-04-indian-equity-dashboard-design.md`
 - Pharma deep dive: `docs/superpowers/specs/2026-10-18-stage2-pharma-deep-dive-design.md`
 
-**Delivery:** Implement and push directly to `main` (no long-lived feature branch required).
+**Delivery:** Implement and push directly to `main`.
 
 **Roadmap (separate specs after this ships):** Macro deepen → New-Age deepen.
 
@@ -15,9 +15,9 @@
 
 ## 1. Goal
 
-Publish a **Banks** Stage 2 deep dive on `#/deep-dives`: sector narrative, **~5-name shortlist**, and **hybrid banking KPIs** on shortlist cards (qualitative badge + optional cited numeric).
+Publish a **Banks** Stage 2 deep dive on `#/deep-dives`: sector narrative, **10-name shortlist** with **hybrid banking KPIs**, and an **expanded Stage 1 banks universe** (~18 names) for the Companies monitor.
 
-Reuse the Pharma pack/UI path; extend the shortlist schema with optional `kpis` so Pharma packs remain valid without KPIs.
+Reuse the Pharma pack/UI path; extend shortlist schema with optional `kpis`. Raise published shortlist length to **4–10** (Pharma remains at 5).
 
 **Central question:** Within Indian banks, where should capital lean on a 6–24 month horizon, with liability, asset-quality, and margin risks stated honestly.
 
@@ -27,169 +27,109 @@ Reuse the Pharma pack/UI path; extend the shortlist schema with optional `kpis` 
 
 ### In scope
 
-- Create `data/deep_dives/banks.json` (full pack content)
-- Update `data/deep_dives/index.json`: Banks `status: published`, set `as_of`
-- Extend schema for optional shortlist `kpis` (hybrid qualitative + optional numeric)
-- UI: render KPI strip on shortlist cards when `kpis` present; show Banks pack `as_of` like Pharma
-- Join returns/price from `companies.by_sector.banks` by ticker (do not duplicate returns in the pack)
-- Tests: pack load, ticker cross-check, KPI validation, build embed, smoke that Banks is published
-- README: Banks live; next = Macro / New-Age
+- Expand `companies.by_sector.banks` from 12 → 18 names (add PNB, Union Bank, Indian Bank, Yes Bank, RBL Bank, Karur Vysya); fetch/merge Yahoo performance
+- Create `data/deep_dives/banks.json` with **10** shortlist names + hybrid KPIs
+- Update `data/deep_dives/index.json`: Banks `published` + `as_of`
+- Schema: optional shortlist `kpis`; published shortlist length **4–10** (validator max 10)
+- UI: KPI strip on shortlist cards; Banks pack `as_of`
+- Join returns from `companies.by_sector.banks` by ticker
+- Tests + README; push to `main`
 - Keep `#/analyst`, `#/valuation`, `#/portfolio` gated
 
 ### Out of scope
 
-- Macro deepen / New-Age deepen (next roadmap slices)
-- Sell-side consensus scrapes; full valuation scenarios
-- Inventing NIM / GNPA / credit-cost percentages without a cited source + `as_of`
-- Full 12-name bank deep dives (shortlist only)
-- Changing Pharma pack content except ensuring optional `kpis` does not break validation
+- Macro deepen / New-Age deepen
+- Sell-side scrapes; full valuation scenarios
+- Inventing NIM / GNPA / credit-cost % without cited `as_of` + `source`
+- Authored deep-dive notes for every universe name (shortlist only)
 
 ### Honesty rule (inherited)
 
-Never invent financial, market, consensus, technical, or analyst data. Missing → exact string:
-
-`Data unavailable from reliable sources.`
-
-If a KPI has no reliable numeric, set `value` to `null` and put the unavailable string (or a short qualitative-only rationale) in `note`.
+Missing → exact string: `Data unavailable from reliable sources.`
 
 ---
 
 ## 3. Architecture
 
-### Approach
-
-**Extend pack schema with banking KPIs (Approach 2)** + **hybrid KPI presentation (option C)** from brainstorming.
-
 ```
+data/companies.json                 # banks universe 18 names + fetch
 data/deep_dives/index.json          # banks → published
-data/deep_dives/banks.json          # narrative + shortlist + kpis
-src/equity_research/schemas.py      # optional kpis validation
-src/dashboard/app.js                # KPI strip on shortlist cards
+data/deep_dives/banks.json          # narrative + 10 shortlist + kpis
+src/equity_research/schemas.py      # kpis + shortlist length 4–10
+src/dashboard/app.js                # KPI strip
 ```
 
-No new hash routes. Pharma continues to load without `kpis`.
+### Expanded universe (18)
 
-### Index
+**Existing (12):** HDFCBANK, ICICIBANK, SBIN, KOTAKBANK, AXISBANK, INDUSINDBK, BANDHANBNK, FEDERALBNK, IDFCFIRSTB, AUBANK, BANKBARODA, CANBK  
 
-```json
-{
-  "sector_id": "banks",
-  "name": "Banks",
-  "status": "published",
-  "as_of": "YYYY-MM-DD"
-}
-```
+**Add (6):**
 
-Pharma entry remains `published`. No `coming_next` Banks row after this ships (unless a third sector is added later).
+| Ticker | Name | Classification |
+|--------|------|----------------|
+| PNB.NS | Punjab National Bank | Cyclical Opportunity |
+| UNIONBANK.NS | Union Bank of India | Cyclical Opportunity |
+| INDIANB.NS | Indian Bank | Value Opportunity |
+| YESBANK.NS | Yes Bank | Turnaround |
+| RBLBANK.NS | RBL Bank | High-Risk |
+| KARURVYSYA.NS | Karur Vysya Bank | Growth Challenger |
 
-### Banks pack core
+### Shortlist (10) — locked
 
-Same required top-level keys as Pharma:
-
-`sector_id`, `name`, `as_of`, `stance_summary`, `overview`, `sub_themes`, `drivers`, `risks`, `expectation_gaps`, `shortlist` (4–6), `methodology_notes`, `sources`
-
-- `sector_id` must be `banks` and match `companies.by_sector.banks`
-- Align stance with Stage 1 (`OW`, attractiveness ~69.9) unless the pack explicitly documents a change
-
-Suggested sub-themes:
-- Large private franchise
-- PSU franchise / liability scale
-- Deposit competition & margins
-- Asset quality / unsecured watchpoints
-
-### Shortlist (locked default)
-
-| Priority | Ticker | Name |
-|----------|--------|------|
+| # | Ticker | Name |
+|---|--------|------|
 | 1 | HDFCBANK.NS | HDFC Bank |
 | 2 | ICICIBANK.NS | ICICI Bank |
 | 3 | SBIN.NS | State Bank of India |
 | 4 | KOTAKBANK.NS | Kotak Mahindra Bank |
 | 5 | AXISBANK.NS | Axis Bank |
+| 6 | BANKBARODA.NS | Bank of Baroda |
+| 7 | FEDERALBNK.NS | Federal Bank |
+| 8 | IDFCFIRSTB.NS | IDFC First Bank |
+| 9 | AUBANK.NS | AU Small Finance Bank |
+| 10 | INDUSINDBK.NS | IndusInd Bank |
 
-Swaps require an explicit plan amendment. All tickers must exist in `companies.by_sector.banks`.
+Universe-only (not shortlist): BANDHANBNK, CANBK, PNB, UNIONBANK, INDIANB, YESBANK, RBLBANK, KARURVYSYA.
 
 ### Hybrid KPI schema
 
-Optional on each shortlist item: `kpis` — array of KPI objects.
+Same as prior approval: optional `kpis` with `id` ∈ {`nim`,`asset_quality`,`liability_franchise`,`credit_cost`}, `qualitative` ∈ {`strong`,`adequate`,`watch`,`weak`}, numeric `value` only with `as_of` + `source`.
 
-| Field | Required | Notes |
-|-------|----------|--------|
-| `id` | yes | One of: `nim`, `asset_quality`, `liability_franchise`, `credit_cost` |
-| `label` | yes | Display label (e.g. `"NIM"`) |
-| `qualitative` | yes | Exactly one of: `strong`, `adequate`, `watch`, `weak` |
-| `value` | no | number or `null` |
-| `unit` | no | e.g. `pct`; ignored if `value` is null |
-| `as_of` | no | `YYYY-MM-DD` when `value` is a number |
-| `source` | no | publisher or URL string when `value` is a number |
-| `note` | no | rationale or `Data unavailable from reliable sources.` |
+### Shortlist length rules
 
-**Validation rules:**
-- If `kpis` is present, it must be a list (may be empty only if omitted entirely — prefer omit vs empty).
-- Each item must include `id`, `label`, `qualitative`.
-- `qualitative` ∈ {`strong`,`adequate`,`watch`,`weak`}.
-- `id` ∈ the Banks standard set above (packs in other sectors may later define their own sets; for this slice only Banks uses KPIs).
-- If `value` is not `null`, it must be a number, and both `as_of` and `source` are required (reject otherwise).
-- Duplicate `id` within one shortlist item’s `kpis` → `ValueError`.
-- Pharma shortlist without `kpis` remains valid.
-
-**UI rules:**
-- Render a compact KPI strip under open questions / above the returns strip.
-- Show qualitative as a badge; if `value` is a number, show formatted value + unit + `as_of`.
-- If `value` is null, show qualitative + `note` (or unavailable string).
-- Do not invent colours beyond existing stance/badge patterns; reuse muted panel styling.
-
-### Loader / schema touchpoints
-
-- Reuse `load_deep_dives` / `validate_deep_dive_pack`.
-- Add `validate_shortlist_kpis(item)` called from pack validation when `kpis` key exists.
-- Published Banks pack must have 4–6 shortlist names (existing rule).
-
-### Sources
-
-Pack-local `sources` appear under Sources → “Deep-dive sources” (existing subsection). Include Stage 1 banks thesis/universe and any numeric KPI citations with `as_of`.
+- `validate_deep_dive_pack`: shortlist length **1–10**
+- `load_deep_dives` for published packs: **4–10**
+- Pharma pack (5 names) unchanged and still valid
 
 ---
 
 ## 4. Content guidelines
 
-- Prefer liability franchise quality and diversified large banks over pure cyclical PSU beta unless thesis justifies it.
-- Call out deposit competition, unsecured stress, and margin discipline (Stage 1 gaps).
-- Numerics only when cited; otherwise qualitative + unavailable string.
-- Research `as_of` and `meta.price_date` both shown on the deep-dive page.
+- Prefer franchise quality; shortlist mixes leaders, PSU scale, and selected challengers — not every cyclical PSU.
+- KPI numerics null + honesty notes unless cited.
+- Show pack `as_of` and `meta.price_date`.
 
 ---
 
 ## 5. Testing & acceptance
 
-- Load `load_all_data` includes `deep_dives.packs.banks`.
-- Unknown shortlist ticker fails; invalid qualitative / numeric without `as_of` fails.
-- Pharma pack still loads (no `kpis`).
-- Build HTML contains Banks stance_summary (or unique pack string) and at least one KPI label from the pack.
-- `#/deep-dives` Banks selection shows shortlist + KPI strip; no “coming next” for Banks.
-- Analyst/valuation still show gate copy.
-- Offline: no CDN.
+- `companies.by_sector.banks` has 18 tickers including the six adds
+- `deep_dives.packs.banks` shortlist length 10; all tickers in universe
+- Pharma still loads
+- Build embeds Banks stance string + a KPI label
+- Deep Dives Banks shows 10 cards + KPI strips; no coming_next
+- Analyst/valuation gated
 
 ---
 
-## 6. Delivery sequence
-
-1. This spec approved by user.
-2. Implementation plan (`writing-plans`).
-3. Schema + tests for KPIs → banks.json + index flip → UI strip → README.
-4. Push commits to `main`; Netlify rebuilds.
-
----
-
-## 7. Decisions locked
+## 6. Decisions locked
 
 | Decision | Choice |
 |----------|--------|
-| Roadmap order | Banks → Macro → New-Age |
-| Banks depth | Deep dive + ~5 shortlist |
-| Approach | Extend schema with banking KPIs |
-| KPI presentation | Hybrid (qualitative + optional cited numeric) |
-| Shortlist | HDFC, ICICI, SBI, Kotak, Axis |
-| Standard KPI ids | `nim`, `asset_quality`, `liability_franchise`, `credit_cost` |
-| Git delivery | Push directly to `main` |
-| Analyst / Valuation | Remain gated |
+| Expansion | Universe + shortlist (option C) |
+| Universe size | 18 (12 + 6) |
+| Shortlist size | 10 |
+| Published shortlist cap | 4–10 |
+| KPIs | Hybrid qualitative + optional cited numeric |
+| Delivery | Push to `main` |
+| Next after Banks | Macro → New-Age |
