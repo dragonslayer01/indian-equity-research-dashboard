@@ -169,6 +169,7 @@
 
   function renderMacro() {
     const variables = valueAt(DATA, "macro.variables", []);
+    const deep = DATA.macro_deep || {};
     const cards = variables.map(function (row) {
       return '<article class="macro-card"><div class="card-head"><h3>' + escapeHtml(row.name) +
         '</h3><span class="direction">' + escapeHtml(row.direction) + "</span></div>" +
@@ -178,10 +179,32 @@
         "</dd><dt>Sector impact</dt><dd>" + escapeHtml(row.sector_market_impact) +
         '</dd></dl><p class="source-line">' + escapeHtml(row.source) + " · " + formatDate(row.as_of) + "</p></article>";
     }).join("");
+    const risks = (deep.risk_watchlist || []).map(function (row) {
+      return '<article class="risk-card severity-' + escapeHtml(row.severity) + '">' +
+        '<div class="card-head"><h3>' + escapeHtml(row.title) +
+        '</h3><span class="severity">' + escapeHtml(row.severity) + "</span></div><p>" +
+        escapeHtml(row.note) + "</p></article>";
+    }).join("");
+    const deepBlock = deep.headline
+      ? '<section class="panel macro-deep-headline"><h3>Macro deep dive</h3><p class="eyebrow">Research as of ' +
+        formatDate(deep.as_of) + "</p><p>" + escapeHtml(deep.headline) + "</p></section>" +
+        '<div class="scenario-grid">' +
+        panel("Base case", list(deep.base_case)) +
+        panel("Upside", list(deep.upside)) +
+        panel("Downside", list(deep.downside)) +
+        "</div>" +
+        panel("Transmission map", list(deep.transmission_map)) +
+        panel("Portfolio implications", list(deep.portfolio_implications)) +
+        '<section class="panel"><h3>Risk watchlist</h3><div class="risk-grid">' + risks +
+        "</div></section>" +
+        panel("Open questions", list(deep.open_questions)) +
+        panel("Methodology", list(deep.methodology_notes))
+      : "";
     return pageHeader("Macro framework", "Macro scorecard",
       "Reported facts are separated from analytical interpretation and market transmission.") +
       '<div class="macro-grid">' + cards + "</div>" +
       panel("Transmission narrative", list(valueAt(DATA, "macro.transmission_narrative", []))) +
+      deepBlock +
       renderPageCutoff();
   }
 
@@ -434,12 +457,23 @@
         escapeHtml(source.pack) + "</td><td>" + publisher + "</td><td>" +
         formatDate(source.as_of) + "</td><td>" + escapeHtml(source.notes) + "</td></tr>";
     }).join("");
+    const macroDeepRows = valueAt(DATA, "macro_deep.sources", []).map(function (source) {
+      const isUrl = /^https?:\/\//.test(source.url_or_publisher || "");
+      const publisher = isUrl ? '<a href="' + escapeHtml(source.url_or_publisher) +
+        '" target="_blank" rel="noopener noreferrer">Open source ↗</a>' : escapeHtml(source.url_or_publisher);
+      return "<tr><td><strong>" + escapeHtml(source.title) + "</strong></td><td>" + publisher +
+        "</td><td>" + formatDate(source.as_of) + "</td><td>" + escapeHtml(source.notes) + "</td></tr>";
+    }).join("");
     return pageHeader("Audit trail", "Sources and methodology",
       "Primary sources, market-data references and explicit methodology limitations.") +
       panel("Source register", '<div class="table-wrap"><table><thead><tr><th>Source</th><th>Link / publisher</th><th>As of</th><th>Usage note</th></tr></thead><tbody>' +
         rows + "</tbody></table></div>") +
       panel("Deep-dive sources", '<div class="table-wrap"><table><thead><tr><th>Source</th><th>Pack</th><th>Link / publisher</th><th>As of</th><th>Usage note</th></tr></thead><tbody>' +
         diveRows + "</tbody></table></div>") +
+      (macroDeepRows
+        ? panel("Macro deep sources", '<div class="table-wrap"><table><thead><tr><th>Source</th><th>Link / publisher</th><th>As of</th><th>Usage note</th></tr></thead><tbody>' +
+          macroDeepRows + "</tbody></table></div>")
+        : "") +
       panel("Methodology notes", list(valueAt(DATA, "sources.methodology_notes", []))) + renderPageCutoff();
   }
 

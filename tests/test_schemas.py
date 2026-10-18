@@ -18,6 +18,7 @@ def test_load_all_data_from_repo():
         "new_age",
         "sources",
         "deep_dives",
+        "macro_deep",
     }
 
 

@@ -295,4 +295,62 @@ def load_all_data(data_dir: Path) -> dict[str, Any]:
         raise ValueError(f"loaded data missing required keys: {', '.join(missing)}")
 
     loaded["deep_dives"] = load_deep_dives(data_dir, loaded["companies"])
+    loaded["macro_deep"] = load_macro_deep(data_dir)
     return loaded
+
+
+_MACRO_DEEP_KEYS = (
+    "as_of",
+    "headline",
+    "base_case",
+    "upside",
+    "downside",
+    "transmission_map",
+    "portfolio_implications",
+    "risk_watchlist",
+    "open_questions",
+    "methodology_notes",
+    "sources",
+)
+_MACRO_RISK_KEYS = ("id", "title", "severity", "note")
+_MACRO_SEVERITY = frozenset({"high", "medium", "low"})
+
+
+def validate_macro_deep(data: dict[str, Any]) -> None:
+    _require_keys(data, _MACRO_DEEP_KEYS, "macro_deep")
+    for key in (
+        "base_case",
+        "upside",
+        "downside",
+        "transmission_map",
+        "portfolio_implications",
+        "open_questions",
+        "methodology_notes",
+    ):
+        _require_str_list(data[key], f"macro_deep.{key}")
+    watch = data["risk_watchlist"]
+    if not isinstance(watch, list) or not watch:
+        raise ValueError("macro_deep.risk_watchlist must be a non-empty list")
+    for i, row in enumerate(watch):
+        _require_keys(row, _MACRO_RISK_KEYS, f"macro_deep.risk_watchlist[{i}]")
+        if row["severity"] not in _MACRO_SEVERITY:
+            raise ValueError(
+                f"macro_deep.risk_watchlist[{i}].severity must be one of "
+                f"{sorted(_MACRO_SEVERITY)}"
+            )
+        if not isinstance(row["note"], str):
+            raise ValueError(f"macro_deep.risk_watchlist[{i}].note must be a string")
+    sources = data["sources"]
+    if not isinstance(sources, list):
+        raise ValueError("macro_deep.sources must be a list")
+    for i, src in enumerate(sources):
+        _require_keys(src, _SOURCE_ITEM_KEYS, f"macro_deep.sources[{i}]")
+
+
+def load_macro_deep(data_dir: Path) -> dict[str, Any]:
+    path = data_dir / "macro_deep.json"
+    if not path.is_file():
+        raise ValueError("missing required data file: macro_deep.json")
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    validate_macro_deep(payload)
+    return payload

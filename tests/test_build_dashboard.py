@@ -16,3 +16,4 @@ def test_build_embeds_data(tmp_path):
     assert "Maintain Stage 1 OW" in text
     assert "Maintain Stage 1 OW (~69.9)" in text
     assert "Liability franchise" in text
+    assert "franchise-quality equity exposure" in text

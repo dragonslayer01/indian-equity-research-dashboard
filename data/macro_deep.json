@@ -1,0 +1,103 @@
+{
+  "as_of": "2026-10-18",
+  "headline": "Domestic growth remains supportive under a neutral policy stance, but uneven inflation and unverified external prices argue for franchise-quality equity exposure rather than a broad cyclical beta call.",
+  "base_case": [
+    "Real activity stays constructive over 6–12 months without mechanically extrapolating the strong Q1 FY2026-27 GDP print.",
+    "RBI remains data-dependent around a 5.25% repo and neutral stance; funding-cost relief is gradual, not a rapid easing cycle.",
+    "Equity returns stay stock- and sector-specific: de-rating risk persists where earnings visibility is weak.",
+    "Public capex execution continues to support order books in capital goods and infrastructure-linked suppliers."
+  ],
+  "upside": [
+    "Food inflation cools faster than feared, opening room for policy support without a growth scare.",
+    "Capex crowding-in lifts private investment and utilisation more than budgeted outlays alone imply.",
+    "Global risk appetite stabilises, reducing INR and imported-input stress for domestic franchises."
+  ],
+  "downside": [
+    "Food or oil shocks prolong inflation persistence and delay any easing path.",
+    "Global risk-off tightens financial conditions and pressures the currency and import-intensive margins.",
+    "Capex or earnings delivery misses force further de-rating in crowded quality/growth names."
+  ],
+  "transmission_map": [
+    "Domestic GDP and public capex → demand and order books for banks, NBFCs, capital goods and selective industrials.",
+    "CPI path + neutral MPC → deposit pricing, NIM discipline and the speed of rate-sensitive recovery in realty/autos.",
+    "Liquidity and funding conditions → lender ALM outcomes; one-day surplus/absorption prints are not a durable trend.",
+    "Crude / INR (unverified at cutoff) → treat as two-sided margin and external-balance risks, not as embedded price targets.",
+    "Global demand and discount-rate volatility → selectivity for IT/metals exporters versus domestic compounders.",
+    "Net transmission → prefer balance-sheet strength, liability franchise and execution visibility (Banks, Pharma, Capital Goods OW leans)."
+  ],
+  "portfolio_implications": [
+    "Keep Banks OW expressed through scaled franchises and selected challengers — deposit competition matters more than a rate-cut beta trade.",
+    "Keep Pharma/Healthcare OW as a defensive growth sleeve where domestic and specialty mix can offset export regulatory noise.",
+    "Maintain Capital Goods / Infrastructure OW as a capex-execution sleeve; watch order conversion and working-capital stress.",
+    "Stay selective on IT and metals until external demand and global risk appetite are clearer.",
+    "Do not treat trailing index weakness alone as valuation support without verified earnings revisions."
+  ],
+  "risk_watchlist": [
+    {
+      "id": "food_inflation",
+      "title": "Food inflation persistence",
+      "severity": "high",
+      "note": "August 2026 CPI showed food running above headline; prolongs purchasing-power and policy uncertainty."
+    },
+    {
+      "id": "deposit_competition",
+      "title": "Deposit competition / NIM pressure",
+      "severity": "high",
+      "note": "Neutral policy stance elevates liability franchise quality over wholesale-funded growth."
+    },
+    {
+      "id": "oil_external",
+      "title": "Oil and external price shocks",
+      "severity": "medium",
+      "note": "Cutoff crude print: Data unavailable from reliable sources. Treat oil as a two-sided inflation and margin risk."
+    },
+    {
+      "id": "inr_flows",
+      "title": "INR and portfolio flow volatility",
+      "severity": "medium",
+      "note": "Cutoff FX/flow print: Data unavailable from reliable sources. Monitor yields, oil and risk-appetite transmission."
+    },
+    {
+      "id": "capex_execution",
+      "title": "Public/private capex execution slips",
+      "severity": "medium",
+      "note": "Budgeted outlays help, but order books and utilisation depend on execution quality."
+    },
+    {
+      "id": "earnings_visibility",
+      "title": "Earnings visibility / de-rating",
+      "severity": "high",
+      "note": "Without verified forward earnings breadth, price correction is not automatic undervaluation."
+    }
+  ],
+  "open_questions": [
+    "Cutoff-consistent crude spot series: Data unavailable from reliable sources.",
+    "Cutoff-consistent INR and FPI/DII flow series: Data unavailable from reliable sources.",
+    "Verified index forward P/E and earnings revision breadth: Data unavailable from reliable sources."
+  ],
+  "methodology_notes": [
+    "Stage 1 macro.json remains the fact scorecard; this pack adds scenario and portfolio transmission research.",
+    "No invented oil, FX or valuation multiples are embedded; unavailable series stay explicit.",
+    "Portfolio implications are research leans aligned with Stage 1/2 sector OW stances — not portfolio weights or advice."
+  ],
+  "sources": [
+    {
+      "title": "Stage 1 macro scorecard",
+      "url_or_publisher": "data/macro.json",
+      "as_of": "2026-10-03",
+      "notes": "Reported GDP, CPI, MPC and liquidity facts used as baseline."
+    },
+    {
+      "title": "Stage 1 market regime",
+      "url_or_publisher": "data/market_regime.json",
+      "as_of": "2026-10-04",
+      "notes": "Mid-cycle / valuation compression regime framing."
+    },
+    {
+      "title": "Stage 2 Banks and Pharma deep dives",
+      "url_or_publisher": "data/deep_dives/",
+      "as_of": "2026-10-18",
+      "notes": "Sector OW implementation context for portfolio implications."
+    }
+  ]
+}
