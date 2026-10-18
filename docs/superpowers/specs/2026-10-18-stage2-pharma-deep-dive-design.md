@@ -112,7 +112,7 @@ Required top-level keys:
 | `expectation_gaps` | object | `{ "positive": string[], "negative": string[] }` |
 | `shortlist` | object[] | Exactly 4–6 names (target 5) |
 | `methodology_notes` | string[] | Limitations; what was not verified |
-| `sources` | object[] | `{ "title", "url_or_publisher", "as_of", "notes" }` — pack-local; also mirrored or linked on Sources page optionally |
+| `sources` | object[] | `{ "title", "url_or_publisher", "as_of", "notes" }` — pack-local; shown under Sources → “Deep-dive sources” |
 
 **Shortlist item keys:**
 
@@ -154,7 +154,7 @@ Analyst / Valuation / Portfolio routes unchanged gates.
 
 ### Sources page
 
-Append pack `sources` into the Sources view **or** add a subsection “Deep-dive sources” listing published packs’ source rows. Prefer subsection to avoid mixing with Yahoo/macro register without attribution.
+Add a subsection **“Deep-dive sources”** listing source rows from each published pack. Do not merge those rows into the primary Yahoo/macro register table.
 
 ---
 
