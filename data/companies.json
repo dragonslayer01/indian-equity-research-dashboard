@@ -280,6 +280,126 @@
         "price_date": "2026-10-16",
         "source": "Yahoo Finance (NSE)",
         "classification_basis": "Our analysis: qualitative Stage 1 role classification; not a recommendation or valuation conclusion."
+      },
+      {
+        "ticker": "PNB.NS",
+        "name": "Punjab National Bank",
+        "classification": "Cyclical Opportunity",
+        "performance": {
+          "1D": 1.0865,
+          "1W": -0.5813,
+          "1M": -0.4281,
+          "3M": 9.9556,
+          "6M": 1.5898,
+          "1Y": 0.1636,
+          "YTD": -6.1643,
+          "3Y_cagr": 15.6139,
+          "5Y_cagr": 22.251
+        },
+        "price": 116.3000030517578,
+        "price_date": "2026-10-16",
+        "source": "Yahoo Finance (NSE)",
+        "classification_basis": "Our analysis: qualitative Stage 1 role classification; not a recommendation or valuation conclusion."
+      },
+      {
+        "ticker": "UNIONBANK.NS",
+        "name": "Union Bank of India",
+        "classification": "Cyclical Opportunity",
+        "performance": {
+          "1D": -0.5791,
+          "1W": -0.7974,
+          "1M": -3.6588,
+          "3M": 1.9114,
+          "6M": -9.1208,
+          "1Y": 23.6798,
+          "YTD": 11.7854,
+          "3Y_cagr": 17.7855,
+          "5Y_cagr": 30.7906
+        },
+        "price": 171.67999267578125,
+        "price_date": "2026-10-16",
+        "source": "Yahoo Finance (NSE)",
+        "classification_basis": "Our analysis: qualitative Stage 1 role classification; not a recommendation or valuation conclusion."
+      },
+      {
+        "ticker": "INDIANB.NS",
+        "name": "Indian Bank",
+        "classification": "Value Opportunity",
+        "performance": {
+          "1D": 2.2874,
+          "1W": 2.9284,
+          "1M": 1.6786,
+          "3M": 2.6069,
+          "6M": -9.0851,
+          "1Y": 10.771,
+          "YTD": 2.5823,
+          "3Y_cagr": 25.6822,
+          "5Y_cagr": 38.9734
+        },
+        "price": 854.0999755859375,
+        "price_date": "2026-10-16",
+        "source": "Yahoo Finance (NSE)",
+        "classification_basis": "Our analysis: qualitative Stage 1 role classification; not a recommendation or valuation conclusion."
+      },
+      {
+        "ticker": "YESBANK.NS",
+        "name": "Yes Bank",
+        "classification": "Turnaround",
+        "performance": {
+          "1D": -3.4216,
+          "1W": -14.6341,
+          "1M": -25.2137,
+          "3M": -25.8789,
+          "6M": -13.3234,
+          "1Y": -24.308,
+          "YTD": -18.5668,
+          "3Y_cagr": 0.8719,
+          "5Y_cagr": 5.796
+        },
+        "price": 17.5,
+        "price_date": "2026-10-16",
+        "source": "Yahoo Finance (NSE)",
+        "classification_basis": "Our analysis: qualitative Stage 1 role classification; not a recommendation or valuation conclusion."
+      },
+      {
+        "ticker": "RBLBANK.NS",
+        "name": "RBL Bank",
+        "classification": "High-Risk",
+        "performance": {
+          "1D": 1.0958,
+          "1W": -9.5096,
+          "1M": -6.3738,
+          "3M": 2.7574,
+          "6M": 19.8701,
+          "1Y": 23.3089,
+          "YTD": 19.9651,
+          "3Y_cagr": 15.7782,
+          "5Y_cagr": 14.5506
+        },
+        "price": 378.25,
+        "price_date": "2026-10-16",
+        "source": "Yahoo Finance (NSE)",
+        "classification_basis": "Our analysis: qualitative Stage 1 role classification; not a recommendation or valuation conclusion."
+      },
+      {
+        "ticker": "KARURVYSYA.NS",
+        "name": "Karur Vysya Bank",
+        "classification": "Growth Challenger",
+        "performance": {
+          "1D": 2.8931,
+          "1W": 4.6337,
+          "1M": 6.2276,
+          "3M": 14.7999,
+          "6M": 28.1391,
+          "1Y": 57.0199,
+          "YTD": 32.0156,
+          "3Y_cagr": 45.8225,
+          "5Y_cagr": 53.9501
+        },
+        "price": 355.6499938964844,
+        "price_date": "2026-10-16",
+        "source": "Yahoo Finance (NSE)",
+        "classification_basis": "Our analysis: qualitative Stage 1 role classification; not a recommendation or valuation conclusion."
       }
     ],
     "it": [

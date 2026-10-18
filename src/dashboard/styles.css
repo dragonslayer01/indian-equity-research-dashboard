@@ -326,6 +326,27 @@ dd { margin: 2px 0; }
 .perf-strip em { color: var(--slate-600); font-style: normal; }
 .coming-next { text-align: center; }
 .muted { color: var(--slate-600); font-size: 13px; }
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--slate-200);
+}
+.kpi-cell { display: flex; flex-direction: column; gap: 4px; font-size: 12px; }
+.kpi-label { color: var(--slate-600); text-transform: uppercase; letter-spacing: 0.04em; }
+.kpi-badge {
+  display: inline-block;
+  width: fit-content;
+  padding: 2px 8px;
+  border: 1px solid var(--slate-200);
+  text-transform: capitalize;
+}
+.kpi-strong { border-color: #2f6b4f; color: #2f6b4f; }
+.kpi-adequate { border-color: var(--navy-800); color: var(--navy-800); }
+.kpi-watch { border-color: #b28a2f; color: #8a6a20; }
+.kpi-weak { border-color: #8b3a3a; color: #8b3a3a; }
 
 .stance-board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .stance-column { padding: 15px; background: rgba(255, 255, 255, 0.45); border: 1px solid var(--slate-200); }

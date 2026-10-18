@@ -302,6 +302,26 @@
       renderPageCutoff();
   }
 
+  function renderKpiStrip(kpis) {
+    if (!kpis || !kpis.length) return "";
+    const cells = kpis.map(function (kpi) {
+      const badge = '<span class="kpi-badge kpi-' + escapeHtml(kpi.qualitative) + '">' +
+        escapeHtml(kpi.qualitative) + "</span>";
+      let detail;
+      if (kpi.value != null && kpi.value !== "") {
+        detail = "<strong>" + formatNumber(kpi.value, 2) +
+          (kpi.unit === "pct" ? "%" : "") + "</strong>" +
+          '<em class="muted">' + formatDate(kpi.as_of) + "</em>";
+      } else {
+        detail = '<span class="muted">' +
+          escapeHtml(kpi.note || "Data unavailable from reliable sources.") + "</span>";
+      }
+      return '<div class="kpi-cell"><span class="kpi-label">' + escapeHtml(kpi.label) +
+        "</span>" + badge + detail + "</div>";
+    }).join("");
+    return '<div class="kpi-strip" aria-label="Banking KPIs">' + cells + "</div>";
+  }
+
   function renderDeepDives(selectedSectorId) {
     const index = valueAt(DATA, "deep_dives.index", []);
     if (!index.length) {
@@ -362,6 +382,7 @@
         "<h4>Why now</h4>" + list(item.why_now) +
         "<h4>Key risks</h4>" + list(item.key_risks) +
         "<h4>Open questions</h4>" + list(item.open_questions) +
+        renderKpiStrip(item.kpis) +
         '<div class="perf-strip" aria-label="Selected returns">' + strip + "</div>" +
         '<p class="muted">Price as of ' + formatDate(market.price_date) +
         (market.price != null ? " · " + formatNumber(market.price, 2) : "") +

@@ -1,0 +1,600 @@
+{
+  "sector_id": "banks",
+  "name": "Banks",
+  "as_of": "2026-10-18",
+  "stance_summary": "Maintain Stage 1 OW (~69.9): credit demand supported by domestic activity; prefer scaled franchises with funding and risk-management advantages over homogeneous lender beta.",
+  "overview": [
+    "Large diversified banks retain liability and distribution advantages that matter more when policy is neutral and deposit pricing is competitive.",
+    "Asset quality and unsecured books are stock-specific; treat sector OW as a franchise-quality call, not a blanket financials long.",
+    "PSU scale (notably SBI and selected large PSUs) can complement private leaders when liability franchise and capital are intact.",
+    "The investable universe is widened to ~18 names; the Stage 2 shortlist concentrates on ten higher-conviction franchises and selected challengers.",
+    "Stage 1 thesis stands: deposit pricing, asset quality and margin discipline dominate a simple rate-cut narrative."
+  ],
+  "sub_themes": [
+    {
+      "id": "large_private",
+      "title": "Large private franchises",
+      "summary": "HDFC Bank and ICICI Bank anchor private-sector quality via funding mix, distribution and risk systems."
+    },
+    {
+      "id": "psu_scale",
+      "title": "PSU liability scale",
+      "summary": "SBI and selected large PSUs offer deposit franchise scale; cyclical mid-tier PSUs stay in the universe, not the core shortlist."
+    },
+    {
+      "id": "deposit_margins",
+      "title": "Deposit competition and margins",
+      "summary": "Neutral policy raises the importance of CASA quality and pricing discipline versus wholesale-funded growth."
+    },
+    {
+      "id": "challengers",
+      "title": "Improving private and SFB challengers",
+      "summary": "Federal, IDFC First and AU offer incremental upside if liability and underwriting trajectories continue to improve."
+    },
+    {
+      "id": "asset_quality_watch",
+      "title": "Asset quality and unsecured watchpoints",
+      "summary": "Unsecured or concentrated stress can re-rate names quickly even when sector NPAs look benign in aggregate."
+    }
+  ],
+  "drivers": [
+    "Broad-based credit demand from domestic activity",
+    "Franchise advantages in deposits and distribution for scaled leaders",
+    "Improving mid-tier challengers where liability and underwriting are visibly strengthening"
+  ],
+  "risks": [
+    "Deposit competition compressing NIMs",
+    "Unsecured or SME stress lifting credit costs",
+    "Governance or underwriting setbacks at individual banks",
+    "Policy or liquidity surprises that reprice funding costs"
+  ],
+  "expectation_gaps": {
+    "positive": [
+      "Credit costs stay benign while growth remains broad-based",
+      "Street may under-differentiate franchise quality within a wider bank universe"
+    ],
+    "negative": [
+      "Deposit competition or unsecured stress weakens margins and asset quality faster than consensus models",
+      "Homogeneous 'banks OW' ignores stock-specific liability and risk books"
+    ]
+  },
+  "shortlist": [
+    {
+      "ticker": "HDFCBANK.NS",
+      "name": "HDFC Bank",
+      "priority": 1,
+      "role_in_sector": "Large private franchise leader",
+      "thesis": [
+        "Core private-sector expression of scaled funding, distribution and risk architecture.",
+        "Best used as the primary OW vehicle when deposit competition is elevated."
+      ],
+      "why_now": [
+        "Stage 1 prefers scaled franchises over undifferentiated lender beta."
+      ],
+      "key_risks": [
+        "Margin pressure from deposit repricing",
+        "Integration and growth-mix execution remain watchpoints"
+      ],
+      "classification": "Sector Leader",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "nim",
+          "label": "NIM",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "asset_quality",
+          "label": "Asset quality",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "liability_franchise",
+          "label": "Liability franchise",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "credit_cost",
+          "label": "Credit cost",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "ICICIBANK.NS",
+      "name": "ICICI Bank",
+      "priority": 2,
+      "role_in_sector": "Large private franchise / risk culture compounder",
+      "thesis": [
+        "Second core private holding with strong retail/SME franchise and improved risk culture versus prior cycles.",
+        "Complements HDFC Bank without relying on PSU beta."
+      ],
+      "why_now": [
+        "Useful co-leader when expressing Banks OW through private quality."
+      ],
+      "key_risks": [
+        "Competitive intensity in retail unsecured",
+        "Market-sensitive fee and treasury income swings"
+      ],
+      "classification": "Sector Leader",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "nim",
+          "label": "NIM",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "asset_quality",
+          "label": "Asset quality",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "liability_franchise",
+          "label": "Liability franchise",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "credit_cost",
+          "label": "Credit cost",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "SBIN.NS",
+      "name": "State Bank of India",
+      "priority": 3,
+      "role_in_sector": "PSU liability-scale franchise",
+      "thesis": [
+        "Distinctive deposit franchise and balance-sheet scale among Indian banks.",
+        "Complements private leaders when capital and credit mix remain constructive."
+      ],
+      "why_now": [
+        "Provides PSU scale exposure without making cyclical mid-tier PSUs the core OW expression."
+      ],
+      "key_risks": [
+        "Policy and credit-mix interventions",
+        "Operating leverage and cost ratios versus private peers"
+      ],
+      "classification": "Sector Leader",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "nim",
+          "label": "NIM",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "asset_quality",
+          "label": "Asset quality",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "liability_franchise",
+          "label": "Liability franchise",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "credit_cost",
+          "label": "Credit cost",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "KOTAKBANK.NS",
+      "name": "Kotak Mahindra Bank",
+      "priority": 4,
+      "role_in_sector": "High-quality compounder / conservative franchise",
+      "thesis": [
+        "Quality compounder profile with historically conservative underwriting culture.",
+        "Useful satellite to the two large private leaders."
+      ],
+      "why_now": [
+        "Fits preference for franchise quality when deposit competition is elevated."
+      ],
+      "key_risks": [
+        "Growth versus peer share-of-wallet",
+        "Leadership and strategy continuity perceptions"
+      ],
+      "classification": "High-Quality Compounder",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "nim",
+          "label": "NIM",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "asset_quality",
+          "label": "Asset quality",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "liability_franchise",
+          "label": "Liability franchise",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "credit_cost",
+          "label": "Credit cost",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "AXISBANK.NS",
+      "name": "Axis Bank",
+      "priority": 5,
+      "role_in_sector": "Growth challenger among large privates",
+      "thesis": [
+        "Large private challenger with improving franchise trajectory versus prior cycles.",
+        "Offers incremental upside versus leaders if liability and credit outcomes continue to stabilize."
+      ],
+      "why_now": [
+        "Diversifies the shortlist beyond the top-two private names without moving into high-risk mid-tiers."
+      ],
+      "key_risks": [
+        "Still more sensitive to credit and liability setbacks than the top franchises",
+        "Competitive intensity in retail and corporate books"
+      ],
+      "classification": "Growth Challenger",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "nim",
+          "label": "NIM",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "asset_quality",
+          "label": "Asset quality",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "liability_franchise",
+          "label": "Liability franchise",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "credit_cost",
+          "label": "Credit cost",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "BANKBARODA.NS",
+      "name": "Bank of Baroda",
+      "priority": 6,
+      "role_in_sector": "Large PSU value / liability scale",
+      "thesis": [
+        "Large PSU with meaningful liability scale and a cleaner recovery narrative than weaker mid-tiers.",
+        "Secondary PSU expression beside SBI rather than a homogeneous PSU basket."
+      ],
+      "why_now": [
+        "Adds PSU diversification inside the shortlist without relying on smaller cyclical names."
+      ],
+      "key_risks": [
+        "Credit-mix and policy sensitivity",
+        "Deposit cost and operating efficiency versus private peers"
+      ],
+      "classification": "Value Opportunity",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "nim",
+          "label": "NIM",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "asset_quality",
+          "label": "Asset quality",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "liability_franchise",
+          "label": "Liability franchise",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "credit_cost",
+          "label": "Credit cost",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "FEDERALBNK.NS",
+      "name": "Federal Bank",
+      "priority": 7,
+      "role_in_sector": "Private mid-tier growth challenger",
+      "thesis": [
+        "Private mid-tier franchise with a visible growth and liability-build narrative.",
+        "Useful challenger sleeve when leaders are fully valued on franchise quality."
+      ],
+      "why_now": [
+        "Broadens the shortlist into improving private mid-tiers without high-risk classifications."
+      ],
+      "key_risks": [
+        "Scale disadvantage versus large private banks",
+        "Asset-quality sensitivity in faster growth phases"
+      ],
+      "classification": "Growth Challenger",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "nim",
+          "label": "NIM",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "asset_quality",
+          "label": "Asset quality",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "liability_franchise",
+          "label": "Liability franchise",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "credit_cost",
+          "label": "Credit cost",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "IDFCFIRSTB.NS",
+      "name": "IDFC First Bank",
+      "priority": 8,
+      "role_in_sector": "Liability transformation challenger",
+      "thesis": [
+        "Liability transformation and retailisation story remains the core investment debate.",
+        "Higher-beta private expression than Federal within the challenger sleeve."
+      ],
+      "why_now": [
+        "Fits Stage 1 preference for improving challengers with clear franchise-build agendas."
+      ],
+      "key_risks": [
+        "Funding cost and deposit franchise still the swing factor",
+        "Credit costs can surprise during growth bursts"
+      ],
+      "classification": "Growth Challenger",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "nim",
+          "label": "NIM",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "asset_quality",
+          "label": "Asset quality",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "liability_franchise",
+          "label": "Liability franchise",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "credit_cost",
+          "label": "Credit cost",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "AUBANK.NS",
+      "name": "AU Small Finance Bank",
+      "priority": 9,
+      "role_in_sector": "SFB growth challenger",
+      "thesis": [
+        "Leading SFB franchise with retail/MSME orientation and growth optionality.",
+        "Complements scheduled commercial bank names with a different liability and product mix."
+      ],
+      "why_now": [
+        "Extends the shortlist into SFB quality without diluting into high-risk microfinance-heavy names."
+      ],
+      "key_risks": [
+        "Funding and regulatory transition risks as an SFB",
+        "Credit cycle sensitivity in retail/MSME books"
+      ],
+      "classification": "Growth Challenger",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "nim",
+          "label": "NIM",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "asset_quality",
+          "label": "Asset quality",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "liability_franchise",
+          "label": "Liability franchise",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "credit_cost",
+          "label": "Credit cost",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "INDUSINDBK.NS",
+      "name": "IndusInd Bank",
+      "priority": 10,
+      "role_in_sector": "Turnaround large private",
+      "thesis": [
+        "Large private bank where franchise repair and governance outcomes dominate the thesis.",
+        "Included as a monitored turnaround sleeve, not a core quality compounder."
+      ],
+      "why_now": [
+        "Completes the ten-name shortlist with an explicit turnaround risk/reward profile."
+      ],
+      "key_risks": [
+        "Execution and credibility of the turnaround",
+        "Asset-quality and liability surprises can re-rate quickly"
+      ],
+      "classification": "Turnaround",
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "nim",
+          "label": "NIM",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "asset_quality",
+          "label": "Asset quality",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "liability_franchise",
+          "label": "Liability franchise",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "credit_cost",
+          "label": "Credit cost",
+          "qualitative": "weak",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    }
+  ],
+  "methodology_notes": [
+    "KPI values are intentionally null in this pack; qualitative badges are research judgment, not audited financial metrics.",
+    "No NIM, GNPA or credit-cost percentages were verified from filings for this release — use Data unavailable from reliable sources. until cited.",
+    "Shortlist is a ten-name preference ranking within an eighteen-name Stage 1 Banks universe — not portfolio weights.",
+    "Universe-only names (including newly added PSUs and mid-tiers) appear on the Companies page without authored shortlist notes.",
+    "Returns and prices are joined from companies.by_sector.banks at render time."
+  ],
+  "sources": [
+    {
+      "title": "Stage 1 Banks sector thesis and scorecard",
+      "url_or_publisher": "data/sectors.json",
+      "as_of": "2026-10-04",
+      "notes": "Stance, thesis and expectation gaps used as baseline."
+    },
+    {
+      "title": "Stage 1 Banks company universe (expanded)",
+      "url_or_publisher": "data/companies.json",
+      "as_of": "2026-10-18",
+      "notes": "Eighteen-name ticker list and classifications for shortlist eligibility."
+    },
+    {
+      "title": "Yahoo Finance NSE prices",
+      "url_or_publisher": "https://finance.yahoo.com/",
+      "as_of": "2026-10-16",
+      "notes": "Performance joined at dashboard render from company rows."
+    }
+  ]
+}

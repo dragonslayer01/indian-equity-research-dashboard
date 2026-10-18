@@ -9,6 +9,7 @@ from equity_research.schemas import (
     validate_companies,
     validate_deep_dive_index,
     validate_deep_dive_pack,
+    validate_shortlist_kpis,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -150,6 +151,75 @@ def test_load_all_data_includes_pharma_pack():
     data = load_all_data(ROOT / "data")
     assert "deep_dives" in data
     assert data["deep_dives"]["packs"]["pharma"]["sector_id"] == "pharma"
-    assert 4 <= len(data["deep_dives"]["packs"]["pharma"]["shortlist"]) <= 6
-    banks = next(e for e in data["deep_dives"]["index"] if e["sector_id"] == "banks")
-    assert banks["status"] == "coming_next"
+    assert 4 <= len(data["deep_dives"]["packs"]["pharma"]["shortlist"]) <= 10
+
+
+def test_load_all_data_includes_banks_pack():
+    data = load_all_data(ROOT / "data")
+    banks_pack = data["deep_dives"]["packs"]["banks"]
+    assert banks_pack["sector_id"] == "banks"
+    assert len(banks_pack["shortlist"]) == 10
+    assert any(item.get("kpis") for item in banks_pack["shortlist"])
+    entry = next(e for e in data["deep_dives"]["index"] if e["sector_id"] == "banks")
+    assert entry["status"] == "published"
+    assert entry["as_of"]
+    assert len(data["companies"]["by_sector"]["banks"]) == 18
+
+
+_BASE_KPI_ITEM = {
+    "ticker": "HDFCBANK.NS",
+    "name": "HDFC Bank",
+    "priority": 1,
+    "role_in_sector": "Large private franchise",
+    "thesis": ["x"],
+    "why_now": ["y"],
+    "key_risks": ["z"],
+    "classification": "Sector Leader",
+    "open_questions": ["Data unavailable from reliable sources."],
+}
+
+
+def test_kpis_qualitative_only_ok():
+    item = dict(_BASE_KPI_ITEM)
+    item["kpis"] = [
+        {
+            "id": "nim",
+            "label": "NIM",
+            "qualitative": "adequate",
+            "value": None,
+            "note": "Data unavailable from reliable sources.",
+        }
+    ]
+    validate_shortlist_kpis(item, "shortlist[0]")
+
+
+def test_kpis_numeric_requires_as_of_and_source():
+    item = dict(_BASE_KPI_ITEM)
+    item["kpis"] = [
+        {
+            "id": "nim",
+            "label": "NIM",
+            "qualitative": "strong",
+            "value": 3.5,
+            "unit": "pct",
+        }
+    ]
+    with pytest.raises(ValueError, match="as_of"):
+        validate_shortlist_kpis(item, "shortlist[0]")
+
+
+def test_kpis_invalid_qualitative_fails():
+    item = dict(_BASE_KPI_ITEM)
+    item["kpis"] = [{"id": "nim", "label": "NIM", "qualitative": "great"}]
+    with pytest.raises(ValueError, match="qualitative"):
+        validate_shortlist_kpis(item, "shortlist[0]")
+
+
+def test_kpis_duplicate_id_fails():
+    item = dict(_BASE_KPI_ITEM)
+    item["kpis"] = [
+        {"id": "nim", "label": "NIM", "qualitative": "adequate"},
+        {"id": "nim", "label": "NIM", "qualitative": "strong"},
+    ]
+    with pytest.raises(ValueError, match="duplicate"):
+        validate_shortlist_kpis(item, "shortlist[0]")

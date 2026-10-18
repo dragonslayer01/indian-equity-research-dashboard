@@ -14,3 +14,5 @@ def test_build_embeds_data(tmp_path):
     assert '"deep_dives"' in text or "deep_dives" in text
     assert "SUNPHARMA.NS" in text
     assert "Maintain Stage 1 OW" in text
+    assert "Maintain Stage 1 OW (~69.9)" in text
+    assert "Liability franchise" in text

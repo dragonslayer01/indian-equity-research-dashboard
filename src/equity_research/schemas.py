@@ -141,6 +141,41 @@ _DEEP_DIVE_SHORTLIST_KEYS = (
 _DEEP_DIVE_SUBTHEME_KEYS = ("id", "title", "summary")
 _PUBLISHED = "published"
 _COMING_NEXT = "coming_next"
+_KPI_QUALITATIVE = frozenset({"strong", "adequate", "watch", "weak"})
+_KPI_IDS = frozenset({"nim", "asset_quality", "liability_franchise", "credit_cost"})
+_KPI_REQUIRED = ("id", "label", "qualitative")
+_SHORTLIST_MAX = 10
+_PUBLISHED_SHORTLIST_MIN = 4
+_PUBLISHED_SHORTLIST_MAX = 10
+
+
+def validate_shortlist_kpis(item: dict[str, Any], label: str) -> None:
+    if "kpis" not in item:
+        return
+    kpis = item["kpis"]
+    if not isinstance(kpis, list):
+        raise ValueError(f"{label}.kpis must be a list")
+    seen: set[str] = set()
+    for i, kpi in enumerate(kpis):
+        kpi_label = f"{label}.kpis[{i}]"
+        _require_keys(kpi, _KPI_REQUIRED, kpi_label)
+        if kpi["id"] not in _KPI_IDS:
+            raise ValueError(f"{kpi_label}.id must be one of {sorted(_KPI_IDS)}")
+        if kpi["id"] in seen:
+            raise ValueError(f"{kpi_label} duplicate kpi id {kpi['id']}")
+        seen.add(kpi["id"])
+        if kpi["qualitative"] not in _KPI_QUALITATIVE:
+            raise ValueError(
+                f"{kpi_label}.qualitative must be one of {sorted(_KPI_QUALITATIVE)}"
+            )
+        value = kpi.get("value", None)
+        if value is not None:
+            if not isinstance(value, (int, float)) or isinstance(value, bool):
+                raise ValueError(f"{kpi_label}.value must be a number or null")
+            if not kpi.get("as_of"):
+                raise ValueError(f"{kpi_label}.as_of required when value is set")
+            if not kpi.get("source"):
+                raise ValueError(f"{kpi_label}.source required when value is set")
 
 
 def validate_deep_dive_index(data: dict[str, Any]) -> None:
@@ -165,8 +200,10 @@ def validate_deep_dive_pack(pack: dict[str, Any], companies_by_sector: dict[str,
         raise ValueError(f"no companies.by_sector[{sector_id!r}] for deep-dive pack")
     tickers = {row.get("ticker") for row in universe}
     shortlist = pack["shortlist"]
-    if not isinstance(shortlist, list) or not (1 <= len(shortlist) <= 6):
-        raise ValueError("deep_dive.pack.shortlist must contain 1–6 names")
+    if not isinstance(shortlist, list) or not (1 <= len(shortlist) <= _SHORTLIST_MAX):
+        raise ValueError(
+            f"deep_dive.pack.shortlist must contain 1–{_SHORTLIST_MAX} names"
+        )
     for j, item in enumerate(shortlist):
         _require_keys(item, _DEEP_DIVE_SHORTLIST_KEYS, f"deep_dive.pack.shortlist[{j}]")
         for key in ("thesis", "why_now", "key_risks", "open_questions"):
@@ -179,6 +216,7 @@ def validate_deep_dive_pack(pack: dict[str, Any], companies_by_sector: dict[str,
                 f"deep_dive.pack.shortlist[{j}] ticker {item['ticker']} "
                 f"not in companies.by_sector[{sector_id}]"
             )
+        validate_shortlist_kpis(item, f"deep_dive.pack.shortlist[{j}]")
     gaps = pack["expectation_gaps"]
     _require_keys(gaps, ("positive", "negative"), "deep_dive.pack.expectation_gaps")
     for key in ("positive", "negative"):
@@ -228,9 +266,11 @@ def load_deep_dives(data_dir: Path, companies: dict[str, Any]) -> dict[str, Any]
         if pack.get("sector_id") != sector_id:
             raise ValueError(f"pack sector_id mismatch for {pack_path.name}")
         validate_deep_dive_pack(pack, by_sector)
-        if not (4 <= len(pack["shortlist"]) <= 6):
+        n = len(pack["shortlist"])
+        if not (_PUBLISHED_SHORTLIST_MIN <= n <= _PUBLISHED_SHORTLIST_MAX):
             raise ValueError(
-                f"published pack {sector_id} shortlist must contain 4–6 names"
+                f"published pack {sector_id} shortlist must contain "
+                f"{_PUBLISHED_SHORTLIST_MIN}–{_PUBLISHED_SHORTLIST_MAX} names"
             )
         packs[sector_id] = pack
     return {"index": index_payload["entries"], "packs": packs}
