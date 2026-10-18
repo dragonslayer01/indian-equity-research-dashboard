@@ -142,7 +142,20 @@ _DEEP_DIVE_SUBTHEME_KEYS = ("id", "title", "summary")
 _PUBLISHED = "published"
 _COMING_NEXT = "coming_next"
 _KPI_QUALITATIVE = frozenset({"strong", "adequate", "watch", "weak"})
-_KPI_IDS = frozenset({"nim", "asset_quality", "liability_franchise", "credit_cost"})
+_KPI_IDS = frozenset(
+    {
+        # Banks
+        "nim",
+        "asset_quality",
+        "liability_franchise",
+        "credit_cost",
+        # New-Age / digital
+        "unit_economics",
+        "competitive_moat",
+        "profitability_path",
+        "governance_risk",
+    }
+)
 _KPI_REQUIRED = ("id", "label", "qualitative")
 _SHORTLIST_MAX = 10
 _PUBLISHED_SHORTLIST_MIN = 4
@@ -197,7 +210,7 @@ def validate_deep_dive_pack(pack: dict[str, Any], companies_by_sector: dict[str,
     sector_id = pack["sector_id"]
     universe = companies_by_sector.get(sector_id)
     if not isinstance(universe, list):
-        raise ValueError(f"no companies.by_sector[{sector_id!r}] for deep-dive pack")
+        raise ValueError(f"no investable universe for deep-dive pack {sector_id!r}")
     tickers = {row.get("ticker") for row in universe}
     shortlist = pack["shortlist"]
     if not isinstance(shortlist, list) or not (1 <= len(shortlist) <= _SHORTLIST_MAX):
@@ -214,7 +227,7 @@ def validate_deep_dive_pack(pack: dict[str, Any], companies_by_sector: dict[str,
         if item["ticker"] not in tickers:
             raise ValueError(
                 f"deep_dive.pack.shortlist[{j}] ticker {item['ticker']} "
-                f"not in companies.by_sector[{sector_id}]"
+                f"not in universe for {sector_id}"
             )
         validate_shortlist_kpis(item, f"deep_dive.pack.shortlist[{j}]")
     gaps = pack["expectation_gaps"]
@@ -247,14 +260,20 @@ _VALIDATORS = {
 }
 
 
-def load_deep_dives(data_dir: Path, companies: dict[str, Any]) -> dict[str, Any]:
+def load_deep_dives(
+    data_dir: Path,
+    companies: dict[str, Any],
+    new_age: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     index_path = data_dir / "deep_dives" / "index.json"
     if not index_path.is_file():
         raise ValueError("missing required data file: deep_dives/index.json")
     index_payload = json.loads(index_path.read_text(encoding="utf-8"))
     validate_deep_dive_index(index_payload)
     packs: dict[str, Any] = {}
-    by_sector = companies["by_sector"]
+    by_sector = dict(companies["by_sector"])
+    if new_age and isinstance(new_age.get("companies"), list):
+        by_sector["new_age"] = new_age["companies"]
     for entry in index_payload["entries"]:
         if entry["status"] != _PUBLISHED:
             continue
@@ -294,7 +313,9 @@ def load_all_data(data_dir: Path) -> dict[str, Any]:
     if missing:
         raise ValueError(f"loaded data missing required keys: {', '.join(missing)}")
 
-    loaded["deep_dives"] = load_deep_dives(data_dir, loaded["companies"])
+    loaded["deep_dives"] = load_deep_dives(
+        data_dir, loaded["companies"], loaded["new_age"]
+    )
     loaded["macro_deep"] = load_macro_deep(data_dir)
     return loaded
 

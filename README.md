@@ -54,7 +54,8 @@ If `pytest` is not on your PATH, use `PYTHONPATH=src python3 -m pytest -v` inste
 
 ## Stage 2 (in progress)
 
-- **Pharmaceuticals and Healthcare** and **Banks** deep dives + shortlists are live at `#/deep-dives` (Banks: 18-name universe, 10-name shortlist, hybrid KPI badges).
+- **Pharmaceuticals and Healthcare**, **Banks**, and **New-Age / Digital Economy** deep dives + shortlists are live at `#/deep-dives`.
+- **Banks:** 18-name universe, 10-name shortlist, hybrid banking KPIs.
+- **New-Age:** Top 25 monitor on `#/new-age`; 10-name conviction shortlist + digital KPIs on Deep Dives.
 - **Macro deepen** pack is live on `#/macro` (scenarios, transmission map, portfolio implications, risk watchlist).
-- **Next:** New-Age deepen.
 - Analyst View, Valuation, and Full Portfolio remain gated.

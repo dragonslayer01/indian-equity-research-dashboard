@@ -1,0 +1,593 @@
+{
+  "sector_id": "new_age",
+  "name": "New-Age / Digital Economy",
+  "as_of": "2026-10-18",
+  "stance_summary": "Treat New-Age as a selective growth sleeve: prefer demonstrated monetization and path-to-cash over narrative multiples; Top 25 remains the monitor, this pack is the conviction shortlist.",
+  "overview": [
+    "India's listed digital economy spans consumer internet, marketplaces, fintech/insurtech, travel, adtech and B2B software/data.",
+    "Profitability-cycle staging (1–5) is the Stage 1 filter; this shortlist concentrates on stage 4–5 names with clearer unit-economics debates.",
+    "Macro transmission favors domestic demand and liability/funding discipline elsewhere; New-Age exposure should not rely on a broad risk-on beta.",
+    "Governance, related-party and competitive-intensity risks remain stock-specific and can dominate trailing returns."
+  ],
+  "sub_themes": [
+    {
+      "id": "platforms",
+      "title": "Scaled consumer / classifieds platforms",
+      "summary": "Food delivery, beauty commerce and classifieds holdings where monetization is proven but competitive intensity stays high."
+    },
+    {
+      "id": "b2b_software",
+      "title": "B2B marketplaces and software/data",
+      "summary": "IndiaMART, enterprise fintech software and analytics names with stickier demand and clearer cash conversion debates."
+    },
+    {
+      "id": "digital_infra",
+      "title": "Adtech, maps and digital insurance",
+      "summary": "Specialist digital infrastructure and insurtech where product moats and underwriting/governance quality matter as much as growth."
+    },
+    {
+      "id": "travel",
+      "title": "Online travel",
+      "summary": "Travel platforms with cyclical demand and competitive pricing; include selectively where unit economics are improving."
+    }
+  ],
+  "drivers": [
+    "India digital adoption and online spend penetration",
+    "Operating leverage as contribution margins stabilize in scaled platforms",
+    "Enterprise digitization demand for software, data and marketplace tools"
+  ],
+  "risks": [
+    "Competitive intensity and discounting pressure on unit economics",
+    "Regulatory actions in consumer internet, payments or insurance",
+    "Governance and related-party concerns in founder-led platforms",
+    "Global risk-off compressing growth multiples regardless of domestic demand"
+  ],
+  "expectation_gaps": {
+    "positive": [
+      "Street may under-appreciate durability of cash conversion in stage 5 B2B/software names versus consumer internet noise",
+      "Select platforms can compound if take-rates and contribution margins hold through competition"
+    ],
+    "negative": [
+      "Narrative multiples may still embed growth that competitive intensity cannot support",
+      "Governance or regulatory shocks can re-rate names faster than earnings revisions"
+    ]
+  },
+  "shortlist": [
+    {
+      "ticker": "ETERNAL.NS",
+      "name": "Eternal (formerly Zomato)",
+      "priority": 1,
+      "role_in_sector": "Consumer internet / food delivery · stage 4",
+      "classification": "new_age",
+      "thesis": [
+        "Scaled food-delivery platform with demonstrated monetization; still an execution story on profit durability.",
+        "Core consumer-internet expression inside New-Age rather than a pure speculative listing."
+      ],
+      "why_now": [
+        "Stage 4 profitability cycle with visible scale; fits selective growth sleeve when domestic demand holds."
+      ],
+      "key_risks": [
+        "Competitive intensity and discounting",
+        "Profit durability versus reinvestment needs"
+      ],
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "unit_economics",
+          "label": "Unit economics",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "competitive_moat",
+          "label": "Competitive moat",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "profitability_path",
+          "label": "Profitability path",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "governance_risk",
+          "label": "Governance risk",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "NYKAA.NS",
+      "name": "FSN E-Commerce Ventures (Nykaa)",
+      "priority": 2,
+      "role_in_sector": "Beauty e-commerce / omnichannel · stage 4",
+      "classification": "new_age",
+      "thesis": [
+        "Omnichannel beauty commerce franchise with brand and distribution advantages in a high-engagement category.",
+        "Complements food delivery with a different consumer-internet mix."
+      ],
+      "why_now": [
+        "Stage 4 name with category leadership debate still central to the New-Age sleeve."
+      ],
+      "key_risks": [
+        "Competition from marketplaces and D2C brands",
+        "Margin and inventory intensity"
+      ],
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "unit_economics",
+          "label": "Unit economics",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "competitive_moat",
+          "label": "Competitive moat",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "profitability_path",
+          "label": "Profitability path",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "governance_risk",
+          "label": "Governance risk",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "NAUKRI.NS",
+      "name": "Info Edge India",
+      "priority": 3,
+      "role_in_sector": "Online classifieds / internet holdings · stage 5",
+      "classification": "new_age",
+      "thesis": [
+        "Stage 5 classifieds and internet-holdings platform with more mature cash generation than most New-Age peers.",
+        "Useful quality anchor inside the digital shortlist."
+      ],
+      "why_now": [
+        "Prefer stage 5 cash-generative models when expressing New-Age selectively."
+      ],
+      "key_risks": [
+        "Portfolio-company mark-to-market volatility",
+        "Competitive intensity in core classifieds"
+      ],
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "unit_economics",
+          "label": "Unit economics",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "competitive_moat",
+          "label": "Competitive moat",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "profitability_path",
+          "label": "Profitability path",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "governance_risk",
+          "label": "Governance risk",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "INDIAMART.NS",
+      "name": "IndiaMART InterMESH",
+      "priority": 4,
+      "role_in_sector": "B2B marketplace · stage 5",
+      "classification": "new_age",
+      "thesis": [
+        "Stage 5 B2B marketplace with subscription-led economics and SME network effects.",
+        "Diversifies the shortlist away from pure consumer internet."
+      ],
+      "why_now": [
+        "Fits preference for stickier B2B digital models with clearer cash conversion."
+      ],
+      "key_risks": [
+        "SME demand cyclicality",
+        "Competitive responses from horizontal platforms"
+      ],
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "unit_economics",
+          "label": "Unit economics",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "competitive_moat",
+          "label": "Competitive moat",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "profitability_path",
+          "label": "Profitability path",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "governance_risk",
+          "label": "Governance risk",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "AFFLE.NS",
+      "name": "Affle India",
+      "priority": 5,
+      "role_in_sector": "Adtech · stage 5",
+      "classification": "new_age",
+      "thesis": [
+        "Stage 5 adtech franchise tied to mobile advertising and consumer discovery workflows.",
+        "Specialist digital-infra expression within New-Age."
+      ],
+      "why_now": [
+        "Adds non-consumer-internet diversification with established profitability staging."
+      ],
+      "key_risks": [
+        "Ad-cycle and privacy/regulatory shifts",
+        "Customer concentration and tech obsolescence risk"
+      ],
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "unit_economics",
+          "label": "Unit economics",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "competitive_moat",
+          "label": "Competitive moat",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "profitability_path",
+          "label": "Profitability path",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "governance_risk",
+          "label": "Governance risk",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "MAPMYINDIA.NS",
+      "name": "C.E. Info Systems (MapmyIndia)",
+      "priority": 6,
+      "role_in_sector": "Digital maps / geospatial · stage 5",
+      "classification": "new_age",
+      "thesis": [
+        "Stage 5 geospatial/maps platform with enterprise and mobility use cases.",
+        "Niche digital infrastructure name with higher switching costs than consumer apps."
+      ],
+      "why_now": [
+        "Useful specialty sleeve when seeking New-Age exposure beyond marketplaces."
+      ],
+      "key_risks": [
+        "Customer concentration",
+        "Technology and competitive displacement"
+      ],
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "unit_economics",
+          "label": "Unit economics",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "competitive_moat",
+          "label": "Competitive moat",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "profitability_path",
+          "label": "Profitability path",
+          "qualitative": "strong",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "governance_risk",
+          "label": "Governance risk",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "GODIGIT.NS",
+      "name": "Go Digit General Insurance",
+      "priority": 7,
+      "role_in_sector": "Digital insurance · stage 4",
+      "classification": "new_age",
+      "thesis": [
+        "Digital-first general insurer where underwriting quality and distribution mix dominate the thesis.",
+        "Fintech/insurtech expression distinct from pure marketplace beta."
+      ],
+      "why_now": [
+        "Stage 4 digital insurance name for selective New-Age financials exposure."
+      ],
+      "key_risks": [
+        "Underwriting and loss-ratio volatility",
+        "Regulatory and capital intensity"
+      ],
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "unit_economics",
+          "label": "Unit economics",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "competitive_moat",
+          "label": "Competitive moat",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "profitability_path",
+          "label": "Profitability path",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "governance_risk",
+          "label": "Governance risk",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "INTELLECT.NS",
+      "name": "Intellect Design Arena",
+      "priority": 8,
+      "role_in_sector": "Enterprise fintech software · stage 4",
+      "classification": "new_age",
+      "thesis": [
+        "Enterprise fintech software with banking/product platform exposure and stickier B2B demand.",
+        "Balances consumer internet names with software economics."
+      ],
+      "why_now": [
+        "Fits B2B software preference inside the digital shortlist."
+      ],
+      "key_risks": [
+        "Deal timing and implementation risk",
+        "Global banking IT spend cyclicality"
+      ],
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "unit_economics",
+          "label": "Unit economics",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "competitive_moat",
+          "label": "Competitive moat",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "profitability_path",
+          "label": "Profitability path",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "governance_risk",
+          "label": "Governance risk",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "LATENTVIEW.NS",
+      "name": "Latent View Analytics",
+      "priority": 9,
+      "role_in_sector": "Data analytics services · stage 4",
+      "classification": "new_age",
+      "thesis": [
+        "Analytics/services franchise linked to enterprise data demand rather than consumer take-rates.",
+        "Satellite to software/marketplace quality names."
+      ],
+      "why_now": [
+        "Adds services/analytics diversification within stage 4 New-Age."
+      ],
+      "key_risks": [
+        "Client concentration and billing cyclicality",
+        "Talent and delivery intensity"
+      ],
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "unit_economics",
+          "label": "Unit economics",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "competitive_moat",
+          "label": "Competitive moat",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "profitability_path",
+          "label": "Profitability path",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "governance_risk",
+          "label": "Governance risk",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    },
+    {
+      "ticker": "IXIGO.NS",
+      "name": "Le Travenues Technology (ixigo)",
+      "priority": 10,
+      "role_in_sector": "Online travel · stage 4",
+      "classification": "new_age",
+      "thesis": [
+        "Online travel platform with cyclical demand and competitive pricing dynamics.",
+        "Selective travel sleeve rather than a core quality compounder."
+      ],
+      "why_now": [
+        "Completes a ten-name shortlist with travel optionality if domestic mobility demand holds."
+      ],
+      "key_risks": [
+        "Competition and take-rate pressure",
+        "Travel demand shocks"
+      ],
+      "open_questions": [
+        "Data unavailable from reliable sources."
+      ],
+      "kpis": [
+        {
+          "id": "unit_economics",
+          "label": "Unit economics",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "competitive_moat",
+          "label": "Competitive moat",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "profitability_path",
+          "label": "Profitability path",
+          "qualitative": "watch",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        },
+        {
+          "id": "governance_risk",
+          "label": "Governance risk",
+          "qualitative": "adequate",
+          "value": null,
+          "note": "Data unavailable from reliable sources."
+        }
+      ]
+    }
+  ],
+  "methodology_notes": [
+    "KPI values are intentionally null; qualitative badges are research judgment, not audited unit-economics metrics.",
+    "Shortlist is a preference ranking within the Stage 1 New-Age Top 25 — not portfolio weights.",
+    "Returns and prices join from new_age.companies at render time; #/new-age remains the full Top 25 monitor.",
+    "Profitability-cycle stages 1–5 come from Stage 1 methodology in new_age.json."
+  ],
+  "sources": [
+    {
+      "title": "Stage 1 New-Age Top 25",
+      "url_or_publisher": "data/new_age.json",
+      "as_of": "2026-10-04",
+      "notes": "Universe, sub-sectors and profitability stages."
+    },
+    {
+      "title": "Yahoo Finance NSE prices",
+      "url_or_publisher": "https://finance.yahoo.com/",
+      "as_of": "2026-10-16",
+      "notes": "Performance joined at dashboard render."
+    },
+    {
+      "title": "Macro deepen pack",
+      "url_or_publisher": "data/macro_deep.json",
+      "as_of": "2026-10-18",
+      "notes": "Selective growth sleeve framing versus broad beta."
+    }
+  ]
+}

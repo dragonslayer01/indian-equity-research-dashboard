@@ -166,6 +166,20 @@ def test_load_all_data_includes_banks_pack():
     assert len(data["companies"]["by_sector"]["banks"]) == 18
 
 
+def test_load_all_data_includes_new_age_pack():
+    data = load_all_data(ROOT / "data")
+    pack = data["deep_dives"]["packs"]["new_age"]
+    assert pack["sector_id"] == "new_age"
+    assert len(pack["shortlist"]) == 10
+    assert any(
+        kpi.get("id") == "unit_economics"
+        for item in pack["shortlist"]
+        for kpi in item.get("kpis", [])
+    )
+    entry = next(e for e in data["deep_dives"]["index"] if e["sector_id"] == "new_age")
+    assert entry["status"] == "published"
+
+
 _BASE_KPI_ITEM = {
     "ticker": "HDFCBANK.NS",
     "name": "HDFC Bank",

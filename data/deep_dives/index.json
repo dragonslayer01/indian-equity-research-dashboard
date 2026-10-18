@@ -11,6 +11,12 @@
       "name": "Banks",
       "status": "published",
       "as_of": "2026-10-18"
+    },
+    {
+      "sector_id": "new_age",
+      "name": "New-Age / Digital Economy",
+      "status": "published",
+      "as_of": "2026-10-18"
     }
   ]
 }

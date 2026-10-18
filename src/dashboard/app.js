@@ -342,7 +342,7 @@
       return '<div class="kpi-cell"><span class="kpi-label">' + escapeHtml(kpi.label) +
         "</span>" + badge + detail + "</div>";
     }).join("");
-    return '<div class="kpi-strip" aria-label="Banking KPIs">' + cells + "</div>";
+    return '<div class="kpi-strip" aria-label="Research KPIs">' + cells + "</div>";
   }
 
   function renderDeepDives(selectedSectorId) {
@@ -381,7 +381,9 @@
         emptyState("Published pack file is missing for " + entry.sector_id + ".");
     }
 
-    const universe = valueAt(DATA, "companies.by_sector." + pack.sector_id, []);
+    const universe = pack.sector_id === "new_age"
+      ? valueAt(DATA, "new_age.companies", [])
+      : valueAt(DATA, "companies.by_sector." + pack.sector_id, []);
     const byTicker = {};
     universe.forEach(function (row) { byTicker[row.ticker] = row; });
     const shortlist = (pack.shortlist || []).slice().sort(function (a, b) {
