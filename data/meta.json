@@ -1,6 +1,6 @@
 {
-  "analysis_date": "2026-10-04",
-  "data_cutoff_date": "2026-10-16",
+  "analysis_date": "2026-10-18",
+  "data_cutoff_date": "2026-10-18",
   "price_date": "2026-10-16",
   "return_type": "price_return_split_bonus_adjusted_dividends_excluded",
   "currency": "INR",
@@ -8,7 +8,7 @@
     "Nifty 50",
     "Nifty 500"
   ],
-  "research_status": "Stage 1 final",
-  "research_as_of": "2026-10-04",
-  "integrity_note": "Market fields are retained from the existing Yahoo-derived dataset; authored research does not overwrite prices, returns, price dates or market sources."
+  "research_status": "Stage 2 in progress",
+  "research_as_of": "2026-10-18",
+  "integrity_note": "Market prices/returns refreshed from Yahoo Finance through the latest NSE session (2026-10-16). Analysis and research cutoff set to 2026-10-18. Authored research fields are not overwritten by the price fetch."
 }
