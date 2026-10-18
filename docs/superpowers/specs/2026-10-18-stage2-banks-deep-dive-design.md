@@ -129,7 +129,7 @@ Optional on each shortlist item: `kpis` — array of KPI objects.
 - Each item must include `id`, `label`, `qualitative`.
 - `qualitative` ∈ {`strong`,`adequate`,`watch`,`weak`}.
 - `id` ∈ the Banks standard set above (packs in other sectors may later define their own sets; for this slice only Banks uses KPIs).
-- If `value` is not `null`, it must be a number; `as_of` and `source` should be present (warn in methodology if missing; **require** `as_of` when value is numeric to avoid unsourced precision).
+- If `value` is not `null`, it must be a number, and both `as_of` and `source` are required (reject otherwise).
 - Duplicate `id` within one shortlist item’s `kpis` → `ValueError`.
 - Pharma shortlist without `kpis` remains valid.
 
