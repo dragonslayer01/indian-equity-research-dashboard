@@ -1,0 +1,55 @@
+name: Weekly price refresh
+
+on:
+  schedule:
+    # Saturday 02:30 UTC ≈ 08:00 IST — after the week’s NSE sessions settle
+    - cron: "30 2 * * 6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-price-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch and merge market prices
+        run: |
+          PYTHONPATH=src python scripts/fetch_market_data.py \
+            --data-dir data \
+            --raw-dir data/raw
+
+      - name: Commit and push data updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/*.json data/sources.json data/deep_dives/*.json 2>/dev/null || true
+          # Fetch only touches top-level market JSON + sources + meta (not deep_dives).
+          git add \
+            data/meta.json \
+            data/sources.json \
+            data/companies.json \
+            data/sectors.json \
+            data/new_age.json \
+            data/macro.json \
+            data/market_regime.json
+          if git diff --staged --quiet; then
+            echo "No price data changes to commit."
+            exit 0
+          fi
+          PRICE_DATE=$(python3 -c "import json; print(json.load(open('data/meta.json'))['price_date'])")
+          git commit -m "Weekly price refresh (${PRICE_DATE})."
+          git push

@@ -37,6 +37,16 @@ Workflow: [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.
 
 `netlify.toml` remains in the repo for optional/legacy Netlify use; prefer GitHub Pages for day-to-day hosting.
 
+## Weekly price refresh (automated)
+
+GitHub Action [`.github/workflows/weekly-price-refresh.yml`](.github/workflows/weekly-price-refresh.yml) runs every **Saturday 02:30 UTC** (~08:00 IST):
+
+1. Fetches Yahoo closes into `data/*.json` (same script as local refresh)
+2. Commits and pushes if anything changed
+3. The Pages deploy workflow then rebuilds the live site
+
+Authored research (deep dives, macro narrative, sector theses) is **not** rewritten. Trigger anytime via **Actions → Weekly price refresh → Run workflow**.
+
 ## Tests
 
 ```bash
