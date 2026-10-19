@@ -317,6 +317,7 @@ def load_all_data(data_dir: Path) -> dict[str, Any]:
         data_dir, loaded["companies"], loaded["new_age"]
     )
     loaded["macro_deep"] = load_macro_deep(data_dir)
+    loaded["quant_signals"] = load_quant_signals(data_dir)
     return loaded
 
 
@@ -374,4 +375,45 @@ def load_macro_deep(data_dir: Path) -> dict[str, Any]:
         raise ValueError("missing required data file: macro_deep.json")
     payload = json.loads(path.read_text(encoding="utf-8"))
     validate_macro_deep(payload)
+    return payload
+
+
+_QUANT_KEYS = (
+    "as_of",
+    "benchmark",
+    "methodology_notes",
+    "benchmarks",
+    "sectors",
+    "companies",
+    "new_age",
+)
+_QUANT_MOMENTUM = frozenset(
+    {"outperforming", "underperforming", "mixed", "unavailable"}
+)
+
+
+def validate_quant_signals(data: dict[str, Any]) -> None:
+    _require_keys(data, _QUANT_KEYS, "quant_signals")
+    _require_str_list(data["methodology_notes"], "quant_signals.methodology_notes")
+    if not isinstance(data["benchmarks"], dict):
+        raise ValueError("quant_signals.benchmarks must be an object")
+    for key in ("sectors", "companies", "new_age"):
+        if not isinstance(data[key], dict):
+            raise ValueError(f"quant_signals.{key} must be an object")
+    for sector_id, row in data["sectors"].items():
+        label = f"quant_signals.sectors[{sector_id}]"
+        if not isinstance(row, dict):
+            raise ValueError(f"{label} must be an object")
+        if row.get("momentum_label") not in _QUANT_MOMENTUM:
+            raise ValueError(f"{label}.momentum_label invalid")
+        if "rel_nifty50" not in row or not isinstance(row["rel_nifty50"], dict):
+            raise ValueError(f"{label}.rel_nifty50 must be an object")
+
+
+def load_quant_signals(data_dir: Path) -> dict[str, Any]:
+    path = data_dir / "quant_signals.json"
+    if not path.is_file():
+        raise ValueError("missing required data file: quant_signals.json")
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    validate_quant_signals(payload)
     return payload

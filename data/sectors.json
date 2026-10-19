@@ -4,7 +4,7 @@
       "id": "banks",
       "name": "Banks",
       "stance": "OW",
-      "attractiveness_score": 69.9,
+      "attractiveness_score": 70.6,
       "factor_scores": {
         "demand": 8,
         "earnings_growth": 8,
@@ -15,7 +15,7 @@
         "policy": 7,
         "competitive_structure": 7,
         "capital_cycle": 7,
-        "price_momentum": 4,
+        "price_momentum": 5,
         "macro_sensitivity": 7,
         "downside_risk": 7
       },
@@ -67,7 +67,7 @@
       "id": "it",
       "name": "Information Technology",
       "stance": "Neutral",
-      "attractiveness_score": 61.5,
+      "attractiveness_score": 65.7,
       "factor_scores": {
         "demand": 5,
         "earnings_growth": 5,
@@ -78,7 +78,7 @@
         "policy": 5,
         "competitive_structure": 8,
         "capital_cycle": 8,
-        "price_momentum": 3,
+        "price_momentum": 9,
         "macro_sensitivity": 5,
         "downside_risk": 8
       },
@@ -258,7 +258,7 @@
       "id": "pharma",
       "name": "Pharmaceuticals and Healthcare",
       "stance": "OW",
-      "attractiveness_score": 71.0,
+      "attractiveness_score": 70.3,
       "factor_scores": {
         "demand": 7,
         "earnings_growth": 8,
@@ -269,7 +269,7 @@
         "policy": 6,
         "competitive_structure": 7,
         "capital_cycle": 8,
-        "price_momentum": 8,
+        "price_momentum": 7,
         "macro_sensitivity": 8,
         "downside_risk": 7
       },

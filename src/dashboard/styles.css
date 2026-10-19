@@ -375,6 +375,18 @@ dd { margin: 2px 0; }
 .kpi-watch { border-color: #b28a2f; color: #8a6a20; }
 .kpi-weak { border-color: #8b3a3a; color: #8b3a3a; }
 
+.momentum-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--slate-200);
+  font-size: 11px;
+  text-transform: capitalize;
+}
+.momentum-outperforming { color: var(--green); background: var(--green-soft); border-color: transparent; }
+.momentum-underperforming { color: var(--red); background: var(--red-soft); border-color: transparent; }
+.momentum-mixed { color: var(--amber); background: var(--amber-soft); border-color: transparent; }
+.momentum-unavailable { color: var(--slate-600); background: var(--slate-100); }
+
 .stance-board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .stance-column { padding: 15px; background: rgba(255, 255, 255, 0.45); border: 1px solid var(--slate-200); }
 .stance-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }

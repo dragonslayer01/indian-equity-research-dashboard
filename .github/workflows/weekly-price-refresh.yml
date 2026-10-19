@@ -32,24 +32,26 @@ jobs:
             --data-dir data \
             --raw-dir data/raw
 
+      - name: Compute quantitative overlays
+        run: |
+          PYTHONPATH=src python scripts/compute_quant_signals.py --data-dir data
+
       - name: Commit and push data updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/*.json data/sources.json data/deep_dives/*.json 2>/dev/null || true
-          # Fetch only touches top-level market JSON + sources + meta (not deep_dives).
+          # Prices + price-derived quant overlays (not authored research theses/KPIs).
           git add \
             data/meta.json \
             data/sources.json \
             data/companies.json \
             data/sectors.json \
             data/new_age.json \
-            data/macro.json \
-            data/market_regime.json
+            data/quant_signals.json
           if git diff --staged --quiet; then
-            echo "No price data changes to commit."
+            echo "No price/quant data changes to commit."
             exit 0
           fi
           PRICE_DATE=$(python3 -c "import json; print(json.load(open('data/meta.json'))['price_date'])")
-          git commit -m "Weekly price refresh (${PRICE_DATE})."
+          git commit -m "Weekly price refresh + quant signals (${PRICE_DATE})."
           git push

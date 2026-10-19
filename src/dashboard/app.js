@@ -104,16 +104,39 @@
     if (note) note.textContent = "Data cutoff: " + formatDate(meta.data_cutoff_date) + ". Later events are excluded.";
   }
 
+  function quantCompany(ticker) {
+    return valueAt(DATA, "quant_signals.companies." + ticker, null);
+  }
+
+  function quantNewAge(ticker) {
+    return valueAt(DATA, "quant_signals.new_age." + ticker, null);
+  }
+
+  function quantSector(sectorId) {
+    return valueAt(DATA, "quant_signals.sectors." + sectorId, null);
+  }
+
+  function momentumBadge(label) {
+    const safe = label || "unavailable";
+    return '<span class="momentum-badge momentum-' + escapeHtml(safe) + '">' +
+      escapeHtml(safe) + "</span>";
+  }
+
   function renderKpis() {
     const sectors = valueAt(DATA, "sectors.sectors", []);
     const newAge = valueAt(DATA, "new_age.companies", []);
     const regime = valueAt(DATA, "market_regime.label", "Unavailable");
     const overweights = sectors.filter(function (sector) { return sector.stance === "OW"; }).length;
+    const quantSectors = valueAt(DATA, "quant_signals.sectors", {});
+    const outperforming = Object.keys(quantSectors).filter(function (id) {
+      return quantSectors[id] && quantSectors[id].momentum_label === "outperforming";
+    }).length;
     const items = [
       ["Market regime", regime],
       ["Sectors covered", sectors.length],
       ["Overweight sectors", overweights],
       ["New-age universe", newAge.length],
+      ["Sectors outperforming Nifty", outperforming],
     ];
     document.getElementById("kpi-strip").innerHTML = items.map(function (item) {
       return '<div class="kpi"><span>' + escapeHtml(item[0]) + "</span><strong>" + escapeHtml(item[1]) + "</strong></div>";
@@ -248,18 +271,22 @@
 
   function renderSectorPerformance() {
     const sectors = valueAt(DATA, "sectors.sectors", []).map(function (sector) {
+      const signal = quantSector(sector.id) || {};
       return {
         name: sector.name,
         ticker: sector.representative_index,
         price: sector.price,
         price_date: sector.price_date,
         performance: sector.performance,
+        quant: signal,
+        sector_id: sector.id,
       };
     });
     return pageHeader("Market monitor", "Sector performance",
-      "Cross-period price returns for representative sector indices.") +
+      "Cross-period price returns for representative sector indices, plus relative performance vs Nifty 50.") +
       panel("Returns heatmap", renderHeatmap(sectors, PERIODS), "heatmap-panel") +
-      panel("Sortable return table", renderReturnsTable(sectors)) + renderPageCutoff();
+      panel("Sortable return table", renderReturnsTable(sectors, { withQuant: true })) +
+      renderPageCutoff();
   }
 
   function renderCompanies(selectedSector) {
@@ -270,13 +297,21 @@
       return '<option value="' + escapeHtml(sector.id) + '"' + (sector.id === sectorId ? " selected" : "") + ">" +
         escapeHtml(sector.name) + "</option>";
     }).join("");
-    const companies = valueAt(DATA, "companies.by_sector." + sectorId, []);
+    const companies = valueAt(DATA, "companies.by_sector." + sectorId, []).map(function (row) {
+      return Object.assign({}, row, { quant: quantCompany(row.ticker) || {} });
+    });
     const benchmarks = valueAt(DATA, "companies.benchmarks", []);
+    const breadth = quantSector(sectorId) || {};
+    const breadthNote = (breadth.breadth_1m != null)
+      ? " Sector breadth (share beating Nifty 50): 1M " + formatNumber(breadth.breadth_1m, 1) +
+        "% · 3M " + formatNumber(breadth.breadth_3m, 1) + "%."
+      : "";
     return pageHeader("Company monitor", "Company performance",
-      "Select a sector, sort any return column, or filter by company name and ticker.") +
+      "Select a sector, sort any return column, or filter by company name and ticker." + breadthNote) +
       '<div class="toolbar"><label>Sector<select id="sector-select">' + options +
       '</select></label><label class="search-label">Search<input id="entity-search" type="search" placeholder="Name or ticker…" autocomplete="off"></label></div>' +
-      panel("Companies and benchmarks", renderReturnsTable(companies.concat(benchmarks))) + renderPageCutoff();
+      panel("Companies and benchmarks", renderReturnsTable(companies.concat(benchmarks), { withQuant: true })) +
+      renderPageCutoff();
   }
 
   function renderNewAge(selectedSubSector) {
@@ -300,7 +335,9 @@
       "Performance and qualitative profitability-cycle staging for recently listed and digital-first businesses.") +
       '<div class="toolbar"><label>Sub-sector<select id="sub-sector-select">' + options +
       '</select></label><label class="search-label">Search<input id="entity-search" type="search" placeholder="Name or ticker…" autocomplete="off"></label></div>' +
-      panel("Returns", renderReturnsTable(filtered.concat(valueAt(DATA, "new_age.benchmarks", [])))) +
+      panel("Returns", renderReturnsTable(filtered.map(function (row) {
+        return Object.assign({}, row, { quant: quantNewAge(row.ticker) || {} });
+      }).concat(valueAt(DATA, "new_age.benchmarks", [])), { withQuant: true })) +
       '<div class="company-grid">' + stages + "</div>" + renderPageCutoff();
   }
 
@@ -485,12 +522,18 @@
       '<div class="gate-status"><span>Current status</span><strong>Not yet published</strong></div><a class="button-link" href="#/overview">Return to overview</a></section>';
   }
 
-  function renderReturnsTable(rows) {
+  function renderReturnsTable(rows, options) {
     if (!rows || !rows.length) return emptyState("No return series are available for this selection.");
+    const withQuant = options && options.withQuant;
     const headerPeriods = PERIODS.map(function (period) {
       return '<th class="sortable numeric" data-sort="' + period + '" tabindex="0" role="button" aria-label="Sort by ' +
         escapeHtml(period.replace("_cagr", " CAGR")) + '">' + escapeHtml(period.replace("_cagr", " CAGR")) + "</th>";
     }).join("");
+    const quantHeaders = withQuant
+      ? '<th class="sortable numeric" data-sort="rel_1m" tabindex="0" role="button">Rel 1M</th>' +
+        '<th class="sortable numeric" data-sort="rel_3m" tabindex="0" role="button">Rel 3M</th>' +
+        '<th class="sortable" data-sort="momentum" tabindex="0" role="button">vs Nifty</th>'
+      : "";
     const body = rows.map(function (row) {
       const performance = row.performance || {};
       const periodCells = PERIODS.map(function (period) {
@@ -498,16 +541,26 @@
         return '<td class="numeric return-value ' + returnClass(value) + '" data-value="' +
           (typeof value === "number" ? value : "") + '">' + formatReturn(value) + "</td>";
       }).join("");
+      const quant = row.quant || {};
+      const rel = quant.rel_nifty50 || {};
+      const quantCells = withQuant
+        ? '<td class="numeric return-value ' + returnClass(rel["1M"]) + '" data-value="' +
+          (typeof rel["1M"] === "number" ? rel["1M"] : "") + '">' + formatReturn(rel["1M"]) + "</td>" +
+          '<td class="numeric return-value ' + returnClass(rel["3M"]) + '" data-value="' +
+          (typeof rel["3M"] === "number" ? rel["3M"] : "") + '">' + formatReturn(rel["3M"]) + "</td>" +
+          '<td data-value="' + escapeHtml(quant.momentum_label || "") + '">' +
+          (quant.momentum_label ? momentumBadge(quant.momentum_label) : "—") + "</td>"
+        : "";
       const search = ((row.name || "") + " " + (row.ticker || "")).toLowerCase();
       return '<tr class="searchable-row" data-search="' + escapeHtml(search) + '"><td><strong>' +
         escapeHtml(row.name || "Unnamed") + '</strong><small>' + escapeHtml(row.classification || "") +
         '</small></td><td class="ticker">' + escapeHtml(row.ticker || "—") +
         '</td><td class="numeric">₹' + formatNumber(row.price, 2) + "</td><td>" +
-        escapeHtml(row.price_date || "N/A") + "</td>" + periodCells + "</tr>";
+        escapeHtml(row.price_date || "N/A") + "</td>" + periodCells + quantCells + "</tr>";
     }).join("");
     return '<div class="table-wrap"><table class="returns-table"><thead><tr><th class="sortable" data-sort="name" tabindex="0" role="button">Company / Index</th>' +
       '<th class="sortable" data-sort="ticker" tabindex="0" role="button">Ticker</th><th class="sortable numeric" data-sort="price" tabindex="0" role="button">Price</th>' +
-      '<th class="sortable" data-sort="price_date" tabindex="0" role="button">Price Date</th>' + headerPeriods +
+      '<th class="sortable" data-sort="price_date" tabindex="0" role="button">Price Date</th>' + headerPeriods + quantHeaders +
       "</tr></thead><tbody>" + body + "</tbody></table></div>";
   }
 

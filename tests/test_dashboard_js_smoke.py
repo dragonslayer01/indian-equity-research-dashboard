@@ -57,4 +57,7 @@ def test_javascript_defines_public_dashboard_functions():
     assert "renderDeepDives" in javascript
     assert "function renderKpiStrip(" in javascript
     assert "kpi-strip" in javascript
+    assert "Rel 1M" in javascript
+    assert "momentumBadge" in javascript
+    assert "quant_signals" in javascript
     assert javascript.count('return renderGate("Sector Deep Dives"') == 0

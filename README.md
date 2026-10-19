@@ -42,10 +42,17 @@ Workflow: [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.
 GitHub Action [`.github/workflows/weekly-price-refresh.yml`](.github/workflows/weekly-price-refresh.yml) runs every **Saturday 02:30 UTC** (~08:00 IST):
 
 1. Fetches Yahoo closes into `data/*.json` (same script as local refresh)
-2. Commits and pushes if anything changed
-3. The Pages deploy workflow then rebuilds the live site
+2. Computes price-derived overlays (`data/quant_signals.json`) and refreshes sector `price_momentum` + attractiveness score
+3. Commits and pushes if anything changed
+4. The Pages deploy workflow then rebuilds the live site
 
-Authored research (deep dives, macro narrative, sector theses) is **not** rewritten. Trigger anytime via **Actions → Weekly price refresh → Run workflow**.
+Authored research (deep dives, macro narrative, sector theses, judgment factors other than `price_momentum`) is **not** rewritten. Trigger anytime via **Actions → Weekly price refresh → Run workflow**.
+
+Local quant-only recompute (after a fetch):
+
+```bash
+PYTHONPATH=src python scripts/compute_quant_signals.py --data-dir data
+```
 
 ## Tests
 
