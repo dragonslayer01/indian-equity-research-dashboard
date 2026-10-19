@@ -27,16 +27,15 @@ open dist/index.html
 - **Build** produces `dist/index.html` (and a legacy copy `dist/indian_equity_strategy_dashboard.html`) with inlined CSS, JS, and `window.RESEARCH_DATA` — no CDN or server required to view.
 - To recompute returns from cached CSVs **without** network access, use `PYTHONPATH=src python scripts/compute_returns.py --data-dir data --raw-dir data/raw`.
 
-## Deploy to Netlify
+## Deploy (GitHub Pages)
 
-Site is configured via `netlify.toml`: Netlify rebuilds `dist/index.html` from `data/` + `src/dashboard/` on each deploy (no extra Node build).
+**Live site:** https://dragonslayer01.github.io/indian-equity-research-dashboard/
 
-1. Push this repo to GitHub/GitLab.
-2. In Netlify: **Add new site → Import an existing project** → select the repo.
-3. Leave build settings as detected from `netlify.toml` (`publish = dist`).
-4. Deploy. The site root serves the Stage 1 dashboard.
+Each push to `main` (or a manual **Actions → Deploy to GitHub Pages → Run workflow**) builds `dist/index.html` from `data/` + `src/dashboard/` and publishes it. No Netlify credits required.
 
-**Drag-and-drop alternative:** run the build locally, then drop the `dist/` folder on [Netlify Drop](https://app.netlify.com/drop).
+Workflow: [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
+
+`netlify.toml` remains in the repo for optional/legacy Netlify use; prefer GitHub Pages for day-to-day hosting.
 
 ## Tests
 
