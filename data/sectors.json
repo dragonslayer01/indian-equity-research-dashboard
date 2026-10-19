@@ -45,7 +45,7 @@
         ]
       },
       "price": 55844.0,
-      "price_date": "2026-10-16",
+      "price_date": "2026-10-18",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -108,7 +108,7 @@
         ]
       },
       "price": 31924.099609375,
-      "price_date": "2026-10-16",
+      "price_date": "2026-10-18",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -171,7 +171,7 @@
         ]
       },
       "price": 25768.5,
-      "price_date": "2026-10-16",
+      "price_date": "2026-10-18",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -235,7 +235,7 @@
         ]
       },
       "price": 44616.1484375,
-      "price_date": "2026-10-16",
+      "price_date": "2026-10-18",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -299,7 +299,7 @@
         ]
       },
       "price": 25781.650390625,
-      "price_date": "2026-10-16",
+      "price_date": "2026-10-18",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -362,7 +362,7 @@
         ]
       },
       "price": 12133.2001953125,
-      "price_date": "2026-10-16",
+      "price_date": "2026-10-18",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -426,7 +426,7 @@
         ]
       },
       "price": 36190.8515625,
-      "price_date": "2026-10-16",
+      "price_date": "2026-10-18",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -471,8 +471,8 @@
         "1M": "Data unavailable from reliable sources.",
         "3M": "Data unavailable from reliable sources.",
         "6M": "Data unavailable from reliable sources.",
-        "1Y": "Data unavailable from reliable sources.",
         "YTD": "Data unavailable from reliable sources.",
+        "1Y": "Data unavailable from reliable sources.",
         "3Y_cagr": "Data unavailable from reliable sources.",
         "5Y_cagr": "Data unavailable from reliable sources."
       },
@@ -489,8 +489,8 @@
           "Funding spreads or unsecured stress expose aggressive underwriting."
         ]
       },
-      "price": 27211.0,
-      "price_date": "2026-10-16",
+      "price": null,
+      "price_date": "2026-10-18",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -554,7 +554,7 @@
         ]
       },
       "price": 8725.599609375,
-      "price_date": "2026-10-16",
+      "price_date": "2026-10-18",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -618,7 +618,7 @@
         ]
       },
       "price": 825.9500122070312,
-      "price_date": "2026-10-16",
+      "price_date": "2026-10-18",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,

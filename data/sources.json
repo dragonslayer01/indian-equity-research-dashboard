@@ -57,8 +57,8 @@
     {
       "title": "Yahoo Finance market prices",
       "url_or_publisher": "https://finance.yahoo.com/",
-      "as_of": "2026-10-16",
-      "notes": "Close-price history fetched by yfinance. All requested symbols returned data."
+      "as_of": "2026-10-18",
+      "notes": "Close-price history fetched by yfinance. Unavailable symbols: ^CNXFIN."
     }
   ],
   "methodology_notes": [
