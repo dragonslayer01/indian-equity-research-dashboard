@@ -21,15 +21,15 @@
       },
       "representative_index": "^NSEBANK",
       "performance": {
-        "1D": -0.4056,
-        "1W": 0.7361,
-        "1M": 0.0987,
-        "3M": -4.5017,
-        "6M": -0.3215,
-        "1Y": -5.7627,
-        "YTD": -8.4148,
-        "3Y_cagr": 8.3092,
-        "5Y_cagr": 6.9288
+        "1D": 2.2715,
+        "1W": 8.0441,
+        "1M": 7.3207,
+        "3M": 2.3197,
+        "6M": 6.8259,
+        "1Y": 2.6614,
+        "YTD": -1.0476,
+        "3Y_cagr": 10.6433,
+        "5Y_cagr": 8.3384
       },
       "thesis": [
         "Our analysis: firm domestic activity supports credit demand, while large diversified banks retain funding and risk-management advantages.",
@@ -44,8 +44,8 @@
           "Deposit competition or unsecured stress weakens margins and asset quality."
         ]
       },
-      "price": 54686.94921875,
-      "price_date": "2026-10-30",
+      "price": 59086.0,
+      "price_date": "2026-11-06",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -67,7 +67,7 @@
       "id": "it",
       "name": "Information Technology",
       "stance": "Neutral",
-      "attractiveness_score": 65.7,
+      "attractiveness_score": 65.0,
       "factor_scores": {
         "demand": 5,
         "earnings_growth": 5,
@@ -78,21 +78,21 @@
         "policy": 5,
         "competitive_structure": 8,
         "capital_cycle": 8,
-        "price_momentum": 9,
+        "price_momentum": 8,
         "macro_sensitivity": 5,
         "downside_risk": 8
       },
       "representative_index": "^CNXIT",
       "performance": {
-        "1D": 2.3238,
-        "1W": 1.9109,
-        "1M": 17.694,
-        "3M": 6.1804,
-        "6M": 11.082,
-        "1Y": -9.1892,
-        "YTD": -14.5779,
-        "3Y_cagr": 2.094,
-        "5Y_cagr": -1.0695
+        "1D": 0.4265,
+        "1W": 1.1378,
+        "1M": 18.8057,
+        "3M": 4.5335,
+        "6M": 12.1919,
+        "1Y": -6.6776,
+        "YTD": -13.606,
+        "3Y_cagr": 2.1123,
+        "5Y_cagr": -1.3695
       },
       "thesis": [
         "Our analysis: sector balance sheets and cash generation are strong, but global discretionary demand visibility remains uneven.",
@@ -107,8 +107,8 @@
           "Pricing pressure and automation reduce labor-arbitrage growth before new demand scales."
         ]
       },
-      "price": 32606.900390625,
-      "price_date": "2026-10-30",
+      "price": 32977.8984375,
+      "price_date": "2026-11-06",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -147,15 +147,15 @@
       },
       "representative_index": "^CNXAUTO",
       "performance": {
-        "1D": -0.8692,
-        "1W": 2.254,
-        "1M": -3.3135,
-        "3M": -11.5552,
-        "6M": -1.9095,
-        "1Y": -5.2437,
-        "YTD": -9.8153,
-        "3Y_cagr": 16.629,
-        "5Y_cagr": 17.6033
+        "1D": 0.761,
+        "1W": 9.3975,
+        "1M": 10.6325,
+        "3M": -6.193,
+        "6M": 2.0248,
+        "1Y": 4.4516,
+        "YTD": -1.3402,
+        "3Y_cagr": 19.8019,
+        "5Y_cagr": 19.1538
       },
       "thesis": [
         "Our analysis: premiumization and product cycles support leaders, while affordability and financing costs constrain mass demand.",
@@ -170,8 +170,8 @@
           "Affordability pressure, discounting or transition spending dilute returns."
         ]
       },
-      "price": 25422.69921875,
-      "price_date": "2026-10-30",
+      "price": 27811.80078125,
+      "price_date": "2026-11-06",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -211,15 +211,15 @@
       },
       "representative_index": "^CNXFMCG",
       "performance": {
-        "1D": -0.6238,
-        "1W": 2.1755,
-        "1M": -2.0204,
-        "3M": -11.2212,
-        "6M": -14.6125,
-        "1Y": -22.6012,
-        "YTD": -21.3904,
-        "3Y_cagr": -5.1954,
-        "5Y_cagr": 2.6711
+        "1D": 0.6745,
+        "1W": 7.2838,
+        "1M": 4.4302,
+        "3M": -5.3597,
+        "6M": -8.561,
+        "1Y": -16.022,
+        "YTD": -15.6646,
+        "3Y_cagr": -3.507,
+        "5Y_cagr": 3.8584
       },
       "thesis": [
         "Our analysis: strong franchises offer balance-sheet resilience and pricing power in a volatile macro environment.",
@@ -234,8 +234,8 @@
           "Food inflation persists and price increases weaken volumes."
         ]
       },
-      "price": 43609.19921875,
-      "price_date": "2026-10-30",
+      "price": 46785.6015625,
+      "price_date": "2026-11-06",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -258,7 +258,7 @@
       "id": "pharma",
       "name": "Pharmaceuticals and Healthcare",
       "stance": "OW",
-      "attractiveness_score": 71.0,
+      "attractiveness_score": 68.9,
       "factor_scores": {
         "demand": 7,
         "earnings_growth": 8,
@@ -269,21 +269,21 @@
         "policy": 6,
         "competitive_structure": 7,
         "capital_cycle": 8,
-        "price_momentum": 8,
+        "price_momentum": 5,
         "macro_sensitivity": 8,
         "downside_risk": 7
       },
       "representative_index": "^CNXPHARMA",
       "performance": {
-        "1D": 1.5501,
-        "1W": 7.0882,
-        "1M": 2.598,
-        "3M": 2.2237,
-        "6M": 16.5773,
-        "1Y": 21.6459,
-        "YTD": 19.3684,
-        "3Y_cagr": 22.4393,
-        "5Y_cagr": 14.3341
+        "1D": 1.2055,
+        "1W": 3.0067,
+        "1M": 5.6885,
+        "3M": 5.2694,
+        "6M": 15.8857,
+        "1Y": 25.5717,
+        "YTD": 22.9574,
+        "3Y_cagr": 22.8374,
+        "5Y_cagr": 14.8908
       },
       "thesis": [
         "Our analysis: diversified healthcare demand and exporter characteristics provide defensive growth and currency diversification.",
@@ -298,8 +298,8 @@
           "Regulatory actions or price erosion offset operating leverage."
         ]
       },
-      "price": 27124.849609375,
-      "price_date": "2026-10-30",
+      "price": 27940.400390625,
+      "price_date": "2026-11-06",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -338,15 +338,15 @@
       },
       "representative_index": "^CNXMETAL",
       "performance": {
-        "1D": -0.5364,
-        "1W": 2.672,
-        "1M": -7.6455,
-        "3M": -7.3441,
-        "6M": -8.1676,
-        "1Y": 9.8395,
-        "YTD": 5.5271,
-        "3Y_cagr": 22.1331,
-        "5Y_cagr": 16.1904
+        "1D": 0.6594,
+        "1W": 7.5796,
+        "1M": 3.0183,
+        "3M": -3.8795,
+        "6M": -2.8565,
+        "1Y": 23.3055,
+        "YTD": 13.5257,
+        "3Y_cagr": 24.5104,
+        "5Y_cagr": 17.3278
       },
       "thesis": [
         "Our analysis: earnings remain highly sensitive to global demand, commodity prices and supply responses.",
@@ -361,8 +361,8 @@
           "Global slowdown or new capacity drives price and margin compression."
         ]
       },
-      "price": 11784.900390625,
-      "price_date": "2026-10-30",
+      "price": 12678.150390625,
+      "price_date": "2026-11-06",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -385,7 +385,7 @@
       "id": "energy",
       "name": "Energy and Utilities",
       "stance": "Neutral",
-      "attractiveness_score": 55.8,
+      "attractiveness_score": 55.1,
       "factor_scores": {
         "demand": 6,
         "earnings_growth": 6,
@@ -396,21 +396,21 @@
         "policy": 7,
         "competitive_structure": 6,
         "capital_cycle": 5,
-        "price_momentum": 3,
+        "price_momentum": 2,
         "macro_sensitivity": 4,
         "downside_risk": 5
       },
       "representative_index": "^CNXENERGY",
       "performance": {
-        "1D": -0.9663,
-        "1W": 1.2684,
-        "1M": -4.5805,
-        "3M": -9.7384,
-        "6M": -14.2598,
-        "1Y": -3.9423,
-        "YTD": -1.041,
-        "3Y_cagr": 9.2045,
-        "5Y_cagr": 8.508
+        "1D": -0.0465,
+        "1W": 5.462,
+        "1M": 0.5012,
+        "3M": -4.8582,
+        "6M": -9.6297,
+        "1Y": 2.8678,
+        "YTD": 4.3641,
+        "3Y_cagr": 10.3305,
+        "5Y_cagr": 9.3371
       },
       "thesis": [
         "Our analysis: regulated utilities offer visibility while upstream and refining earnings remain commodity- and policy-sensitive.",
@@ -425,8 +425,8 @@
           "Commodity volatility, policy intervention or low-return capex erodes cash generation."
         ]
       },
-      "price": 34957.8984375,
-      "price_date": "2026-10-30",
+      "price": 36867.30078125,
+      "price_date": "2026-11-06",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -489,8 +489,8 @@
           "Funding spreads or unsecured stress expose aggressive underwriting."
         ]
       },
-      "price": 26446.900390625,
-      "price_date": "2026-10-30",
+      "price": 29269.099609375,
+      "price_date": "2026-11-06",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -513,7 +513,7 @@
       "id": "capital_goods_infra",
       "name": "Capital Goods and Infrastructure",
       "stance": "OW",
-      "attractiveness_score": 71.5,
+      "attractiveness_score": 70.8,
       "factor_scores": {
         "demand": 9,
         "earnings_growth": 8,
@@ -524,21 +524,21 @@
         "policy": 9,
         "competitive_structure": 7,
         "capital_cycle": 7,
-        "price_momentum": 5,
+        "price_momentum": 4,
         "macro_sensitivity": 7,
         "downside_risk": 6
       },
       "representative_index": "^CNXINFRA",
       "performance": {
-        "1D": 0.0739,
-        "1W": 2.8612,
-        "1M": 0.7454,
-        "3M": -6.4856,
-        "6M": -6.5859,
-        "1Y": -8.4263,
-        "YTD": -8.4996,
-        "3Y_cagr": 12.8924,
-        "5Y_cagr": 11.7617
+        "1D": 0.7696,
+        "1W": 7.3622,
+        "1M": 8.2294,
+        "3M": -0.6034,
+        "6M": -0.537,
+        "1Y": -0.4426,
+        "YTD": -1.7631,
+        "3Y_cagr": 14.7498,
+        "5Y_cagr": 12.7303
       },
       "thesis": [
         "Reported budget policy sustains a large public-capex envelope; our analysis favors firms with execution capacity and order quality.",
@@ -553,8 +553,8 @@
           "Project delays, working-capital stress or margin dilution disappoint elevated expectations."
         ]
       },
-      "price": 8799.0,
-      "price_date": "2026-10-30",
+      "price": 9446.7998046875,
+      "price_date": "2026-11-06",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
@@ -577,7 +577,7 @@
       "id": "realty_consumer_disc",
       "name": "Realty and Consumer Discretionary",
       "stance": "Neutral",
-      "attractiveness_score": 54.6,
+      "attractiveness_score": 56.0,
       "factor_scores": {
         "demand": 6,
         "earnings_growth": 6,
@@ -588,21 +588,21 @@
         "policy": 5,
         "competitive_structure": 7,
         "capital_cycle": 6,
-        "price_momentum": 3,
+        "price_momentum": 5,
         "macro_sensitivity": 4,
         "downside_risk": 5
       },
       "representative_index": "^CNXREALTY",
       "performance": {
-        "1D": -0.7197,
-        "1W": 3.7675,
-        "1M": -3.9476,
-        "3M": -9.7121,
-        "6M": 2.5644,
-        "1Y": -14.4074,
-        "YTD": -7.2954,
-        "3Y_cagr": 10.9766,
-        "5Y_cagr": 10.2882
+        "1D": 0.0893,
+        "1W": 10.1732,
+        "1M": 9.008,
+        "3M": 1.2134,
+        "6M": 8.8757,
+        "1Y": -5.2715,
+        "YTD": 2.1357,
+        "3Y_cagr": 11.233,
+        "5Y_cagr": 10.3378
       },
       "thesis": [
         "Our analysis: premium formal-sector demand remains an opportunity, but affordability and rates constrain broad-based upside.",
@@ -617,8 +617,8 @@
           "Affordability weakens, inventory rises or competitive intensity increases."
         ]
       },
-      "price": 813.9000244140625,
-      "price_date": "2026-10-30",
+      "price": 896.7000122070312,
+      "price_date": "2026-11-06",
       "source": "Yahoo Finance (index)",
       "weights": {
         "demand": 12,
