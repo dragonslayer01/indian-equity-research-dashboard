@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-06",
+  "as_of": "2026-11-13",
   "benchmark": "Nifty 50",
   "methodology_notes": [
     "Relative return = entity absolute return minus benchmark return for the same horizon.",
@@ -11,29 +11,29 @@
     "Nifty 50": {
       "ticker": "^NSEI",
       "performance": {
-        "1D": 2.0123,
-        "1W": 8.5769,
-        "1M": 10.7388,
-        "3M": 1.8709,
-        "6M": 3.5332,
-        "1Y": -1.8791,
-        "YTD": -4.269,
-        "3Y_cagr": 8.841,
-        "5Y_cagr": 6.9088
+        "1D": -0.6129,
+        "1W": 0.4553,
+        "1M": 11.1463,
+        "3M": 3.1942,
+        "6M": 6.3476,
+        "1Y": -2.8395,
+        "YTD": -3.8332,
+        "3Y_cagr": 8.9464,
+        "5Y_cagr": 6.7892
       }
     },
     "Nifty 500": {
       "ticker": "^CRSLDX",
       "performance": {
-        "1D": 1.0,
-        "1W": 7.1294,
-        "1M": 6.333,
-        "3M": -1.076,
-        "6M": 1.4765,
-        "1Y": -0.239,
-        "YTD": -1.7368,
-        "3Y_cagr": 10.9804,
-        "5Y_cagr": 8.8041
+        "1D": -0.5514,
+        "1W": 1.182,
+        "1M": 7.6967,
+        "3M": 0.5904,
+        "6M": 5.3395,
+        "1Y": -0.3435,
+        "YTD": -0.5754,
+        "3Y_cagr": 11.0734,
+        "5Y_cagr": 8.7807
       }
     }
   },
@@ -41,82 +41,82 @@
     "banks": {
       "name": "Banks",
       "rel_nifty50": {
-        "1M": -3.4181,
-        "3M": 0.4488,
-        "YTD": 3.2214,
-        "1Y": 4.5405
+        "1M": -0.8091,
+        "3M": 2.9685,
+        "YTD": 6.0481,
+        "1Y": 7.3823
       },
       "rel_nifty500": {
-        "1M": 0.9877,
-        "3M": 3.3957,
-        "YTD": 0.6892,
-        "1Y": 2.9004
+        "1M": 2.6405,
+        "3M": 5.5723,
+        "YTD": 2.7903,
+        "1Y": 4.8863
       },
       "momentum_label": "mixed",
-      "breadth_1m": 16.7,
-      "breadth_3m": 33.3,
-      "price_momentum_factor": 5,
+      "breadth_1m": 44.4,
+      "breadth_3m": 50.0,
+      "price_momentum_factor": 6,
       "attractiveness_score_before": 70.6,
-      "attractiveness_score_after": 70.6
+      "attractiveness_score_after": 71.3
     },
     "it": {
       "name": "Information Technology",
       "rel_nifty50": {
-        "1M": 8.0669,
-        "3M": 2.6626,
-        "YTD": -9.337,
-        "1Y": -4.7985
+        "1M": -5.3124,
+        "3M": -1.3656,
+        "YTD": -12.515,
+        "1Y": -10.106
       },
       "rel_nifty500": {
-        "1M": 12.4727,
-        "3M": 5.6095,
-        "YTD": -11.8692,
-        "1Y": -6.4386
+        "1M": -1.8628,
+        "3M": 1.2382,
+        "YTD": -15.7728,
+        "1Y": -12.602
       },
-      "momentum_label": "outperforming",
-      "breadth_1m": 66.7,
-      "breadth_3m": 50.0,
-      "price_momentum_factor": 8,
-      "attractiveness_score_before": 65.7,
-      "attractiveness_score_after": 65.0
+      "momentum_label": "underperforming",
+      "breadth_1m": 16.7,
+      "breadth_3m": 33.3,
+      "price_momentum_factor": 4,
+      "attractiveness_score_before": 65.0,
+      "attractiveness_score_after": 62.2
     },
     "auto": {
       "name": "Automobiles",
       "rel_nifty50": {
-        "1M": -0.1063,
-        "3M": -8.0639,
-        "YTD": 2.9288,
-        "1Y": 6.3307
+        "1M": -0.123,
+        "3M": -7.5699,
+        "YTD": 2.9118,
+        "1Y": 4.8373
       },
       "rel_nifty500": {
-        "1M": 4.2995,
-        "3M": -5.117,
-        "YTD": 0.3966,
-        "1Y": 4.6906
+        "1M": 3.3266,
+        "3M": -4.9661,
+        "YTD": -0.346,
+        "1Y": 2.3413
       },
       "momentum_label": "underperforming",
-      "breadth_1m": 41.7,
-      "breadth_3m": 8.3,
-      "price_momentum_factor": 3,
+      "breadth_1m": 33.3,
+      "breadth_3m": 16.7,
+      "price_momentum_factor": 4,
       "attractiveness_score_before": 57.6,
-      "attractiveness_score_after": 57.6
+      "attractiveness_score_after": 58.3
     },
     "fmcg": {
       "name": "FMCG",
       "rel_nifty50": {
-        "1M": -6.3086,
-        "3M": -7.2306,
-        "YTD": -11.3956,
-        "1Y": -14.1429
+        "1M": -7.6963,
+        "3M": -6.8587,
+        "YTD": -11.745,
+        "1Y": -12.3839
       },
       "rel_nifty500": {
-        "1M": -1.9028,
-        "3M": -4.2837,
-        "YTD": -13.9278,
-        "1Y": -15.783
+        "1M": -4.2467,
+        "3M": -4.2549,
+        "YTD": -15.0028,
+        "1Y": -14.8799
       },
       "momentum_label": "underperforming",
-      "breadth_1m": 16.7,
+      "breadth_1m": 8.3,
       "breadth_3m": 8.3,
       "price_momentum_factor": 3,
       "attractiveness_score_before": 65.7,
@@ -125,41 +125,41 @@
     "pharma": {
       "name": "Pharmaceuticals and Healthcare",
       "rel_nifty50": {
-        "1M": -5.0503,
-        "3M": 3.3985,
-        "YTD": 27.2264,
-        "1Y": 27.4508
+        "1M": -0.2717,
+        "3M": 4.7096,
+        "YTD": 29.4105,
+        "1Y": 28.6208
       },
       "rel_nifty500": {
-        "1M": -0.6445,
-        "3M": 6.3454,
-        "YTD": 24.6942,
-        "1Y": 25.8107
+        "1M": 3.1779,
+        "3M": 7.3134,
+        "YTD": 26.1527,
+        "1Y": 26.1248
       },
       "momentum_label": "mixed",
-      "breadth_1m": 8.3,
+      "breadth_1m": 16.7,
       "breadth_3m": 33.3,
-      "price_momentum_factor": 5,
-      "attractiveness_score_before": 71.0,
-      "attractiveness_score_after": 68.9
+      "price_momentum_factor": 7,
+      "attractiveness_score_before": 68.9,
+      "attractiveness_score_after": 70.3
     },
     "metals": {
       "name": "Metals and Mining",
       "rel_nifty50": {
-        "1M": -7.7205,
-        "3M": -5.7504,
-        "YTD": 17.7947,
-        "1Y": 25.1846
+        "1M": -5.8064,
+        "3M": -5.4644,
+        "YTD": 17.088,
+        "1Y": 22.2878
       },
       "rel_nifty500": {
-        "1M": -3.3147,
-        "3M": -2.8035,
-        "YTD": 15.2625,
-        "1Y": 23.5445
+        "1M": -2.3568,
+        "3M": -2.8606,
+        "YTD": 13.8302,
+        "1Y": 19.7918
       },
       "momentum_label": "underperforming",
-      "breadth_1m": 0.0,
-      "breadth_3m": 25.0,
+      "breadth_1m": 16.7,
+      "breadth_3m": 33.3,
       "price_momentum_factor": 3,
       "attractiveness_score_before": 44.9,
       "attractiveness_score_after": 44.9
@@ -167,23 +167,23 @@
     "energy": {
       "name": "Energy and Utilities",
       "rel_nifty50": {
-        "1M": -10.2376,
-        "3M": -6.7291,
-        "YTD": 8.6331,
-        "1Y": 4.7469
+        "1M": -8.693,
+        "3M": -6.1904,
+        "YTD": 9.7026,
+        "1Y": 6.1865
       },
       "rel_nifty500": {
-        "1M": -5.8318,
-        "3M": -3.7822,
-        "YTD": 6.1009,
-        "1Y": 3.1068
+        "1M": -5.2434,
+        "3M": -3.5866,
+        "YTD": 6.4448,
+        "1Y": 3.6905
       },
       "momentum_label": "underperforming",
-      "breadth_1m": 8.3,
+      "breadth_1m": 25.0,
       "breadth_3m": 33.3,
-      "price_momentum_factor": 2,
-      "attractiveness_score_before": 55.8,
-      "attractiveness_score_after": 55.1
+      "price_momentum_factor": 3,
+      "attractiveness_score_before": 55.1,
+      "attractiveness_score_after": 55.8
     },
     "financials_nbfc": {
       "name": "Financial Services and NBFC",
@@ -209,44 +209,44 @@
     "capital_goods_infra": {
       "name": "Capital Goods and Infrastructure",
       "rel_nifty50": {
-        "1M": -2.5094,
-        "3M": -2.4743,
-        "YTD": 2.5059,
-        "1Y": 1.4365
+        "1M": -0.6647,
+        "3M": -2.5513,
+        "YTD": 2.4117,
+        "1Y": 1.5828
       },
       "rel_nifty500": {
-        "1M": 1.8964,
-        "3M": 0.4726,
-        "YTD": -0.0263,
-        "1Y": -0.2036
+        "1M": 2.7849,
+        "3M": 0.0525,
+        "YTD": -0.8461,
+        "1Y": -0.9132
       },
       "momentum_label": "underperforming",
       "breadth_1m": 8.3,
       "breadth_3m": 8.3,
-      "price_momentum_factor": 4,
-      "attractiveness_score_before": 71.5,
-      "attractiveness_score_after": 70.8
+      "price_momentum_factor": 5,
+      "attractiveness_score_before": 70.8,
+      "attractiveness_score_after": 71.5
     },
     "realty_consumer_disc": {
       "name": "Realty and Consumer Discretionary",
       "rel_nifty50": {
-        "1M": -1.7308,
-        "3M": -0.6575,
-        "YTD": 6.4047,
-        "1Y": -3.3924
+        "1M": 0.8189,
+        "3M": -0.3359,
+        "YTD": 8.7651,
+        "1Y": 0.6471
       },
       "rel_nifty500": {
-        "1M": 2.675,
-        "3M": 2.2894,
-        "YTD": 3.8725,
-        "1Y": -5.0325
+        "1M": 4.2685,
+        "3M": 2.2679,
+        "YTD": 5.5073,
+        "1Y": -1.8489
       },
-      "momentum_label": "underperforming",
-      "breadth_1m": 33.3,
-      "breadth_3m": 33.3,
-      "price_momentum_factor": 5,
-      "attractiveness_score_before": 54.6,
-      "attractiveness_score_after": 56.0
+      "momentum_label": "mixed",
+      "breadth_1m": 41.7,
+      "breadth_3m": 41.7,
+      "price_momentum_factor": 6,
+      "attractiveness_score_before": 56.0,
+      "attractiveness_score_after": 56.7
     }
   },
   "companies": {
@@ -254,16 +254,16 @@
       "sector_id": "banks",
       "name": "HDFC Bank",
       "rel_nifty50": {
-        "1M": 1.4277,
-        "3M": 5.9608,
-        "YTD": -16.2022,
-        "1Y": -18.0671
+        "1M": 1.9816,
+        "3M": 7.3973,
+        "YTD": -15.0489,
+        "1Y": -15.6726
       },
       "rel_nifty500": {
-        "1M": 5.8335,
-        "3M": 8.9077,
-        "YTD": -18.7344,
-        "1Y": -19.7072
+        "1M": 5.4312,
+        "3M": 10.0011,
+        "YTD": -18.3067,
+        "1Y": -18.1686
       },
       "momentum_label": "outperforming"
     },
@@ -271,16 +271,16 @@
       "sector_id": "banks",
       "name": "ICICI Bank",
       "rel_nifty50": {
-        "1M": 5.0034,
-        "3M": 8.6991,
-        "YTD": 21.698,
-        "1Y": 20.8733
+        "1M": 7.1564,
+        "3M": 8.563,
+        "YTD": 22.189,
+        "1Y": 17.1046
       },
       "rel_nifty500": {
-        "1M": 9.4092,
-        "3M": 11.646,
-        "YTD": 19.1658,
-        "1Y": 19.2332
+        "1M": 10.606,
+        "3M": 11.1668,
+        "YTD": 18.9312,
+        "1Y": 14.6086
       },
       "momentum_label": "outperforming"
     },
@@ -288,50 +288,50 @@
       "sector_id": "banks",
       "name": "State Bank of India",
       "rel_nifty50": {
-        "1M": -3.9778,
-        "3M": -9.0437,
-        "YTD": 7.6963,
-        "1Y": 7.89
+        "1M": 1.9545,
+        "3M": -2.0422,
+        "YTD": 13.5057,
+        "1Y": 16.047
       },
       "rel_nifty500": {
-        "1M": 0.428,
-        "3M": -6.0968,
-        "YTD": 5.1641,
-        "1Y": 6.2499
+        "1M": 5.4041,
+        "3M": 0.5616,
+        "YTD": 10.2479,
+        "1Y": 13.551
       },
-      "momentum_label": "underperforming"
+      "momentum_label": "mixed"
     },
     "KOTAKBANK.NS": {
       "sector_id": "banks",
       "name": "Kotak Mahindra Bank",
       "rel_nifty50": {
-        "1M": -1.6479,
-        "3M": 20.9698,
-        "YTD": 12.4843,
-        "1Y": 17.0865
+        "1M": 0.3821,
+        "3M": 21.7067,
+        "YTD": 13.9761,
+        "1Y": 20.551
       },
       "rel_nifty500": {
-        "1M": 2.7579,
-        "3M": 23.9167,
-        "YTD": 9.9521,
-        "1Y": 15.4464
+        "1M": 3.8317,
+        "3M": 24.3105,
+        "YTD": 10.7183,
+        "1Y": 18.055
       },
-      "momentum_label": "mixed"
+      "momentum_label": "outperforming"
     },
     "AXISBANK.NS": {
       "sector_id": "banks",
       "name": "Axis Bank",
       "rel_nifty50": {
-        "1M": -4.268,
-        "3M": 4.9869,
-        "YTD": 8.0747,
-        "1Y": 9.5633
+        "1M": -5.8956,
+        "3M": 6.1372,
+        "YTD": 8.2745,
+        "1Y": 11.4748
       },
       "rel_nifty500": {
-        "1M": 0.1378,
-        "3M": 7.9338,
-        "YTD": 5.5425,
-        "1Y": 7.9232
+        "1M": -2.446,
+        "3M": 8.741,
+        "YTD": 5.0167,
+        "1Y": 8.9788
       },
       "momentum_label": "mixed"
     },
@@ -339,16 +339,16 @@
       "sector_id": "banks",
       "name": "IndusInd Bank",
       "rel_nifty50": {
-        "1M": -6.6983,
-        "3M": -12.8053,
-        "YTD": 6.5213,
-        "1Y": 17.6575
+        "1M": -5.5574,
+        "3M": -13.6174,
+        "YTD": 6.5517,
+        "1Y": 8.7402
       },
       "rel_nifty500": {
-        "1M": -2.2925,
-        "3M": -9.8584,
-        "YTD": 3.9891,
-        "1Y": 16.0174
+        "1M": -2.1078,
+        "3M": -11.0136,
+        "YTD": 3.2939,
+        "1Y": 6.2442
       },
       "momentum_label": "underperforming"
     },
@@ -356,16 +356,16 @@
       "sector_id": "banks",
       "name": "Bandhan Bank",
       "rel_nifty50": {
-        "1M": -9.5056,
-        "3M": -8.1316,
-        "YTD": 18.7093,
-        "1Y": 9.7716
+        "1M": -8.5956,
+        "3M": -4.1509,
+        "YTD": 23.7389,
+        "1Y": 15.0046
       },
       "rel_nifty500": {
-        "1M": -5.0998,
-        "3M": -5.1847,
-        "YTD": 16.1771,
-        "1Y": 8.1315
+        "1M": -5.146,
+        "3M": -1.5471,
+        "YTD": 20.4811,
+        "1Y": 12.5086
       },
       "momentum_label": "underperforming"
     },
@@ -373,16 +373,16 @@
       "sector_id": "banks",
       "name": "Federal Bank",
       "rel_nifty50": {
-        "1M": -5.6074,
-        "3M": -6.4042,
-        "YTD": 32.0061,
-        "1Y": 46.0932
+        "1M": -1.7675,
+        "3M": -0.4473,
+        "YTD": 39.4013,
+        "1Y": 55.9206
       },
       "rel_nifty500": {
-        "1M": -1.2016,
-        "3M": -3.4573,
-        "YTD": 29.4739,
-        "1Y": 44.4531
+        "1M": 1.6821,
+        "3M": 2.1565,
+        "YTD": 36.1435,
+        "1Y": 53.4246
       },
       "momentum_label": "underperforming"
     },
@@ -390,16 +390,16 @@
       "sector_id": "banks",
       "name": "IDFC First Bank",
       "rel_nifty50": {
-        "1M": -13.5173,
-        "3M": -10.4859,
-        "YTD": -5.4028,
-        "1Y": -1.9034
+        "1M": -10.1303,
+        "3M": -10.3712,
+        "YTD": -3.2571,
+        "1Y": 2.2645
       },
       "rel_nifty500": {
-        "1M": -9.1115,
-        "3M": -7.539,
-        "YTD": -7.935,
-        "1Y": -3.5435
+        "1M": -6.6807,
+        "3M": -7.7674,
+        "YTD": -6.5149,
+        "1Y": -0.2315
       },
       "momentum_label": "underperforming"
     },
@@ -407,16 +407,16 @@
       "sector_id": "banks",
       "name": "AU Small Finance Bank",
       "rel_nifty50": {
-        "1M": -16.9397,
-        "3M": -14.5419,
-        "YTD": -2.4997,
-        "1Y": 7.6453
+        "1M": -14.3979,
+        "3M": -13.8144,
+        "YTD": 0.5864,
+        "1Y": 11.8955
       },
       "rel_nifty500": {
-        "1M": -12.5339,
-        "3M": -11.595,
-        "YTD": -5.0319,
-        "1Y": 6.0052
+        "1M": -10.9483,
+        "3M": -11.2106,
+        "YTD": -2.6714,
+        "1Y": 9.3995
       },
       "momentum_label": "underperforming"
     },
@@ -424,33 +424,33 @@
       "sector_id": "banks",
       "name": "Bank of Baroda",
       "rel_nifty50": {
-        "1M": -4.0196,
-        "3M": -2.0265,
-        "YTD": -12.5024,
-        "1Y": -10.7069
+        "1M": 8.4345,
+        "3M": 7.1273,
+        "YTD": -5.1144,
+        "1Y": -0.4827
       },
       "rel_nifty500": {
-        "1M": 0.3862,
-        "3M": 0.9204,
-        "YTD": -15.0346,
-        "1Y": -12.347
+        "1M": 11.8841,
+        "3M": 9.7311,
+        "YTD": -8.3722,
+        "1Y": -2.9787
       },
-      "momentum_label": "underperforming"
+      "momentum_label": "outperforming"
     },
     "CANBK.NS": {
       "sector_id": "banks",
       "name": "Canara Bank",
       "rel_nifty50": {
-        "1M": -7.5663,
-        "3M": -8.7068,
-        "YTD": -16.0305,
-        "1Y": -9.8345
+        "1M": -6.2168,
+        "3M": -3.4532,
+        "YTD": -11.2926,
+        "1Y": -5.9022
       },
       "rel_nifty500": {
-        "1M": -3.1605,
-        "3M": -5.7599,
-        "YTD": -18.5627,
-        "1Y": -11.4746
+        "1M": -2.7672,
+        "3M": -0.8494,
+        "YTD": -14.5504,
+        "1Y": -8.3982
       },
       "momentum_label": "underperforming"
     },
@@ -458,67 +458,67 @@
       "sector_id": "banks",
       "name": "Punjab National Bank",
       "rel_nifty50": {
-        "1M": -0.3016,
-        "3M": 8.3547,
-        "YTD": 6.3749,
-        "1Y": 6.9347
+        "1M": 9.3685,
+        "3M": 17.8312,
+        "YTD": 19.0583,
+        "1Y": 20.7961
       },
       "rel_nifty500": {
-        "1M": 4.1042,
-        "3M": 11.3016,
-        "YTD": 3.8427,
-        "1Y": 5.2946
+        "1M": 12.8181,
+        "3M": 20.435,
+        "YTD": 15.8005,
+        "1Y": 18.3001
       },
-      "momentum_label": "mixed"
+      "momentum_label": "outperforming"
     },
     "UNIONBANK.NS": {
       "sector_id": "banks",
       "name": "Union Bank of India",
       "rel_nifty50": {
-        "1M": -2.74,
-        "3M": -0.0191,
-        "YTD": 26.0296,
-        "1Y": 26.4212
+        "1M": 5.5204,
+        "3M": 5.1418,
+        "YTD": 36.0119,
+        "1Y": 36.4801
       },
       "rel_nifty500": {
-        "1M": 1.6658,
-        "3M": 2.9278,
-        "YTD": 23.4974,
-        "1Y": 24.7811
+        "1M": 8.97,
+        "3M": 7.7456,
+        "YTD": 32.7541,
+        "1Y": 33.9841
       },
-      "momentum_label": "underperforming"
+      "momentum_label": "outperforming"
     },
     "INDIANB.NS": {
       "sector_id": "banks",
       "name": "Indian Bank",
       "rel_nifty50": {
-        "1M": -1.8411,
-        "3M": -0.4656,
-        "YTD": 12.6043,
-        "1Y": 6.0602
+        "1M": -1.3282,
+        "3M": 1.0407,
+        "YTD": 15.8738,
+        "1Y": 10.1315
       },
       "rel_nifty500": {
-        "1M": 2.5647,
-        "3M": 2.4813,
-        "YTD": 10.0721,
-        "1Y": 4.4201
+        "1M": 2.1214,
+        "3M": 3.6445,
+        "YTD": 12.616,
+        "1Y": 7.6355
       },
-      "momentum_label": "underperforming"
+      "momentum_label": "mixed"
     },
     "YESBANK.NS": {
       "sector_id": "banks",
       "name": "Yes Bank",
       "rel_nifty50": {
-        "1M": -28.0067,
-        "3M": -26.0666,
-        "YTD": -15.6938,
-        "1Y": -22.1156
+        "1M": -28.9765,
+        "3M": -26.3526,
+        "YTD": -15.1058,
+        "1Y": -19.6694
       },
       "rel_nifty500": {
-        "1M": -23.6009,
-        "3M": -23.1197,
-        "YTD": -18.226,
-        "1Y": -23.7557
+        "1M": -25.5269,
+        "3M": -23.7488,
+        "YTD": -18.3636,
+        "1Y": -22.1654
       },
       "momentum_label": "underperforming"
     },
@@ -526,16 +526,16 @@
       "sector_id": "banks",
       "name": "RBL Bank",
       "rel_nifty50": {
-        "1M": -18.7485,
-        "3M": -4.6415,
-        "YTD": 24.472,
-        "1Y": 18.2796
+        "1M": -11.2111,
+        "3M": -2.9994,
+        "YTD": 26.177,
+        "1Y": 25.1251
       },
       "rel_nifty500": {
-        "1M": -14.3427,
-        "3M": -1.6946,
-        "YTD": 21.9398,
-        "1Y": 16.6395
+        "1M": -7.7615,
+        "3M": -0.3956,
+        "YTD": 22.9192,
+        "1Y": 22.6291
       },
       "momentum_label": "underperforming"
     },
@@ -543,16 +543,16 @@
       "sector_id": "banks",
       "name": "Karur Vysya Bank",
       "rel_nifty50": {
-        "1M": 1.3636,
-        "3M": 8.4107,
-        "YTD": 41.6298,
-        "1Y": 51.873
+        "1M": 0.6632,
+        "3M": 11.8171,
+        "YTD": 45.4627,
+        "1Y": 54.3444
       },
       "rel_nifty500": {
-        "1M": 5.7694,
-        "3M": 11.3576,
-        "YTD": 39.0976,
-        "1Y": 50.2329
+        "1M": 4.1128,
+        "3M": 14.4209,
+        "YTD": 42.2049,
+        "1Y": 51.8484
       },
       "momentum_label": "outperforming"
     },
@@ -560,67 +560,67 @@
       "sector_id": "it",
       "name": "Tata Consultancy Services",
       "rel_nifty50": {
-        "1M": 9.3641,
-        "3M": -0.0036,
-        "YTD": -18.3157,
-        "1Y": -15.1391
+        "1M": -6.6949,
+        "3M": -1.2247,
+        "YTD": -21.5711,
+        "1Y": -19.6417
       },
       "rel_nifty500": {
-        "1M": 13.7699,
-        "3M": 2.9433,
-        "YTD": -20.8479,
-        "1Y": -16.7792
+        "1M": -3.2453,
+        "3M": 1.3791,
+        "YTD": -24.8289,
+        "1Y": -22.1377
       },
-      "momentum_label": "mixed"
+      "momentum_label": "underperforming"
     },
     "INFY.NS": {
       "sector_id": "it",
       "name": "Infosys",
       "rel_nifty50": {
-        "1M": 8.3539,
-        "3M": -1.3348,
-        "YTD": -23.2436,
-        "1Y": -17.5727
+        "1M": -6.229,
+        "3M": -5.5633,
+        "YTD": -26.1275,
+        "1Y": -23.1237
       },
       "rel_nifty500": {
-        "1M": 12.7597,
-        "3M": 1.6121,
-        "YTD": -25.7758,
-        "1Y": -19.2128
+        "1M": -2.7794,
+        "3M": -2.9595,
+        "YTD": -29.3853,
+        "1Y": -25.6197
       },
-      "momentum_label": "mixed"
+      "momentum_label": "underperforming"
     },
     "HCLTECH.NS": {
       "sector_id": "it",
       "name": "HCL Technologies",
       "rel_nifty50": {
-        "1M": 10.7802,
-        "3M": 4.2768,
-        "YTD": -7.6307,
-        "1Y": -3.7813
+        "1M": -7.303,
+        "3M": -1.8707,
+        "YTD": -11.8597,
+        "1Y": -10.9547
       },
       "rel_nifty500": {
-        "1M": 15.186,
-        "3M": 7.2237,
-        "YTD": -10.1629,
-        "1Y": -5.4214
+        "1M": -3.8534,
+        "3M": 0.7331,
+        "YTD": -15.1175,
+        "1Y": -13.4507
       },
-      "momentum_label": "outperforming"
+      "momentum_label": "underperforming"
     },
     "WIPRO.NS": {
       "sector_id": "it",
       "name": "Wipro",
       "rel_nifty50": {
-        "1M": 13.3213,
-        "3M": 3.7122,
-        "YTD": -21.6708,
-        "1Y": -15.6381
+        "1M": 2.7081,
+        "3M": 2.5667,
+        "YTD": -23.3783,
+        "1Y": -17.8388
       },
       "rel_nifty500": {
-        "1M": 17.7271,
-        "3M": 6.6591,
-        "YTD": -24.203,
-        "1Y": -17.2782
+        "1M": 6.1577,
+        "3M": 5.1705,
+        "YTD": -26.6361,
+        "1Y": -20.3348
       },
       "momentum_label": "outperforming"
     },
@@ -628,16 +628,16 @@
       "sector_id": "it",
       "name": "Tech Mahindra",
       "rel_nifty50": {
-        "1M": 12.0565,
-        "3M": 10.1169,
-        "YTD": 18.1584,
-        "1Y": 31.4065
+        "1M": 0.8395,
+        "3M": 4.8411,
+        "YTD": 13.5552,
+        "1Y": 24.3773
       },
       "rel_nifty500": {
-        "1M": 16.4623,
-        "3M": 13.0638,
-        "YTD": 15.6262,
-        "1Y": 29.7664
+        "1M": 4.2891,
+        "3M": 7.4449,
+        "YTD": 10.2974,
+        "1Y": 21.8813
       },
       "momentum_label": "outperforming"
     },
@@ -645,16 +645,16 @@
       "sector_id": "it",
       "name": "LTIMindtree",
       "rel_nifty50": {
-        "1M": -0.3571,
-        "3M": -8.7428,
-        "YTD": -24.7559,
-        "1Y": -21.3693
+        "1M": -10.4293,
+        "3M": -12.9206,
+        "YTD": -26.5267,
+        "1Y": -24.3642
       },
       "rel_nifty500": {
-        "1M": 4.0487,
-        "3M": -5.7959,
-        "YTD": -27.2881,
-        "1Y": -23.0094
+        "1M": -6.9797,
+        "3M": -10.3168,
+        "YTD": -29.7845,
+        "1Y": -26.8602
       },
       "momentum_label": "underperforming"
     },
@@ -662,16 +662,16 @@
       "sector_id": "it",
       "name": "Persistent Systems",
       "rel_nifty50": {
-        "1M": -0.8151,
-        "3M": 8.6953,
-        "YTD": 0.624,
-        "1Y": 5.4994
+        "1M": -9.366,
+        "3M": 4.3864,
+        "YTD": -0.6157,
+        "1Y": 0.656
       },
       "rel_nifty500": {
-        "1M": 3.5907,
-        "3M": 11.6422,
-        "YTD": -1.9082,
-        "1Y": 3.8593
+        "1M": -5.9164,
+        "3M": 6.9902,
+        "YTD": -3.8735,
+        "1Y": -1.84
       },
       "momentum_label": "mixed"
     },
@@ -679,33 +679,33 @@
       "sector_id": "it",
       "name": "Coforge",
       "rel_nifty50": {
-        "1M": 3.1894,
-        "3M": 15.021,
-        "YTD": 29.6465,
-        "1Y": 19.5728
+        "1M": -5.9596,
+        "3M": 8.7263,
+        "YTD": 26.3118,
+        "1Y": 14.8713
       },
       "rel_nifty500": {
-        "1M": 7.5952,
-        "3M": 17.9679,
-        "YTD": 27.1143,
-        "1Y": 17.9327
+        "1M": -2.51,
+        "3M": 11.3301,
+        "YTD": 23.054,
+        "1Y": 12.3753
       },
-      "momentum_label": "outperforming"
+      "momentum_label": "mixed"
     },
     "MPHASIS.NS": {
       "sector_id": "it",
       "name": "Mphasis",
       "rel_nifty50": {
-        "1M": -0.6471,
-        "3M": -0.0527,
-        "YTD": -6.641,
-        "1Y": -7.2741
+        "1M": -10.3374,
+        "3M": -6.7305,
+        "YTD": -9.3748,
+        "1Y": -10.1655
       },
       "rel_nifty500": {
-        "1M": 3.7587,
-        "3M": 2.8942,
-        "YTD": -9.1732,
-        "1Y": -8.9142
+        "1M": -6.8878,
+        "3M": -4.1267,
+        "YTD": -12.6326,
+        "1Y": -12.6615
       },
       "momentum_label": "underperforming"
     },
@@ -713,33 +713,33 @@
       "sector_id": "it",
       "name": "Tata Elxsi",
       "rel_nifty50": {
-        "1M": 14.322,
-        "3M": 0.0863,
-        "YTD": -21.76,
-        "1Y": -24.5873
+        "1M": -5.2977,
+        "3M": -1.5429,
+        "YTD": -22.5795,
+        "1Y": -24.9043
       },
       "rel_nifty500": {
-        "1M": 18.7278,
-        "3M": 3.0332,
-        "YTD": -24.2922,
-        "1Y": -26.2274
+        "1M": -1.8481,
+        "3M": 1.0609,
+        "YTD": -25.8373,
+        "1Y": -27.4003
       },
-      "momentum_label": "outperforming"
+      "momentum_label": "underperforming"
     },
     "OFSS.NS": {
       "sector_id": "it",
       "name": "Oracle Financial Services Software",
       "rel_nifty50": {
-        "1M": -14.1522,
-        "3M": -15.3398,
-        "YTD": 37.147,
-        "1Y": 26.2627
+        "1M": -16.0215,
+        "3M": -19.3931,
+        "YTD": 32.7698,
+        "1Y": 22.2108
       },
       "rel_nifty500": {
-        "1M": -9.7464,
-        "3M": -12.3929,
-        "YTD": 34.6148,
-        "1Y": 24.6226
+        "1M": -12.5719,
+        "3M": -16.7893,
+        "YTD": 29.512,
+        "1Y": 19.7148
       },
       "momentum_label": "underperforming"
     },
@@ -747,33 +747,33 @@
       "sector_id": "it",
       "name": "KPIT Technologies",
       "rel_nifty50": {
-        "1M": 0.8668,
-        "3M": -16.0716,
-        "YTD": -49.2687,
-        "1Y": -51.4982
+        "1M": -5.7626,
+        "3M": -13.2919,
+        "YTD": -48.7115,
+        "1Y": -52.5977
       },
       "rel_nifty500": {
-        "1M": 5.2726,
-        "3M": -13.1247,
-        "YTD": -51.8009,
-        "1Y": -53.1383
+        "1M": -2.313,
+        "3M": -10.6881,
+        "YTD": -51.9693,
+        "1Y": -55.0937
       },
-      "momentum_label": "mixed"
+      "momentum_label": "underperforming"
     },
     "MARUTI.NS": {
       "sector_id": "auto",
       "name": "Maruti Suzuki India",
       "rel_nifty50": {
-        "1M": 0.6149,
-        "3M": -11.0395,
-        "YTD": -19.4203,
-        "1Y": -15.6073
+        "1M": 3.8474,
+        "3M": -10.2782,
+        "YTD": -19.2336,
+        "1Y": -15.5426
       },
       "rel_nifty500": {
-        "1M": 5.0207,
-        "3M": -8.0926,
-        "YTD": -21.9525,
-        "1Y": -17.2474
+        "1M": 7.297,
+        "3M": -7.6744,
+        "YTD": -22.4914,
+        "1Y": -18.0386
       },
       "momentum_label": "mixed"
     },
@@ -781,16 +781,16 @@
       "sector_id": "auto",
       "name": "Mahindra & Mahindra",
       "rel_nifty50": {
-        "1M": 6.6612,
-        "3M": -8.0045,
-        "YTD": -8.3287,
-        "1Y": -7.2766
+        "1M": 8.1579,
+        "3M": -5.974,
+        "YTD": -7.5468,
+        "1Y": -7.0672
       },
       "rel_nifty500": {
-        "1M": 11.067,
-        "3M": -5.0576,
-        "YTD": -10.8609,
-        "1Y": -8.9167
+        "1M": 11.6075,
+        "3M": -3.3702,
+        "YTD": -10.8046,
+        "1Y": -9.5632
       },
       "momentum_label": "mixed"
     },
@@ -798,16 +798,16 @@
       "sector_id": "auto",
       "name": "Tata Motors Passenger Vehicles",
       "rel_nifty50": {
-        "1M": -7.5586,
-        "3M": -17.721,
-        "YTD": -16.286,
-        "1Y": -26.526
+        "1M": -9.8778,
+        "3M": -17.2749,
+        "YTD": -17.9734,
+        "1Y": -24.9404
       },
       "rel_nifty500": {
-        "1M": -3.1528,
-        "3M": -14.7741,
-        "YTD": -18.8182,
-        "1Y": -28.1661
+        "1M": -6.4282,
+        "3M": -14.6711,
+        "YTD": -21.2312,
+        "1Y": -27.4364
       },
       "momentum_label": "underperforming"
     },
@@ -815,16 +815,16 @@
       "sector_id": "auto",
       "name": "Bajaj Auto",
       "rel_nifty50": {
-        "1M": -0.4596,
-        "3M": -8.4049,
-        "YTD": 18.3096,
-        "1Y": 26.8719
+        "1M": -5.2926,
+        "3M": -10.4592,
+        "YTD": 17.3507,
+        "1Y": 25.1964
       },
       "rel_nifty500": {
-        "1M": 3.9462,
-        "3M": -5.458,
-        "YTD": 15.7774,
-        "1Y": 25.2318
+        "1M": -1.843,
+        "3M": -7.8554,
+        "YTD": 14.0929,
+        "1Y": 22.7004
       },
       "momentum_label": "underperforming"
     },
@@ -832,16 +832,16 @@
       "sector_id": "auto",
       "name": "Hero MotoCorp",
       "rel_nifty50": {
-        "1M": -0.5669,
-        "3M": -5.574,
-        "YTD": -1.3546,
-        "1Y": 5.3902
+        "1M": -3.8647,
+        "3M": -10.189,
+        "YTD": -3.9816,
+        "1Y": 0.5975
       },
       "rel_nifty500": {
-        "1M": 3.8389,
-        "3M": -2.6271,
-        "YTD": -3.8868,
-        "1Y": 3.7501
+        "1M": -0.4151,
+        "3M": -7.5852,
+        "YTD": -7.2394,
+        "1Y": -1.8985
       },
       "momentum_label": "underperforming"
     },
@@ -849,16 +849,16 @@
       "sector_id": "auto",
       "name": "Eicher Motors",
       "rel_nifty50": {
-        "1M": -0.5448,
-        "3M": -6.2412,
-        "YTD": 8.6443,
-        "1Y": 14.5582
+        "1M": -3.1336,
+        "3M": -8.3575,
+        "YTD": 7.9432,
+        "1Y": 14.4369
       },
       "rel_nifty500": {
-        "1M": 3.861,
-        "3M": -3.2943,
-        "YTD": 6.1121,
-        "1Y": 12.9181
+        "1M": 0.316,
+        "3M": -5.7537,
+        "YTD": 4.6854,
+        "1Y": 11.9409
       },
       "momentum_label": "underperforming"
     },
@@ -866,33 +866,33 @@
       "sector_id": "auto",
       "name": "TVS Motor Company",
       "rel_nifty50": {
-        "1M": 3.6703,
-        "3M": -0.727,
-        "YTD": 22.6461,
-        "1Y": 32.1942
+        "1M": 2.0864,
+        "3M": 1.1708,
+        "YTD": 22.2973,
+        "1Y": 33.1067
       },
       "rel_nifty500": {
-        "1M": 8.0761,
-        "3M": 2.2199,
-        "YTD": 20.1139,
-        "1Y": 30.5541
+        "1M": 5.536,
+        "3M": 3.7746,
+        "YTD": 19.0395,
+        "1Y": 30.6107
       },
-      "momentum_label": "mixed"
+      "momentum_label": "outperforming"
     },
     "ASHOKLEY.NS": {
       "sector_id": "auto",
       "name": "Ashok Leyland",
       "rel_nifty50": {
-        "1M": 4.603,
-        "3M": -4.9188,
-        "YTD": -2.649,
-        "1Y": 23.73
+        "1M": 5.5434,
+        "3M": -4.6158,
+        "YTD": -4.648,
+        "1Y": 15.332
       },
       "rel_nifty500": {
-        "1M": 9.0088,
-        "3M": -1.9719,
-        "YTD": -5.1812,
-        "1Y": 22.0899
+        "1M": 8.993,
+        "3M": -2.012,
+        "YTD": -7.9058,
+        "1Y": 12.836
       },
       "momentum_label": "mixed"
     },
@@ -900,16 +900,16 @@
       "sector_id": "auto",
       "name": "Bharat Forge",
       "rel_nifty50": {
-        "1M": -16.266,
-        "3M": -25.0565,
-        "YTD": 23.089,
-        "1Y": 33.7273
+        "1M": -15.9483,
+        "3M": -18.4242,
+        "YTD": 23.3702,
+        "1Y": 28.8836
       },
       "rel_nifty500": {
-        "1M": -11.8602,
-        "3M": -22.1096,
-        "YTD": 20.5568,
-        "1Y": 32.0872
+        "1M": -12.4987,
+        "3M": -15.8204,
+        "YTD": 20.1124,
+        "1Y": 26.3876
       },
       "momentum_label": "underperforming"
     },
@@ -917,16 +917,16 @@
       "sector_id": "auto",
       "name": "Samvardhana Motherson International",
       "rel_nifty50": {
-        "1M": -11.1471,
-        "3M": -7.7759,
-        "YTD": 33.6764,
-        "1Y": 54.4484
+        "1M": -8.0174,
+        "3M": -5.2738,
+        "YTD": 38.3419,
+        "1Y": 53.8521
       },
       "rel_nifty500": {
-        "1M": -6.7413,
-        "3M": -4.829,
-        "YTD": 31.1442,
-        "1Y": 52.8083
+        "1M": -4.5678,
+        "3M": -2.67,
+        "YTD": 35.0841,
+        "1Y": 51.3561
       },
       "momentum_label": "underperforming"
     },
@@ -934,33 +934,33 @@
       "sector_id": "auto",
       "name": "Bosch India",
       "rel_nifty50": {
-        "1M": 3.4247,
-        "3M": 16.1733,
-        "YTD": 44.5568,
-        "1Y": 38.8321
+        "1M": -1.3907,
+        "3M": 1.6678,
+        "YTD": 40.4962,
+        "1Y": 34.9513
       },
       "rel_nifty500": {
-        "1M": 7.8305,
-        "3M": 19.1202,
-        "YTD": 42.0246,
-        "1Y": 37.192
+        "1M": 2.0589,
+        "3M": 4.2716,
+        "YTD": 37.2384,
+        "1Y": 32.4553
       },
-      "momentum_label": "outperforming"
+      "momentum_label": "mixed"
     },
     "EXIDEIND.NS": {
       "sector_id": "auto",
       "name": "Exide Industries",
       "rel_nifty50": {
-        "1M": -22.0553,
-        "3M": -28.9423,
-        "YTD": 2.6448,
-        "1Y": -4.0443
+        "1M": -13.77,
+        "3M": -24.8493,
+        "YTD": 6.5173,
+        "1Y": 1.0749
       },
       "rel_nifty500": {
-        "1M": -17.6495,
-        "3M": -25.9954,
-        "YTD": 0.1126,
-        "1Y": -5.6844
+        "1M": -10.3204,
+        "3M": -22.2455,
+        "YTD": 3.2595,
+        "1Y": -1.4211
       },
       "momentum_label": "underperforming"
     },
@@ -968,16 +968,16 @@
       "sector_id": "fmcg",
       "name": "Hindustan Unilever",
       "rel_nifty50": {
-        "1M": -3.609,
-        "3M": -6.5274,
-        "YTD": -9.7043,
-        "1Y": -16.0848
+        "1M": -6.0078,
+        "3M": -7.2433,
+        "YTD": -10.3769,
+        "1Y": -14.3851
       },
       "rel_nifty500": {
-        "1M": 0.7968,
-        "3M": -3.5805,
-        "YTD": -12.2365,
-        "1Y": -17.7249
+        "1M": -2.5582,
+        "3M": -4.6395,
+        "YTD": -13.6347,
+        "1Y": -16.8811
       },
       "momentum_label": "underperforming"
     },
@@ -985,16 +985,16 @@
       "sector_id": "fmcg",
       "name": "ITC",
       "rel_nifty50": {
-        "1M": -4.1712,
-        "3M": -2.902,
-        "YTD": -17.9105,
-        "1Y": -28.6362
+        "1M": -2.1597,
+        "3M": -0.7499,
+        "YTD": -17.8378,
+        "1Y": -26.9115
       },
       "rel_nifty500": {
-        "1M": 0.2346,
-        "3M": 0.0449,
-        "YTD": -20.4427,
-        "1Y": -30.2763
+        "1M": 1.2899,
+        "3M": 1.8539,
+        "YTD": -21.0956,
+        "1Y": -29.4075
       },
       "momentum_label": "underperforming"
     },
@@ -1002,16 +1002,16 @@
       "sector_id": "fmcg",
       "name": "Nestle India",
       "rel_nifty50": {
-        "1M": -13.9035,
-        "3M": -18.6177,
-        "YTD": 3.2729,
-        "1Y": 3.1428
+        "1M": -19.8218,
+        "3M": -18.9303,
+        "YTD": 1.3776,
+        "1Y": 1.8985
       },
       "rel_nifty500": {
-        "1M": -9.4977,
-        "3M": -15.6708,
-        "YTD": 0.7407,
-        "1Y": 1.5027
+        "1M": -16.3722,
+        "3M": -16.3265,
+        "YTD": -1.8802,
+        "1Y": -0.5975
       },
       "momentum_label": "underperforming"
     },
@@ -1019,16 +1019,16 @@
       "sector_id": "fmcg",
       "name": "Britannia Industries",
       "rel_nifty50": {
-        "1M": -10.6342,
-        "3M": -15.0288,
-        "YTD": -16.1071,
-        "1Y": -18.5499
+        "1M": -14.7482,
+        "3M": -17.7228,
+        "YTD": -17.117,
+        "1Y": -15.9762
       },
       "rel_nifty500": {
-        "1M": -6.2284,
-        "3M": -12.0819,
-        "YTD": -18.6393,
-        "1Y": -20.19
+        "1M": -11.2986,
+        "3M": -15.119,
+        "YTD": -20.3748,
+        "1Y": -18.4722
       },
       "momentum_label": "underperforming"
     },
@@ -1036,33 +1036,33 @@
       "sector_id": "fmcg",
       "name": "Tata Consumer Products",
       "rel_nifty50": {
-        "1M": 1.4243,
-        "3M": -1.5013,
-        "YTD": -3.4292,
-        "1Y": -6.8659
+        "1M": -1.9247,
+        "3M": -3.2405,
+        "YTD": -4.4853,
+        "1Y": -3.7244
       },
       "rel_nifty500": {
-        "1M": 5.8301,
-        "3M": 1.4456,
-        "YTD": -5.9614,
-        "1Y": -8.506
+        "1M": 1.5249,
+        "3M": -0.6367,
+        "YTD": -7.7431,
+        "1Y": -6.2204
       },
-      "momentum_label": "mixed"
+      "momentum_label": "underperforming"
     },
     "DABUR.NS": {
       "sector_id": "fmcg",
       "name": "Dabur India",
       "rel_nifty50": {
-        "1M": -11.5731,
-        "3M": -9.1026,
-        "YTD": -19.6534,
-        "1Y": -25.4934
+        "1M": -13.1803,
+        "3M": -9.3015,
+        "YTD": -20.0592,
+        "1Y": -24.2957
       },
       "rel_nifty500": {
-        "1M": -7.1673,
-        "3M": -6.1557,
-        "YTD": -22.1856,
-        "1Y": -27.1335
+        "1M": -9.7307,
+        "3M": -6.6977,
+        "YTD": -23.317,
+        "1Y": -26.7917
       },
       "momentum_label": "underperforming"
     },
@@ -1070,16 +1070,16 @@
       "sector_id": "fmcg",
       "name": "Marico",
       "rel_nifty50": {
-        "1M": 3.2974,
-        "3M": 2.2764,
-        "YTD": 22.3241,
-        "1Y": 27.7643
+        "1M": 2.7778,
+        "3M": 0.828,
+        "YTD": 22.1842,
+        "1Y": 27.4932
       },
       "rel_nifty500": {
-        "1M": 7.7032,
-        "3M": 5.2233,
-        "YTD": 19.7919,
-        "1Y": 26.1242
+        "1M": 6.2274,
+        "3M": 3.4318,
+        "YTD": 18.9264,
+        "1Y": 24.9972
       },
       "momentum_label": "outperforming"
     },
@@ -1087,16 +1087,16 @@
       "sector_id": "fmcg",
       "name": "Godrej Consumer Products",
       "rel_nifty50": {
-        "1M": -12.4198,
-        "3M": -20.8233,
-        "YTD": -27.2896,
-        "1Y": -23.8626
+        "1M": -11.2094,
+        "3M": -9.9961,
+        "YTD": -26.137,
+        "1Y": -20.3341
       },
       "rel_nifty500": {
-        "1M": -8.014,
-        "3M": -17.8764,
-        "YTD": -29.8218,
-        "1Y": -25.5027
+        "1M": -7.7598,
+        "3M": -7.3923,
+        "YTD": -29.3948,
+        "1Y": -22.8301
       },
       "momentum_label": "underperforming"
     },
@@ -1104,16 +1104,16 @@
       "sector_id": "fmcg",
       "name": "Colgate-Palmolive India",
       "rel_nifty50": {
-        "1M": -15.1999,
-        "3M": -19.1615,
-        "YTD": -15.5419,
-        "1Y": -20.8758
+        "1M": -17.3005,
+        "3M": -16.6722,
+        "YTD": -14.3061,
+        "1Y": -18.3197
       },
       "rel_nifty500": {
-        "1M": -10.7941,
-        "3M": -16.2146,
-        "YTD": -18.0741,
-        "1Y": -22.5159
+        "1M": -13.8509,
+        "3M": -14.0684,
+        "YTD": -17.5639,
+        "1Y": -20.8157
       },
       "momentum_label": "underperforming"
     },
@@ -1121,16 +1121,16 @@
       "sector_id": "fmcg",
       "name": "United Spirits",
       "rel_nifty50": {
-        "1M": -5.2328,
-        "3M": -8.1126,
-        "YTD": 5.2518,
-        "1Y": 1.985
+        "1M": -8.5985,
+        "3M": -10.9546,
+        "YTD": 4.7305,
+        "1Y": 2.558
       },
       "rel_nifty500": {
-        "1M": -0.827,
-        "3M": -5.1657,
-        "YTD": 2.7196,
-        "1Y": 0.3449
+        "1M": -5.1489,
+        "3M": -8.3508,
+        "YTD": 1.4727,
+        "1Y": 0.062
       },
       "momentum_label": "underperforming"
     },
@@ -1138,16 +1138,16 @@
       "sector_id": "fmcg",
       "name": "Emami",
       "rel_nifty50": {
-        "1M": -7.6092,
-        "3M": -8.0156,
-        "YTD": -21.9716,
-        "1Y": -24.0865
+        "1M": -3.2404,
+        "3M": -2.004,
+        "YTD": -18.4261,
+        "1Y": -19.0104
       },
       "rel_nifty500": {
-        "1M": -3.2034,
-        "3M": -5.0687,
-        "YTD": -24.5038,
-        "1Y": -25.7266
+        "1M": 0.2092,
+        "3M": 0.5998,
+        "YTD": -21.6839,
+        "1Y": -21.5064
       },
       "momentum_label": "underperforming"
     },
@@ -1155,16 +1155,16 @@
       "sector_id": "fmcg",
       "name": "Varun Beverages",
       "rel_nifty50": {
-        "1M": -11.3627,
-        "3M": -2.7759,
-        "YTD": -6.6614,
-        "1Y": -5.2948
+        "1M": -13.3715,
+        "3M": -3.6999,
+        "YTD": -8.1546,
+        "1Y": -1.6197
       },
       "rel_nifty500": {
-        "1M": -6.9569,
-        "3M": 0.171,
-        "YTD": -9.1936,
-        "1Y": -6.9349
+        "1M": -9.9219,
+        "3M": -1.0961,
+        "YTD": -11.4124,
+        "1Y": -4.1157
       },
       "momentum_label": "underperforming"
     },
@@ -1172,16 +1172,16 @@
       "sector_id": "pharma",
       "name": "Sun Pharmaceutical Industries",
       "rel_nifty50": {
-        "1M": -6.3031,
-        "3M": -6.2411,
-        "YTD": 12.3394,
-        "1Y": 12.2059
+        "1M": -3.4963,
+        "3M": -5.7849,
+        "YTD": 13.0657,
+        "1Y": 11.0472
       },
       "rel_nifty500": {
-        "1M": -1.8973,
-        "3M": -3.2942,
-        "YTD": 9.8072,
-        "1Y": 10.5658
+        "1M": -0.0467,
+        "3M": -3.1811,
+        "YTD": 9.8079,
+        "1Y": 8.5512
       },
       "momentum_label": "underperforming"
     },
@@ -1189,16 +1189,16 @@
       "sector_id": "pharma",
       "name": "Dr. Reddy's Laboratories",
       "rel_nifty50": {
-        "1M": 3.3167,
-        "3M": 15.2793,
-        "YTD": 13.811,
-        "1Y": 15.8021
+        "1M": 2.3405,
+        "3M": 11.8058,
+        "YTD": 13.9337,
+        "1Y": 14.5894
       },
       "rel_nifty500": {
-        "1M": 7.7225,
-        "3M": 18.2262,
-        "YTD": 11.2788,
-        "1Y": 14.162
+        "1M": 5.7901,
+        "3M": 14.4096,
+        "YTD": 10.6759,
+        "1Y": 12.0934
       },
       "momentum_label": "outperforming"
     },
@@ -1206,16 +1206,16 @@
       "sector_id": "pharma",
       "name": "Cipla",
       "rel_nifty50": {
-        "1M": -4.4248,
-        "3M": -5.478,
-        "YTD": -1.7207,
-        "1Y": -4.1482
+        "1M": -5.2738,
+        "3M": -7.208,
+        "YTD": -3.4358,
+        "1Y": -5.9428
       },
       "rel_nifty500": {
-        "1M": -0.019,
-        "3M": -2.5311,
-        "YTD": -4.2529,
-        "1Y": -5.7883
+        "1M": -1.8242,
+        "3M": -4.6042,
+        "YTD": -6.6936,
+        "1Y": -8.4388
       },
       "momentum_label": "underperforming"
     },
@@ -1223,33 +1223,33 @@
       "sector_id": "pharma",
       "name": "Divi's Laboratories",
       "rel_nifty50": {
-        "1M": -3.099,
-        "3M": 22.8481,
-        "YTD": 66.9503,
-        "1Y": 51.8101
+        "1M": 15.663,
+        "3M": 31.7828,
+        "YTD": 84.1926,
+        "1Y": 76.374
       },
       "rel_nifty500": {
-        "1M": 1.3068,
-        "3M": 25.795,
-        "YTD": 64.4181,
-        "1Y": 50.17
+        "1M": 19.1126,
+        "3M": 34.3866,
+        "YTD": 80.9348,
+        "1Y": 73.878
       },
-      "momentum_label": "mixed"
+      "momentum_label": "outperforming"
     },
     "APOLLOHOSP.NS": {
       "sector_id": "pharma",
       "name": "Apollo Hospitals Enterprise",
       "rel_nifty50": {
-        "1M": -4.057,
-        "3M": -7.4494,
-        "YTD": 23.0344,
-        "1Y": 10.4116
+        "1M": -2.1739,
+        "3M": -7.6166,
+        "YTD": 23.7235,
+        "1Y": 17.4286
       },
       "rel_nifty500": {
-        "1M": 0.3488,
-        "3M": -4.5025,
-        "YTD": 20.5022,
-        "1Y": 8.7715
+        "1M": 1.2757,
+        "3M": -5.0128,
+        "YTD": 20.4657,
+        "1Y": 14.9326
       },
       "momentum_label": "underperforming"
     },
@@ -1257,16 +1257,16 @@
       "sector_id": "pharma",
       "name": "Max Healthcare Institute",
       "rel_nifty50": {
-        "1M": -7.8754,
-        "3M": -14.5812,
-        "YTD": -6.7278,
-        "1Y": -15.1282
+        "1M": -0.0495,
+        "3M": -9.2918,
+        "YTD": -5.9152,
+        "1Y": -10.9037
       },
       "rel_nifty500": {
-        "1M": -3.4696,
-        "3M": -11.6343,
-        "YTD": -9.26,
-        "1Y": -16.7683
+        "1M": 3.4001,
+        "3M": -6.688,
+        "YTD": -9.173,
+        "1Y": -13.3997
       },
       "momentum_label": "underperforming"
     },
@@ -1274,16 +1274,16 @@
       "sector_id": "pharma",
       "name": "Torrent Pharmaceuticals",
       "rel_nifty50": {
-        "1M": -10.0221,
-        "3M": -5.4046,
-        "YTD": 27.6969,
-        "1Y": 35.5539
+        "1M": -9.1812,
+        "3M": -6.5668,
+        "YTD": 25.1823,
+        "1Y": 24.8959
       },
       "rel_nifty500": {
-        "1M": -5.6163,
-        "3M": -2.4577,
-        "YTD": 25.1647,
-        "1Y": 33.9138
+        "1M": -5.7316,
+        "3M": -3.963,
+        "YTD": 21.9245,
+        "1Y": 22.3999
       },
       "momentum_label": "underperforming"
     },
@@ -1291,16 +1291,16 @@
       "sector_id": "pharma",
       "name": "Lupin",
       "rel_nifty50": {
-        "1M": -11.9709,
-        "3M": -17.7541,
-        "YTD": -1.1856,
-        "1Y": 3.5462
+        "1M": -9.7588,
+        "3M": -14.5902,
+        "YTD": -1.9924,
+        "1Y": -0.697
       },
       "rel_nifty500": {
-        "1M": -7.5651,
-        "3M": -14.8072,
-        "YTD": -3.7178,
-        "1Y": 1.9061
+        "1M": -6.3092,
+        "3M": -11.9864,
+        "YTD": -5.2502,
+        "1Y": -3.193
       },
       "momentum_label": "underperforming"
     },
@@ -1308,16 +1308,16 @@
       "sector_id": "pharma",
       "name": "Aurobindo Pharma",
       "rel_nifty50": {
-        "1M": -3.7233,
-        "3M": 6.6936,
-        "YTD": 55.1491,
-        "1Y": 59.6908
+        "1M": -1.5065,
+        "3M": 9.2033,
+        "YTD": 56.658,
+        "1Y": 53.4923
       },
       "rel_nifty500": {
-        "1M": 0.6825,
-        "3M": 9.6405,
-        "YTD": 52.6169,
-        "1Y": 58.0507
+        "1M": 1.9431,
+        "3M": 11.8071,
+        "YTD": 53.4002,
+        "1Y": 50.9963
       },
       "momentum_label": "mixed"
     },
@@ -1325,16 +1325,16 @@
       "sector_id": "pharma",
       "name": "Biocon",
       "rel_nifty50": {
-        "1M": -9.3221,
-        "3M": -16.237,
-        "YTD": -1.5724,
-        "1Y": -3.339
+        "1M": -7.31,
+        "3M": -15.892,
+        "YTD": -2.279,
+        "1Y": -9.8583
       },
       "rel_nifty500": {
-        "1M": -4.9163,
-        "3M": -13.2901,
-        "YTD": -4.1046,
-        "1Y": -4.9791
+        "1M": -3.8604,
+        "3M": -13.2882,
+        "YTD": -5.5368,
+        "1Y": -12.3543
       },
       "momentum_label": "underperforming"
     },
@@ -1342,16 +1342,16 @@
       "sector_id": "pharma",
       "name": "Zydus Lifesciences",
       "rel_nifty50": {
-        "1M": -6.8446,
-        "3M": 5.6412,
-        "YTD": 35.1799,
-        "1Y": 29.7642
+        "1M": -5.3492,
+        "3M": 1.6243,
+        "YTD": 33.8698,
+        "1Y": 28.8682
       },
       "rel_nifty500": {
-        "1M": -2.4388,
-        "3M": 8.5881,
-        "YTD": 32.6477,
-        "1Y": 28.1241
+        "1M": -1.8996,
+        "3M": 4.2281,
+        "YTD": 30.612,
+        "1Y": 26.3722
       },
       "momentum_label": "mixed"
     },
@@ -1359,16 +1359,16 @@
       "sector_id": "pharma",
       "name": "Alkem Laboratories",
       "rel_nifty50": {
-        "1M": -11.7387,
-        "3M": -7.6182,
-        "YTD": 1.2215,
-        "1Y": -4.2607
+        "1M": -12.8191,
+        "3M": -7.9259,
+        "YTD": -2.5638,
+        "1Y": -7.8408
       },
       "rel_nifty500": {
-        "1M": -7.3329,
-        "3M": -4.6713,
-        "YTD": -1.3107,
-        "1Y": -5.9008
+        "1M": -9.3695,
+        "3M": -5.3221,
+        "YTD": -5.8216,
+        "1Y": -10.3368
       },
       "momentum_label": "underperforming"
     },
@@ -1376,16 +1376,16 @@
       "sector_id": "metals",
       "name": "Tata Steel",
       "rel_nifty50": {
-        "1M": -4.6696,
-        "3M": -2.5374,
-        "YTD": 6.6935,
-        "1Y": 6.973
+        "1M": -4.1602,
+        "3M": -1.4612,
+        "YTD": 6.4667,
+        "1Y": 8.5174
       },
       "rel_nifty500": {
-        "1M": -0.2638,
-        "3M": 0.4095,
-        "YTD": 4.1613,
-        "1Y": 5.3329
+        "1M": -0.7106,
+        "3M": 1.1426,
+        "YTD": 3.2089,
+        "1Y": 6.0214
       },
       "momentum_label": "underperforming"
     },
@@ -1393,33 +1393,33 @@
       "sector_id": "metals",
       "name": "JSW Steel",
       "rel_nifty50": {
-        "1M": -0.4055,
-        "3M": 2.5616,
-        "YTD": 20.1119,
-        "1Y": 17.9896
+        "1M": 3.4601,
+        "3M": 2.9475,
+        "YTD": 18.8994,
+        "1Y": 16.7005
       },
       "rel_nifty500": {
-        "1M": 4.0003,
-        "3M": 5.5085,
-        "YTD": 17.5797,
-        "1Y": 16.3495
+        "1M": 6.9097,
+        "3M": 5.5513,
+        "YTD": 15.6416,
+        "1Y": 14.2045
       },
-      "momentum_label": "mixed"
+      "momentum_label": "outperforming"
     },
     "HINDALCO.NS": {
       "sector_id": "metals",
       "name": "Hindalco Industries",
       "rel_nifty50": {
-        "1M": -5.5184,
-        "3M": -11.4217,
-        "YTD": 11.3588,
-        "1Y": 23.4418
+        "1M": -4.2228,
+        "3M": -11.5381,
+        "YTD": 9.2693,
+        "1Y": 19.0535
       },
       "rel_nifty500": {
-        "1M": -1.1126,
-        "3M": -8.4748,
-        "YTD": 8.8266,
-        "1Y": 21.8017
+        "1M": -0.7732,
+        "3M": -8.9343,
+        "YTD": 6.0115,
+        "1Y": 16.5575
       },
       "momentum_label": "underperforming"
     },
@@ -1427,16 +1427,16 @@
       "sector_id": "metals",
       "name": "Vedanta",
       "rel_nifty50": {
-        "1M": -10.6049,
-        "3M": -8.0032,
-        "YTD": -52.2978,
-        "1Y": -46.2841
+        "1M": -7.2743,
+        "3M": -6.1176,
+        "YTD": -53.0771,
+        "1Y": -48.1273
       },
       "rel_nifty500": {
-        "1M": -6.1991,
-        "3M": -5.0563,
-        "YTD": -54.83,
-        "1Y": -47.9242
+        "1M": -3.8247,
+        "3M": -3.5138,
+        "YTD": -56.3349,
+        "1Y": -50.6233
       },
       "momentum_label": "underperforming"
     },
@@ -1444,16 +1444,16 @@
       "sector_id": "metals",
       "name": "NMDC",
       "rel_nifty50": {
-        "1M": -14.0355,
-        "3M": -18.9693,
-        "YTD": -11.5809,
-        "1Y": -1.8408
+        "1M": -12.9471,
+        "3M": -20.4928,
+        "YTD": -12.7339,
+        "1Y": -6.968
       },
       "rel_nifty500": {
-        "1M": -9.6297,
-        "3M": -16.0224,
-        "YTD": -14.1131,
-        "1Y": -3.4809
+        "1M": -9.4975,
+        "3M": -17.889,
+        "YTD": -15.9917,
+        "1Y": -9.464
       },
       "momentum_label": "underperforming"
     },
@@ -1461,16 +1461,16 @@
       "sector_id": "metals",
       "name": "Coal India",
       "rel_nifty50": {
-        "1M": -14.237,
-        "3M": -5.5434,
-        "YTD": 4.1566,
-        "1Y": 9.0746
+        "1M": -14.3837,
+        "3M": -4.0785,
+        "YTD": 4.5948,
+        "1Y": 8.137
       },
       "rel_nifty500": {
-        "1M": -9.8312,
-        "3M": -2.5965,
-        "YTD": 1.6244,
-        "1Y": 7.4345
+        "1M": -10.9341,
+        "3M": -1.4747,
+        "YTD": 1.337,
+        "1Y": 5.641
       },
       "momentum_label": "underperforming"
     },
@@ -1478,16 +1478,16 @@
       "sector_id": "metals",
       "name": "National Aluminium Company",
       "rel_nifty50": {
-        "1M": -9.3538,
-        "3M": -16.3722,
-        "YTD": 7.8132,
-        "1Y": 43.1472
+        "1M": -9.0265,
+        "3M": -15.4282,
+        "YTD": 8.7283,
+        "1Y": 25.6668
       },
       "rel_nifty500": {
-        "1M": -4.948,
-        "3M": -13.4253,
-        "YTD": 5.281,
-        "1Y": 41.5071
+        "1M": -5.5769,
+        "3M": -12.8244,
+        "YTD": 5.4705,
+        "1Y": 23.1708
       },
       "momentum_label": "underperforming"
     },
@@ -1495,50 +1495,50 @@
       "sector_id": "metals",
       "name": "Steel Authority of India",
       "rel_nifty50": {
-        "1M": -12.2935,
-        "3M": -4.6911,
-        "YTD": 19.8635,
-        "1Y": 26.3081
+        "1M": -7.4992,
+        "3M": 0.7525,
+        "YTD": 22.5264,
+        "1Y": 24.5918
       },
       "rel_nifty500": {
-        "1M": -7.8877,
-        "3M": -1.7442,
-        "YTD": 17.3313,
-        "1Y": 24.668
+        "1M": -4.0496,
+        "3M": 3.3563,
+        "YTD": 19.2686,
+        "1Y": 22.0958
       },
-      "momentum_label": "underperforming"
+      "momentum_label": "mixed"
     },
     "JINDALSTEL.NS": {
       "sector_id": "metals",
       "name": "Jindal Steel & Power",
       "rel_nifty50": {
-        "1M": -0.9367,
-        "3M": 3.7501,
-        "YTD": 13.3106,
-        "1Y": 13.309
+        "1M": 1.3489,
+        "3M": 2.88,
+        "YTD": 12.2009,
+        "1Y": 9.2745
       },
       "rel_nifty500": {
-        "1M": 3.4691,
-        "3M": 6.697,
-        "YTD": 10.7784,
-        "1Y": 11.6689
+        "1M": 4.7985,
+        "3M": 5.4838,
+        "YTD": 8.9431,
+        "1Y": 6.7785
       },
-      "momentum_label": "mixed"
+      "momentum_label": "outperforming"
     },
     "HINDZINC.NS": {
       "sector_id": "metals",
       "name": "Hindustan Zinc",
       "rel_nifty50": {
-        "1M": -7.6354,
-        "3M": -7.6586,
-        "YTD": -2.8966,
-        "1Y": 23.4758
+        "1M": -8.3963,
+        "3M": -4.4489,
+        "YTD": -5.4976,
+        "1Y": 14.8851
       },
       "rel_nifty500": {
-        "1M": -3.2296,
-        "3M": -4.7117,
-        "YTD": -5.4288,
-        "1Y": 21.8357
+        "1M": -4.9467,
+        "3M": -1.8451,
+        "YTD": -8.7554,
+        "1Y": 12.3891
       },
       "momentum_label": "underperforming"
     },
@@ -1546,16 +1546,16 @@
       "sector_id": "metals",
       "name": "MOIL",
       "rel_nifty50": {
-        "1M": -19.4909,
-        "3M": -24.3192,
-        "YTD": -37.0902,
-        "1Y": -37.7571
+        "1M": -17.1535,
+        "3M": -23.0629,
+        "YTD": -36.4468,
+        "1Y": -36.8089
       },
       "rel_nifty500": {
-        "1M": -15.0851,
-        "3M": -21.3723,
-        "YTD": -39.6224,
-        "1Y": -39.3972
+        "1M": -13.7039,
+        "3M": -20.4591,
+        "YTD": -39.7046,
+        "1Y": -39.3049
       },
       "momentum_label": "underperforming"
     },
@@ -1563,16 +1563,16 @@
       "sector_id": "metals",
       "name": "APL Apollo Tubes",
       "rel_nifty50": {
-        "1M": -8.3828,
-        "3M": 9.058,
-        "YTD": 15.1979,
-        "1Y": 24.2569
+        "1M": -6.9056,
+        "3M": 4.8843,
+        "YTD": 18.1276,
+        "1Y": 30.38
       },
       "rel_nifty500": {
-        "1M": -3.977,
-        "3M": 12.0049,
-        "YTD": 12.6657,
-        "1Y": 22.6168
+        "1M": -3.456,
+        "3M": 7.4881,
+        "YTD": 14.8698,
+        "1Y": 27.884
       },
       "momentum_label": "mixed"
     },
@@ -1580,33 +1580,33 @@
       "sector_id": "energy",
       "name": "Reliance Industries",
       "rel_nifty50": {
-        "1M": -1.4401,
-        "3M": -2.9797,
-        "YTD": -11.9534,
-        "1Y": -9.8915
+        "1M": 2.9095,
+        "3M": -0.927,
+        "YTD": -11.1389,
+        "1Y": -8.4915
       },
       "rel_nifty500": {
-        "1M": 2.9657,
-        "3M": -0.0328,
-        "YTD": -14.4856,
-        "1Y": -11.5316
+        "1M": 6.3591,
+        "3M": 1.6768,
+        "YTD": -14.3967,
+        "1Y": -10.9875
       },
-      "momentum_label": "underperforming"
+      "momentum_label": "mixed"
     },
     "ONGC.NS": {
       "sector_id": "energy",
       "name": "Oil and Natural Gas Corporation",
       "rel_nifty50": {
-        "1M": -6.2859,
-        "3M": -4.8393,
-        "YTD": 1.6717,
-        "1Y": -5.9698
+        "1M": -11.368,
+        "3M": -8.0165,
+        "YTD": -1.6051,
+        "1Y": -7.4655
       },
       "rel_nifty500": {
-        "1M": -1.8801,
-        "3M": -1.8924,
-        "YTD": -0.8605,
-        "1Y": -7.6099
+        "1M": -7.9184,
+        "3M": -5.4127,
+        "YTD": -4.8629,
+        "1Y": -9.9615
       },
       "momentum_label": "underperforming"
     },
@@ -1614,16 +1614,16 @@
       "sector_id": "energy",
       "name": "Bharat Petroleum Corporation",
       "rel_nifty50": {
-        "1M": -2.7921,
-        "3M": -2.2136,
-        "YTD": -11.8778,
-        "1Y": -11.1797
+        "1M": -6.8825,
+        "3M": -8.6567,
+        "YTD": -17.0056,
+        "1Y": -16.6164
       },
       "rel_nifty500": {
-        "1M": 1.6137,
-        "3M": 0.7333,
-        "YTD": -14.41,
-        "1Y": -12.8198
+        "1M": -3.4329,
+        "3M": -6.0529,
+        "YTD": -20.2634,
+        "1Y": -19.1124
       },
       "momentum_label": "underperforming"
     },
@@ -1631,16 +1631,16 @@
       "sector_id": "energy",
       "name": "Indian Oil Corporation",
       "rel_nifty50": {
-        "1M": 1.7612,
-        "3M": 0.1308,
-        "YTD": -7.5649,
-        "1Y": -11.2586
+        "1M": 1.561,
+        "3M": 0.1344,
+        "YTD": -9.333,
+        "1Y": -13.6348
       },
       "rel_nifty500": {
-        "1M": 6.167,
-        "3M": 3.0777,
-        "YTD": -10.0971,
-        "1Y": -12.8987
+        "1M": 5.0106,
+        "3M": 2.7382,
+        "YTD": -12.5908,
+        "1Y": -16.1308
       },
       "momentum_label": "outperforming"
     },
@@ -1648,33 +1648,33 @@
       "sector_id": "energy",
       "name": "GAIL India",
       "rel_nifty50": {
-        "1M": -1.9051,
-        "3M": 5.1325,
-        "YTD": 12.4311,
-        "1Y": 5.684
+        "1M": 1.4555,
+        "3M": 4.2958,
+        "YTD": 13.2819,
+        "1Y": 5.197
       },
       "rel_nifty500": {
-        "1M": 2.5007,
-        "3M": 8.0794,
-        "YTD": 9.8989,
-        "1Y": 4.0439
+        "1M": 4.9051,
+        "3M": 6.8996,
+        "YTD": 10.0241,
+        "1Y": 2.701
       },
-      "momentum_label": "mixed"
+      "momentum_label": "outperforming"
     },
     "POWERGRID.NS": {
       "sector_id": "energy",
       "name": "Power Grid Corporation of India",
       "rel_nifty50": {
-        "1M": -8.0318,
-        "3M": -6.1787,
-        "YTD": 1.6828,
-        "1Y": -1.9329
+        "1M": -7.732,
+        "3M": -6.4267,
+        "YTD": 0.3287,
+        "1Y": -1.7556
       },
       "rel_nifty500": {
-        "1M": -3.626,
-        "3M": -3.2318,
-        "YTD": -0.8494,
-        "1Y": -3.573
+        "1M": -4.2824,
+        "3M": -3.8229,
+        "YTD": -2.9291,
+        "1Y": -4.2516
       },
       "momentum_label": "underperforming"
     },
@@ -1682,16 +1682,16 @@
       "sector_id": "energy",
       "name": "NTPC",
       "rel_nifty50": {
-        "1M": -8.6236,
-        "3M": -7.4329,
-        "YTD": 0.448,
-        "1Y": 0.8995
+        "1M": -9.4249,
+        "3M": -9.3413,
+        "YTD": -1.2813,
+        "1Y": 0.4385
       },
       "rel_nifty500": {
-        "1M": -4.2178,
-        "3M": -4.486,
-        "YTD": -2.0842,
-        "1Y": -0.7406
+        "1M": -5.9753,
+        "3M": -6.7375,
+        "YTD": -4.5391,
+        "1Y": -2.0575
       },
       "momentum_label": "underperforming"
     },
@@ -1699,16 +1699,16 @@
       "sector_id": "energy",
       "name": "Adani Green Energy",
       "rel_nifty50": {
-        "1M": -4.5736,
-        "3M": 1.8962,
-        "YTD": 43.0837,
-        "1Y": 36.1648
+        "1M": -4.7294,
+        "3M": 0.8859,
+        "YTD": 40.5912,
+        "1Y": 33.133
       },
       "rel_nifty500": {
-        "1M": -0.1678,
-        "3M": 4.8431,
-        "YTD": 40.5515,
-        "1Y": 34.5247
+        "1M": -1.2798,
+        "3M": 3.4897,
+        "YTD": 37.3334,
+        "1Y": 30.637
       },
       "momentum_label": "mixed"
     },
@@ -1716,16 +1716,16 @@
       "sector_id": "energy",
       "name": "Tata Power Company",
       "rel_nifty50": {
-        "1M": -8.6093,
-        "3M": -9.2418,
-        "YTD": -3.4173,
-        "1Y": -8.14
+        "1M": -12.5627,
+        "3M": -12.1066,
+        "YTD": -5.0315,
+        "1Y": -7.6543
       },
       "rel_nifty500": {
-        "1M": -4.2035,
-        "3M": -6.2949,
-        "YTD": -5.9495,
-        "1Y": -9.7801
+        "1M": -9.1131,
+        "3M": -9.5028,
+        "YTD": -8.2893,
+        "1Y": -10.1503
       },
       "momentum_label": "underperforming"
     },
@@ -1733,16 +1733,16 @@
       "sector_id": "energy",
       "name": "Adani Power",
       "rel_nifty50": {
-        "1M": -7.0067,
-        "3M": -4.1245,
-        "YTD": 41.5976,
-        "1Y": 35.2538
+        "1M": -5.7556,
+        "3M": -2.9896,
+        "YTD": 42.0895,
+        "1Y": 38.2824
       },
       "rel_nifty500": {
-        "1M": -2.6009,
-        "3M": -1.1776,
-        "YTD": 39.0654,
-        "1Y": 33.6137
+        "1M": -2.306,
+        "3M": -0.3858,
+        "YTD": 38.8317,
+        "1Y": 35.7864
       },
       "momentum_label": "underperforming"
     },
@@ -1750,16 +1750,16 @@
       "sector_id": "energy",
       "name": "Petronet LNG",
       "rel_nifty50": {
-        "1M": -4.0048,
-        "3M": 11.1013,
-        "YTD": 14.3002,
-        "1Y": 17.1518
+        "1M": -0.5302,
+        "3M": 11.4732,
+        "YTD": 16.3115,
+        "1Y": 19.0281
       },
       "rel_nifty500": {
-        "1M": 0.401,
-        "3M": 14.0482,
-        "YTD": 11.768,
-        "1Y": 15.5117
+        "1M": 2.9194,
+        "3M": 14.077,
+        "YTD": 13.0537,
+        "1Y": 16.5321
       },
       "momentum_label": "mixed"
     },
@@ -1767,16 +1767,16 @@
       "sector_id": "energy",
       "name": "Indraprastha Gas",
       "rel_nifty50": {
-        "1M": -13.7316,
-        "3M": -8.4327,
-        "YTD": -21.7729,
-        "1Y": -30.8557
+        "1M": -13.0486,
+        "3M": -9.3709,
+        "YTD": -22.0211,
+        "1Y": -30.9667
       },
       "rel_nifty500": {
-        "1M": -9.3258,
-        "3M": -5.4858,
-        "YTD": -24.3051,
-        "1Y": -32.4958
+        "1M": -9.599,
+        "3M": -6.7671,
+        "YTD": -25.2789,
+        "1Y": -33.4627
       },
       "momentum_label": "underperforming"
     },
@@ -1784,16 +1784,16 @@
       "sector_id": "financials_nbfc",
       "name": "Bajaj Finance",
       "rel_nifty50": {
-        "1M": 2.1159,
-        "3M": -0.9664,
-        "YTD": 16.0509,
-        "1Y": 6.2797
+        "1M": 5.5726,
+        "3M": -0.4343,
+        "YTD": 18.621,
+        "1Y": 13.9396
       },
       "rel_nifty500": {
-        "1M": 6.5217,
-        "3M": 1.9805,
-        "YTD": 13.5187,
-        "1Y": 4.6396
+        "1M": 9.0222,
+        "3M": 2.1695,
+        "YTD": 15.3632,
+        "1Y": 11.4436
       },
       "momentum_label": "mixed"
     },
@@ -1801,16 +1801,16 @@
       "sector_id": "financials_nbfc",
       "name": "Bajaj Finserv",
       "rel_nifty50": {
-        "1M": -3.775,
-        "3M": -9.049,
-        "YTD": -4.1895,
-        "1Y": -7.7419
+        "1M": -2.8231,
+        "3M": -10.3296,
+        "YTD": -4.6106,
+        "1Y": -6.4592
       },
       "rel_nifty500": {
-        "1M": 0.6308,
-        "3M": -6.1021,
-        "YTD": -6.7217,
-        "1Y": -9.382
+        "1M": 0.6265,
+        "3M": -7.7258,
+        "YTD": -7.8684,
+        "1Y": -8.9552
       },
       "momentum_label": "underperforming"
     },
@@ -1818,16 +1818,16 @@
       "sector_id": "financials_nbfc",
       "name": "HDFC Life Insurance Company",
       "rel_nifty50": {
-        "1M": -7.2135,
-        "3M": 2.8143,
-        "YTD": -20.3677,
-        "1Y": -21.3191
+        "1M": -2.2868,
+        "3M": 7.3311,
+        "YTD": -17.2107,
+        "1Y": -21.4446
       },
       "rel_nifty500": {
-        "1M": -2.8077,
-        "3M": 5.7612,
-        "YTD": -22.8999,
-        "1Y": -22.9592
+        "1M": 1.1628,
+        "3M": 9.9349,
+        "YTD": -20.4685,
+        "1Y": -23.9406
       },
       "momentum_label": "mixed"
     },
@@ -1835,16 +1835,16 @@
       "sector_id": "financials_nbfc",
       "name": "SBI Life Insurance Company",
       "rel_nifty50": {
-        "1M": -7.3844,
-        "3M": -5.7243,
-        "YTD": -8.2972,
-        "1Y": -7.5993
+        "1M": -2.6675,
+        "3M": -3.4783,
+        "YTD": -8.4438,
+        "1Y": -7.1208
       },
       "rel_nifty500": {
-        "1M": -2.9786,
-        "3M": -2.7774,
-        "YTD": -10.8294,
-        "1Y": -9.2394
+        "1M": 0.7821,
+        "3M": -0.8745,
+        "YTD": -11.7016,
+        "1Y": -9.6168
       },
       "momentum_label": "underperforming"
     },
@@ -1852,16 +1852,16 @@
       "sector_id": "financials_nbfc",
       "name": "Power Finance Corporation",
       "rel_nifty50": {
-        "1M": -9.7405,
-        "3M": -23.5852,
-        "YTD": -5.1899,
-        "1Y": -12.9616
+        "1M": -14.1216,
+        "3M": -14.2979,
+        "YTD": -4.1249,
+        "1Y": -7.5252
       },
       "rel_nifty500": {
-        "1M": -5.3347,
-        "3M": -20.6383,
-        "YTD": -7.7221,
-        "1Y": -14.6017
+        "1M": -10.672,
+        "3M": -11.6941,
+        "YTD": -7.3827,
+        "1Y": -10.0212
       },
       "momentum_label": "underperforming"
     },
@@ -1869,16 +1869,16 @@
       "sector_id": "financials_nbfc",
       "name": "REC",
       "rel_nifty50": {
-        "1M": -11.4916,
-        "3M": -21.0398,
-        "YTD": -15.0538,
-        "1Y": -16.3315
+        "1M": -14.3374,
+        "3M": -13.0897,
+        "YTD": -14.0754,
+        "1Y": -13.0914
       },
       "rel_nifty500": {
-        "1M": -7.0858,
-        "3M": -18.0929,
-        "YTD": -17.586,
-        "1Y": -17.9716
+        "1M": -10.8878,
+        "3M": -10.4859,
+        "YTD": -17.3332,
+        "1Y": -15.5874
       },
       "momentum_label": "underperforming"
     },
@@ -1886,16 +1886,16 @@
       "sector_id": "financials_nbfc",
       "name": "Cholamandalam Investment and Finance",
       "rel_nifty50": {
-        "1M": 3.3406,
-        "3M": -6.222,
-        "YTD": 7.8073,
-        "1Y": 7.9145
+        "1M": 7.2158,
+        "3M": -5.538,
+        "YTD": 11.1418,
+        "1Y": 10.9887
       },
       "rel_nifty500": {
-        "1M": 7.7464,
-        "3M": -3.2751,
-        "YTD": 5.2751,
-        "1Y": 6.2744
+        "1M": 10.6654,
+        "3M": -2.9342,
+        "YTD": 7.884,
+        "1Y": 8.4927
       },
       "momentum_label": "mixed"
     },
@@ -1903,16 +1903,16 @@
       "sector_id": "financials_nbfc",
       "name": "Muthoot Finance",
       "rel_nifty50": {
-        "1M": -2.6541,
-        "3M": -2.5975,
-        "YTD": -20.998,
-        "1Y": -8.0085
+        "1M": -1.0688,
+        "3M": -3.2646,
+        "YTD": -22.1892,
+        "1Y": -13.4612
       },
       "rel_nifty500": {
-        "1M": 1.7517,
-        "3M": 0.3494,
-        "YTD": -23.5302,
-        "1Y": -9.6486
+        "1M": 2.3808,
+        "3M": -0.6608,
+        "YTD": -25.447,
+        "1Y": -15.9572
       },
       "momentum_label": "underperforming"
     },
@@ -1920,16 +1920,16 @@
       "sector_id": "financials_nbfc",
       "name": "Shriram Finance",
       "rel_nifty50": {
-        "1M": -9.3517,
-        "3M": -15.6691,
-        "YTD": -1.4729,
-        "1Y": 23.1599
+        "1M": -9.041,
+        "3M": -16.7414,
+        "YTD": -1.0408,
+        "1Y": 22.0041
       },
       "rel_nifty500": {
-        "1M": -4.9459,
-        "3M": -12.7222,
-        "YTD": -4.0051,
-        "1Y": 21.5198
+        "1M": -5.5914,
+        "3M": -14.1376,
+        "YTD": -4.2986,
+        "1Y": 19.5081
       },
       "momentum_label": "underperforming"
     },
@@ -1937,16 +1937,16 @@
       "sector_id": "financials_nbfc",
       "name": "Life Insurance Corporation of India",
       "rel_nifty50": {
-        "1M": -8.7455,
-        "3M": -1.8709,
-        "YTD": -3.3295,
-        "1Y": -10.1843
+        "1M": -9.8011,
+        "3M": -6.6283,
+        "YTD": -2.5223,
+        "1Y": -8.7073
       },
       "rel_nifty500": {
-        "1M": -4.3397,
-        "3M": 1.076,
-        "YTD": -5.8617,
-        "1Y": -11.8244
+        "1M": -6.3515,
+        "3M": -4.0245,
+        "YTD": -5.7801,
+        "1Y": -11.2033
       },
       "momentum_label": "underperforming"
     },
@@ -1954,16 +1954,16 @@
       "sector_id": "financials_nbfc",
       "name": "Manappuram Finance",
       "rel_nifty50": {
-        "1M": -5.3973,
-        "3M": -13.1456,
-        "YTD": 7.8666,
-        "1Y": 20.6382
+        "1M": -16.0846,
+        "3M": -14.9421,
+        "YTD": 1.8911,
+        "1Y": 15.3098
       },
       "rel_nifty500": {
-        "1M": -0.9915,
-        "3M": -10.1987,
-        "YTD": 5.3344,
-        "1Y": 18.9981
+        "1M": -12.635,
+        "3M": -12.3383,
+        "YTD": -1.3667,
+        "1Y": 12.8138
       },
       "momentum_label": "underperforming"
     },
@@ -1971,16 +1971,16 @@
       "sector_id": "financials_nbfc",
       "name": "Aditya Birla Capital",
       "rel_nifty50": {
-        "1M": -3.5633,
-        "3M": -4.1378,
-        "YTD": 14.45,
-        "1Y": 23.8176
+        "1M": -3.4662,
+        "3M": -1.4486,
+        "YTD": 16.5559,
+        "1Y": 25.8051
       },
       "rel_nifty500": {
-        "1M": 0.8425,
-        "3M": -1.1909,
-        "YTD": 11.9178,
-        "1Y": 22.1775
+        "1M": -0.0166,
+        "3M": 1.1552,
+        "YTD": 13.2981,
+        "1Y": 23.3091
       },
       "momentum_label": "underperforming"
     },
@@ -1988,16 +1988,16 @@
       "sector_id": "capital_goods_infra",
       "name": "Larsen & Toubro",
       "rel_nifty50": {
-        "1M": 0.5053,
-        "3M": -0.3497,
-        "YTD": 3.7208,
-        "1Y": 7.9616
+        "1M": 2.6318,
+        "3M": -1.0547,
+        "YTD": 3.9153,
+        "1Y": 6.3698
       },
       "rel_nifty500": {
-        "1M": 4.9111,
-        "3M": 2.5972,
-        "YTD": 1.1886,
-        "1Y": 6.3215
+        "1M": 6.0814,
+        "3M": 1.5491,
+        "YTD": 0.6575,
+        "1Y": 3.8738
       },
       "momentum_label": "mixed"
     },
@@ -2005,16 +2005,16 @@
       "sector_id": "capital_goods_infra",
       "name": "Siemens India",
       "rel_nifty50": {
-        "1M": -16.8817,
-        "3M": -11.5179,
-        "YTD": 19.4309,
-        "1Y": 17.3323
+        "1M": -13.9326,
+        "3M": -10.3008,
+        "YTD": 22.23,
+        "1Y": 22.2094
       },
       "rel_nifty500": {
-        "1M": -12.4759,
-        "3M": -8.571,
-        "YTD": 16.8987,
-        "1Y": 15.6922
+        "1M": -10.483,
+        "3M": -7.697,
+        "YTD": 18.9722,
+        "1Y": 19.7134
       },
       "momentum_label": "underperforming"
     },
@@ -2022,16 +2022,16 @@
       "sector_id": "capital_goods_infra",
       "name": "ABB India",
       "rel_nifty50": {
-        "1M": -14.0364,
-        "3M": -12.7393,
-        "YTD": 35.1296,
-        "1Y": 31.4506
+        "1M": -10.3533,
+        "3M": -10.9665,
+        "YTD": 40.1125,
+        "1Y": 46.4279
       },
       "rel_nifty500": {
-        "1M": -9.6306,
-        "3M": -9.7924,
-        "YTD": 32.5974,
-        "1Y": 29.8105
+        "1M": -6.9037,
+        "3M": -8.3627,
+        "YTD": 36.8547,
+        "1Y": 43.9319
       },
       "momentum_label": "underperforming"
     },
@@ -2039,16 +2039,16 @@
       "sector_id": "capital_goods_infra",
       "name": "Bharat Electronics",
       "rel_nifty50": {
-        "1M": -6.06,
-        "3M": -3.1178,
-        "YTD": 3.8415,
-        "1Y": -1.252
+        "1M": -6.3078,
+        "3M": -5.6163,
+        "YTD": 4.6253,
+        "1Y": -1.6746
       },
       "rel_nifty500": {
-        "1M": -1.6542,
-        "3M": -0.1709,
-        "YTD": 1.3093,
-        "1Y": -2.8921
+        "1M": -2.8582,
+        "3M": -3.0125,
+        "YTD": 1.3675,
+        "1Y": -4.1706
       },
       "momentum_label": "underperforming"
     },
@@ -2056,16 +2056,16 @@
       "sector_id": "capital_goods_infra",
       "name": "Hindustan Aeronautics",
       "rel_nifty50": {
-        "1M": -5.815,
-        "3M": -0.4452,
-        "YTD": 17.5049,
-        "1Y": 10.2908
+        "1M": -13.6438,
+        "3M": -7.57,
+        "YTD": 13.199,
+        "1Y": 4.0771
       },
       "rel_nifty500": {
-        "1M": -1.4092,
-        "3M": 2.5017,
-        "YTD": 14.9727,
-        "1Y": 8.6507
+        "1M": -10.1942,
+        "3M": -4.9662,
+        "YTD": 9.9412,
+        "1Y": 1.5811
       },
       "momentum_label": "underperforming"
     },
@@ -2073,16 +2073,16 @@
       "sector_id": "capital_goods_infra",
       "name": "Bharat Heavy Electricals",
       "rel_nifty50": {
-        "1M": -17.3609,
-        "3M": 1.4855,
-        "YTD": 47.9643,
-        "1Y": 62.9251
+        "1M": -17.1161,
+        "3M": 0.268,
+        "YTD": 53.533,
+        "1Y": 57.8306
       },
       "rel_nifty500": {
-        "1M": -12.9551,
-        "3M": 4.4324,
-        "YTD": 45.4321,
-        "1Y": 61.285
+        "1M": -13.6665,
+        "3M": 2.8718,
+        "YTD": 50.2752,
+        "1Y": 55.3346
       },
       "momentum_label": "mixed"
     },
@@ -2090,16 +2090,16 @@
       "sector_id": "capital_goods_infra",
       "name": "Thermax",
       "rel_nifty50": {
-        "1M": -25.7246,
-        "3M": -34.2264,
-        "YTD": -6.0822,
-        "1Y": -13.7751
+        "1M": -27.3567,
+        "3M": -34.5596,
+        "YTD": -5.542,
+        "1Y": -5.358
       },
       "rel_nifty500": {
-        "1M": -21.3188,
-        "3M": -31.2795,
-        "YTD": -8.6144,
-        "1Y": -15.4152
+        "1M": -23.9071,
+        "3M": -31.9558,
+        "YTD": -8.7998,
+        "1Y": -7.854
       },
       "momentum_label": "underperforming"
     },
@@ -2107,16 +2107,16 @@
       "sector_id": "capital_goods_infra",
       "name": "Cummins India",
       "rel_nifty50": {
-        "1M": -27.6388,
-        "3M": -27.2524,
-        "YTD": -5.166,
-        "1Y": -4.314
+        "1M": -19.9906,
+        "3M": -22.2868,
+        "YTD": 1.5606,
+        "1Y": 2.9036
       },
       "rel_nifty500": {
-        "1M": -23.233,
-        "3M": -24.3055,
-        "YTD": -7.6982,
-        "1Y": -5.9541
+        "1M": -16.541,
+        "3M": -19.683,
+        "YTD": -1.6972,
+        "1Y": 0.4076
       },
       "momentum_label": "underperforming"
     },
@@ -2124,16 +2124,16 @@
       "sector_id": "capital_goods_infra",
       "name": "Polycab India",
       "rel_nifty50": {
-        "1M": -16.0216,
-        "3M": -16.4836,
-        "YTD": 6.8495,
-        "1Y": 5.5608
+        "1M": -16.3173,
+        "3M": -17.6531,
+        "YTD": 6.8438,
+        "1Y": 5.2097
       },
       "rel_nifty500": {
-        "1M": -11.6158,
-        "3M": -13.5367,
-        "YTD": 4.3173,
-        "1Y": 3.9207
+        "1M": -12.8677,
+        "3M": -15.0493,
+        "YTD": 3.586,
+        "1Y": 2.7137
       },
       "momentum_label": "underperforming"
     },
@@ -2141,16 +2141,16 @@
       "sector_id": "capital_goods_infra",
       "name": "KEI Industries",
       "rel_nifty50": {
-        "1M": -25.4832,
-        "3M": -30.6566,
-        "YTD": -7.3934,
-        "1Y": 3.4169
+        "1M": -24.2272,
+        "3M": -32.317,
+        "YTD": -6.6774,
+        "1Y": 1.0503
       },
       "rel_nifty500": {
-        "1M": -21.0774,
-        "3M": -27.7097,
-        "YTD": -9.9256,
-        "1Y": 1.7768
+        "1M": -20.7776,
+        "3M": -29.7132,
+        "YTD": -9.9352,
+        "1Y": -1.4457
       },
       "momentum_label": "underperforming"
     },
@@ -2158,16 +2158,16 @@
       "sector_id": "capital_goods_infra",
       "name": "CG Power and Industrial Solutions",
       "rel_nifty50": {
-        "1M": -24.3218,
-        "3M": -13.9301,
-        "YTD": 25.4479,
-        "1Y": 7.3793
+        "1M": -15.2019,
+        "3M": -10.1762,
+        "YTD": 33.6341,
+        "1Y": 13.9506
       },
       "rel_nifty500": {
-        "1M": -19.916,
-        "3M": -10.9832,
-        "YTD": 22.9157,
-        "1Y": 5.7392
+        "1M": -11.7523,
+        "3M": -7.5724,
+        "YTD": 30.3763,
+        "1Y": 11.4546
       },
       "momentum_label": "underperforming"
     },
@@ -2175,16 +2175,16 @@
       "sector_id": "capital_goods_infra",
       "name": "Kaynes Technology India",
       "rel_nifty50": {
-        "1M": -14.6615,
-        "3M": -18.0341,
-        "YTD": -13.748,
-        "1Y": -47.2756
+        "1M": -6.4135,
+        "3M": -9.4835,
+        "YTD": -9.1882,
+        "1Y": -43.3692
       },
       "rel_nifty500": {
-        "1M": -10.2557,
-        "3M": -15.0872,
-        "YTD": -16.2802,
-        "1Y": -48.9157
+        "1M": -2.9639,
+        "3M": -6.8797,
+        "YTD": -12.446,
+        "1Y": -45.8652
       },
       "momentum_label": "underperforming"
     },
@@ -2192,16 +2192,16 @@
       "sector_id": "realty_consumer_disc",
       "name": "DLF",
       "rel_nifty50": {
-        "1M": 4.0325,
-        "3M": 15.4032,
-        "YTD": 13.164,
-        "1Y": 1.1604
+        "1M": 2.6264,
+        "3M": 10.9035,
+        "YTD": 13.5743,
+        "1Y": 2.0484
       },
       "rel_nifty500": {
-        "1M": 8.4383,
-        "3M": 18.3501,
-        "YTD": 10.6318,
-        "1Y": -0.4797
+        "1M": 6.076,
+        "3M": 13.5073,
+        "YTD": 10.3165,
+        "1Y": -0.4476
       },
       "momentum_label": "outperforming"
     },
@@ -2209,16 +2209,16 @@
       "sector_id": "realty_consumer_disc",
       "name": "Godrej Properties",
       "rel_nifty50": {
-        "1M": 3.7594,
-        "3M": -14.4651,
-        "YTD": -5.9528,
-        "1Y": -15.6438
+        "1M": 6.8124,
+        "3M": -9.9831,
+        "YTD": -4.1259,
+        "1Y": -13.08
       },
       "rel_nifty500": {
-        "1M": 8.1652,
-        "3M": -11.5182,
-        "YTD": -8.485,
-        "1Y": -17.2839
+        "1M": 10.262,
+        "3M": -7.3793,
+        "YTD": -7.3837,
+        "1Y": -15.576
       },
       "momentum_label": "mixed"
     },
@@ -2226,16 +2226,16 @@
       "sector_id": "realty_consumer_disc",
       "name": "Oberoi Realty",
       "rel_nifty50": {
-        "1M": -10.566,
-        "3M": -3.8991,
-        "YTD": 6.8104,
-        "1Y": -0.4462
+        "1M": -5.777,
+        "3M": -5.8161,
+        "YTD": 9.83,
+        "1Y": 5.9011
       },
       "rel_nifty500": {
-        "1M": -6.1602,
-        "3M": -0.9522,
-        "YTD": 4.2782,
-        "1Y": -2.0863
+        "1M": -2.3274,
+        "3M": -3.2123,
+        "YTD": 6.5722,
+        "1Y": 3.4051
       },
       "momentum_label": "underperforming"
     },
@@ -2243,16 +2243,16 @@
       "sector_id": "realty_consumer_disc",
       "name": "Prestige Estates Projects",
       "rel_nifty50": {
-        "1M": 3.2331,
-        "3M": 0.9181,
-        "YTD": 5.8213,
-        "1Y": -3.6971
+        "1M": 1.6357,
+        "3M": 0.4165,
+        "YTD": 6.6946,
+        "1Y": -3.1541
       },
       "rel_nifty500": {
-        "1M": 7.6389,
-        "3M": 3.865,
-        "YTD": 3.2891,
-        "1Y": -5.3372
+        "1M": 5.0853,
+        "3M": 3.0203,
+        "YTD": 3.4368,
+        "1Y": -5.6501
       },
       "momentum_label": "outperforming"
     },
@@ -2260,16 +2260,16 @@
       "sector_id": "realty_consumer_disc",
       "name": "Brigade Enterprises",
       "rel_nifty50": {
-        "1M": -10.0261,
-        "3M": -5.9606,
-        "YTD": -12.7332,
-        "1Y": -23.1763
+        "1M": -17.2504,
+        "3M": -10.3618,
+        "YTD": -14.5073,
+        "1Y": -20.1436
       },
       "rel_nifty500": {
-        "1M": -5.6203,
-        "3M": -3.0137,
-        "YTD": -15.2654,
-        "1Y": -24.8164
+        "1M": -13.8008,
+        "3M": -7.758,
+        "YTD": -17.7651,
+        "1Y": -22.6396
       },
       "momentum_label": "underperforming"
     },
@@ -2277,33 +2277,33 @@
       "sector_id": "realty_consumer_disc",
       "name": "Titan Company",
       "rel_nifty50": {
-        "1M": 3.4947,
-        "3M": -0.6768,
-        "YTD": 27.7471,
-        "1Y": 34.3505
+        "1M": -2.1252,
+        "3M": -7.3732,
+        "YTD": 23.481,
+        "1Y": 29.0351
       },
       "rel_nifty500": {
-        "1M": 7.9005,
-        "3M": 2.2701,
-        "YTD": 25.2149,
-        "1Y": 32.7104
+        "1M": 1.3244,
+        "3M": -4.7694,
+        "YTD": 20.2232,
+        "1Y": 26.5391
       },
-      "momentum_label": "mixed"
+      "momentum_label": "underperforming"
     },
     "TRENT.NS": {
       "sector_id": "realty_consumer_disc",
       "name": "Trent",
       "rel_nifty50": {
-        "1M": -4.2101,
-        "3M": 0.8652,
-        "YTD": 11.741,
-        "1Y": -32.3191
+        "1M": -4.6098,
+        "3M": 3.0919,
+        "YTD": 14.314,
+        "1Y": -24.0004
       },
       "rel_nifty500": {
-        "1M": 0.1957,
-        "3M": 3.8121,
-        "YTD": 9.2088,
-        "1Y": -33.9592
+        "1M": -1.1602,
+        "3M": 5.6957,
+        "YTD": 11.0562,
+        "1Y": -26.4964
       },
       "momentum_label": "mixed"
     },
@@ -2311,16 +2311,16 @@
       "sector_id": "realty_consumer_disc",
       "name": "Page Industries",
       "rel_nifty50": {
-        "1M": -15.104,
-        "3M": -11.8208,
-        "YTD": 5.0686,
-        "1Y": -7.7537
+        "1M": -25.629,
+        "3M": -17.9561,
+        "YTD": -8.2863,
+        "1Y": -18.027
       },
       "rel_nifty500": {
-        "1M": -10.6982,
-        "3M": -8.8739,
-        "YTD": 2.5364,
-        "1Y": -9.3938
+        "1M": -22.1794,
+        "3M": -15.3523,
+        "YTD": -11.5441,
+        "1Y": -20.523
       },
       "momentum_label": "underperforming"
     },
@@ -2328,50 +2328,50 @@
       "sector_id": "realty_consumer_disc",
       "name": "InterGlobe Aviation",
       "rel_nifty50": {
-        "1M": -0.9993,
-        "3M": 0.8105,
-        "YTD": 11.4209,
-        "1Y": -1.9326
+        "1M": 7.2663,
+        "3M": 2.028,
+        "YTD": 13.163,
+        "1Y": -2.5487
       },
       "rel_nifty500": {
-        "1M": 3.4065,
-        "3M": 3.7574,
-        "YTD": 8.8887,
-        "1Y": -3.5727
+        "1M": 10.7159,
+        "3M": 4.6318,
+        "YTD": 9.9052,
+        "1Y": -5.0447
       },
-      "momentum_label": "mixed"
+      "momentum_label": "outperforming"
     },
     "KALYANKJIL.NS": {
       "sector_id": "realty_consumer_disc",
       "name": "Kalyan Jewellers India",
       "rel_nifty50": {
-        "1M": -6.9163,
-        "3M": -4.4356,
-        "YTD": 26.2744,
-        "1Y": 17.0687
+        "1M": 12.4353,
+        "3M": 11.3968,
+        "YTD": 47.782,
+        "1Y": 42.5889
       },
       "rel_nifty500": {
-        "1M": -2.5105,
-        "3M": -1.4887,
-        "YTD": 23.7422,
-        "1Y": 15.4286
+        "1M": 15.8849,
+        "3M": 14.0006,
+        "YTD": 44.5242,
+        "1Y": 40.0929
       },
-      "momentum_label": "underperforming"
+      "momentum_label": "outperforming"
     },
     "DMART.NS": {
       "sector_id": "realty_consumer_disc",
       "name": "Avenue Supermarts",
       "rel_nifty50": {
-        "1M": -16.5419,
-        "3M": -14.0504,
-        "YTD": -3.5645,
-        "1Y": -14.2201
+        "1M": -10.4347,
+        "3M": -18.4824,
+        "YTD": -3.6155,
+        "1Y": -12.5008
       },
       "rel_nifty500": {
-        "1M": -12.1361,
-        "3M": -11.1035,
-        "YTD": -6.0967,
-        "1Y": -15.8602
+        "1M": -6.9851,
+        "3M": -15.8786,
+        "YTD": -6.8733,
+        "1Y": -14.9968
       },
       "momentum_label": "underperforming"
     },
@@ -2379,16 +2379,16 @@
       "sector_id": "realty_consumer_disc",
       "name": "Jubilant FoodWorks",
       "rel_nifty50": {
-        "1M": -11.477,
-        "3M": -7.8935,
-        "YTD": -13.0771,
-        "1Y": -19.7326
+        "1M": -8.3157,
+        "3M": -16.3563,
+        "YTD": -17.0291,
+        "1Y": -20.8309
       },
       "rel_nifty500": {
-        "1M": -7.0712,
-        "3M": -4.9466,
-        "YTD": -15.6093,
-        "1Y": -21.3727
+        "1M": -4.8661,
+        "3M": -13.7525,
+        "YTD": -20.2869,
+        "1Y": -23.3269
       },
       "momentum_label": "underperforming"
     }
@@ -2397,400 +2397,400 @@
     "ETERNAL.NS": {
       "name": "Eternal (formerly Zomato)",
       "rel_nifty50": {
-        "1M": -0.0223,
-        "3M": 13.4148,
-        "YTD": 32.2288,
-        "1Y": 20.6915
+        "1M": 3.9328,
+        "3M": 10.9816,
+        "YTD": 31.9692,
+        "1Y": 24.9722
       },
       "rel_nifty500": {
-        "1M": 4.3835,
-        "3M": 16.3617,
-        "YTD": 29.6966,
-        "1Y": 19.0514
+        "1M": 7.3824,
+        "3M": 13.5854,
+        "YTD": 28.7114,
+        "1Y": 22.4762
       },
-      "momentum_label": "mixed"
+      "momentum_label": "outperforming"
     },
     "SWIGGY.NS": {
       "name": "Swiggy",
       "rel_nifty50": {
-        "1M": -33.0274,
-        "3M": -33.7783,
-        "YTD": -46.8009,
-        "1Y": -50.7957
+        "1M": -30.3063,
+        "3M": -35.6227,
+        "YTD": -48.3808,
+        "1Y": -48.4265
       },
       "rel_nifty500": {
-        "1M": -28.6216,
-        "3M": -30.8314,
-        "YTD": -49.3331,
-        "1Y": -52.4358
+        "1M": -26.8567,
+        "3M": -33.0189,
+        "YTD": -51.6386,
+        "1Y": -50.9225
       },
       "momentum_label": "underperforming"
     },
     "NYKAA.NS": {
       "name": "FSN E-Commerce Ventures (Nykaa)",
       "rel_nifty50": {
-        "1M": -7.2956,
-        "3M": 4.4544,
-        "YTD": 37.1006,
-        "1Y": 45.2934
+        "1M": -2.6173,
+        "3M": 7.1381,
+        "YTD": 41.2556,
+        "1Y": 44.9683
       },
       "rel_nifty500": {
-        "1M": -2.8898,
-        "3M": 7.4013,
-        "YTD": 34.5684,
-        "1Y": 43.6533
+        "1M": 0.8323,
+        "3M": 9.7419,
+        "YTD": 37.9978,
+        "1Y": 42.4723
       },
       "momentum_label": "mixed"
     },
     "DELHIVERY.NS": {
       "name": "Delhivery",
       "rel_nifty50": {
-        "1M": -3.2416,
-        "3M": -11.442,
-        "YTD": 11.1087,
-        "1Y": -1.4196
+        "1M": -4.5106,
+        "3M": -8.2845,
+        "YTD": 12.7448,
+        "1Y": 3.3579
       },
       "rel_nifty500": {
-        "1M": 1.1642,
-        "3M": -8.4951,
-        "YTD": 8.5765,
-        "1Y": -3.0597
+        "1M": -1.061,
+        "3M": -5.6807,
+        "YTD": 9.487,
+        "1Y": 0.8619
       },
       "momentum_label": "underperforming"
     },
     "PAYTM.NS": {
       "name": "One 97 Communications (Paytm)",
       "rel_nifty50": {
-        "1M": -7.136,
-        "3M": 22.6019,
-        "YTD": 43.1867,
-        "1Y": 37.7567
+        "1M": 2.1391,
+        "3M": 17.8226,
+        "YTD": 54.0151,
+        "1Y": 51.2066
       },
       "rel_nifty500": {
-        "1M": -2.7302,
-        "3M": 25.5488,
-        "YTD": 40.6545,
-        "1Y": 36.1166
+        "1M": 5.5887,
+        "3M": 20.4264,
+        "YTD": 50.7573,
+        "1Y": 48.7106
       },
-      "momentum_label": "mixed"
+      "momentum_label": "outperforming"
     },
     "POLICYBZR.NS": {
       "name": "PB Fintech (Policybazaar)",
       "rel_nifty50": {
-        "1M": -17.758,
-        "3M": -41.6029,
-        "YTD": -42.1813,
-        "1Y": -43.0964
+        "1M": -6.901,
+        "3M": -39.7249,
+        "YTD": -34.9751,
+        "1Y": -33.4607
       },
       "rel_nifty500": {
-        "1M": -13.3522,
-        "3M": -38.656,
-        "YTD": -44.7135,
-        "1Y": -44.7365
+        "1M": -3.4514,
+        "3M": -37.1211,
+        "YTD": -38.2329,
+        "1Y": -35.9567
       },
       "momentum_label": "underperforming"
     },
     "NAUKRI.NS": {
       "name": "Info Edge India",
       "rel_nifty50": {
-        "1M": -13.4647,
-        "3M": -4.5968,
-        "YTD": -6.8429,
-        "1Y": -8.2882
+        "1M": -13.802,
+        "3M": -14.7653,
+        "YTD": -7.5994,
+        "1Y": -9.0138
       },
       "rel_nifty500": {
-        "1M": -9.0589,
-        "3M": -1.6499,
-        "YTD": -9.3751,
-        "1Y": -9.9283
+        "1M": -10.3524,
+        "3M": -12.1615,
+        "YTD": -10.8572,
+        "1Y": -11.5098
       },
       "momentum_label": "underperforming"
     },
     "INDIAMART.NS": {
       "name": "IndiaMART InterMESH",
       "rel_nifty50": {
-        "1M": -14.3643,
-        "3M": -13.7171,
-        "YTD": -25.2192,
-        "1Y": -35.5638
+        "1M": -11.6474,
+        "3M": -13.3344,
+        "YTD": -22.8611,
+        "1Y": -32.2297
       },
       "rel_nifty500": {
-        "1M": -9.9585,
-        "3M": -10.7702,
-        "YTD": -27.7514,
-        "1Y": -37.2039
+        "1M": -8.1978,
+        "3M": -10.7306,
+        "YTD": -26.1189,
+        "1Y": -34.7257
       },
       "momentum_label": "underperforming"
     },
     "CARTRADE.NS": {
       "name": "CarTrade Tech",
       "rel_nifty50": {
-        "1M": -18.1049,
-        "3M": -5.2007,
-        "YTD": -0.3078,
-        "1Y": -4.0311
+        "1M": -25.5966,
+        "3M": -6.8292,
+        "YTD": -0.8814,
+        "1Y": -12.4308
       },
       "rel_nifty500": {
-        "1M": -13.6991,
-        "3M": -2.2538,
-        "YTD": -2.84,
-        "1Y": -5.6712
+        "1M": -22.147,
+        "3M": -4.2254,
+        "YTD": -4.1392,
+        "1Y": -14.9268
       },
       "momentum_label": "underperforming"
     },
     "FIRSTCRY.NS": {
       "name": "Brainbees Solutions (FirstCry)",
       "rel_nifty50": {
-        "1M": -18.0501,
-        "3M": -27.3564,
-        "YTD": -40.1274,
-        "1Y": -51.7698
+        "1M": -22.8446,
+        "3M": -25.3641,
+        "YTD": -40.288,
+        "1Y": -50.4103
       },
       "rel_nifty500": {
-        "1M": -13.6443,
-        "3M": -24.4095,
-        "YTD": -42.6596,
-        "1Y": -53.4099
+        "1M": -19.395,
+        "3M": -22.7603,
+        "YTD": -43.5458,
+        "1Y": -52.9063
       },
       "momentum_label": "underperforming"
     },
     "OLAELEC.NS": {
       "name": "Ola Electric Mobility",
       "rel_nifty50": {
-        "1M": -14.8198,
-        "3M": -18.5741,
-        "YTD": -4.553,
-        "1Y": -26.2058
+        "1M": -14.3856,
+        "3M": -13.7287,
+        "YTD": -3.8161,
+        "1Y": -15.0515
       },
       "rel_nifty500": {
-        "1M": -10.414,
-        "3M": -15.6272,
-        "YTD": -7.0852,
-        "1Y": -27.8459
+        "1M": -10.936,
+        "3M": -11.1249,
+        "YTD": -7.0739,
+        "1Y": -17.5475
       },
       "momentum_label": "underperforming"
     },
     "ATHERENERG.NS": {
       "name": "Ather Energy",
       "rel_nifty50": {
-        "1M": 14.4639,
-        "3M": 21.0923,
-        "YTD": 150.9447,
-        "1Y": 189.2815
+        "1M": 21.4372,
+        "3M": 25.4859,
+        "YTD": 167.2049,
+        "1Y": 207.1499
       },
       "rel_nifty500": {
-        "1M": 18.8697,
-        "3M": 24.0392,
-        "YTD": 148.4125,
-        "1Y": 187.6414
+        "1M": 24.8868,
+        "3M": 28.0897,
+        "YTD": 163.9471,
+        "1Y": 204.6539
       },
       "momentum_label": "outperforming"
     },
     "HONASA.NS": {
       "name": "Honasa Consumer",
       "rel_nifty50": {
-        "1M": -12.9713,
-        "3M": -4.216,
-        "YTD": 68.726,
-        "1Y": 70.2849
+        "1M": -1.2021,
+        "3M": -3.3632,
+        "YTD": 80.8254,
+        "1Y": 76.2846
       },
       "rel_nifty500": {
-        "1M": -8.5655,
-        "3M": -1.2691,
-        "YTD": 66.1938,
-        "1Y": 68.6448
+        "1M": 2.2475,
+        "3M": -0.7594,
+        "YTD": 77.5676,
+        "1Y": 73.7886
       },
       "momentum_label": "underperforming"
     },
     "IXIGO.NS": {
       "name": "Le Travenues Technology (ixigo)",
       "rel_nifty50": {
-        "1M": -5.9242,
-        "3M": -7.7489,
-        "YTD": -26.8541,
-        "1Y": -38.0702
+        "1M": 6.7145,
+        "3M": -9.423,
+        "YTD": -28.4109,
+        "1Y": -38.3956
       },
       "rel_nifty500": {
-        "1M": -1.5184,
-        "3M": -4.802,
-        "YTD": -29.3863,
-        "1Y": -39.7103
+        "1M": 10.1641,
+        "3M": -6.8192,
+        "YTD": -31.6687,
+        "1Y": -40.8916
       },
-      "momentum_label": "underperforming"
+      "momentum_label": "mixed"
     },
     "BLACKBUCK.NS": {
       "name": "Zinka Logistics Solutions (BlackBuck)",
       "rel_nifty50": {
-        "1M": -20.2862,
-        "3M": -5.3505,
-        "YTD": -13.0759,
-        "1Y": -14.5678
+        "1M": -17.4605,
+        "3M": -4.9976,
+        "YTD": -13.0225,
+        "1Y": -16.9474
       },
       "rel_nifty500": {
-        "1M": -15.8804,
-        "3M": -2.4036,
-        "YTD": -15.6081,
-        "1Y": -16.2079
+        "1M": -14.0109,
+        "3M": -2.3938,
+        "YTD": -16.2803,
+        "1Y": -19.4434
       },
       "momentum_label": "underperforming"
     },
     "GODIGIT.NS": {
       "name": "Go Digit General Insurance",
       "rel_nifty50": {
-        "1M": -16.65,
-        "3M": -10.3741,
-        "YTD": -23.9029,
-        "1Y": -28.0506
+        "1M": -22.9949,
+        "3M": -6.7759,
+        "YTD": -23.9782,
+        "1Y": -26.3702
       },
       "rel_nifty500": {
-        "1M": -12.2442,
-        "3M": -7.4272,
-        "YTD": -26.4351,
-        "1Y": -29.6907
+        "1M": -19.5453,
+        "3M": -4.1721,
+        "YTD": -27.236,
+        "1Y": -28.8662
       },
       "momentum_label": "underperforming"
     },
     "MOBIKWIK.NS": {
       "name": "One MobiKwik Systems",
       "rel_nifty50": {
-        "1M": -22.9459,
-        "3M": 10.3707,
-        "YTD": 1.9956,
-        "1Y": -6.5259
+        "1M": -17.508,
+        "3M": 8.4243,
+        "YTD": 2.4292,
+        "1Y": -9.3479
       },
       "rel_nifty500": {
-        "1M": -18.5401,
-        "3M": 13.3176,
-        "YTD": -0.5366,
-        "1Y": -8.166
+        "1M": -14.0584,
+        "3M": 11.0281,
+        "YTD": -0.8286,
+        "1Y": -11.8439
       },
       "momentum_label": "mixed"
     },
     "AFFLE.NS": {
       "name": "Affle India",
       "rel_nifty50": {
-        "1M": -0.7109,
-        "3M": -5.8573,
-        "YTD": -7.0367,
-        "1Y": -9.257
+        "1M": 0.9937,
+        "3M": -6.8256,
+        "YTD": -5.8895,
+        "1Y": -4.3994
       },
       "rel_nifty500": {
-        "1M": 3.6949,
-        "3M": -2.9104,
-        "YTD": -9.5689,
-        "1Y": -10.8971
+        "1M": 4.4433,
+        "3M": -4.2218,
+        "YTD": -9.1473,
+        "1Y": -6.8954
       },
-      "momentum_label": "underperforming"
+      "momentum_label": "mixed"
     },
     "EASEMYTRIP.NS": {
       "name": "Easy Trip Planners",
       "rel_nifty50": {
-        "1M": -8.0084,
-        "3M": -10.3815,
-        "YTD": -13.9375,
-        "1Y": -23.0586
+        "1M": -7.1671,
+        "3M": -9.2879,
+        "YTD": -14.5092,
+        "1Y": -21.7527
       },
       "rel_nifty500": {
-        "1M": -3.6026,
-        "3M": -7.4346,
-        "YTD": -16.4697,
-        "1Y": -24.6987
+        "1M": -3.7175,
+        "3M": -6.6841,
+        "YTD": -17.767,
+        "1Y": -24.2487
       },
       "momentum_label": "underperforming"
     },
     "YATRA.NS": {
       "name": "Yatra Online",
       "rel_nifty50": {
-        "1M": -34.56,
-        "3M": -29.5641,
-        "YTD": -51.7619,
-        "1Y": -43.2616
+        "1M": -30.1826,
+        "3M": -34.6651,
+        "YTD": -51.7773,
+        "1Y": -56.3274
       },
       "rel_nifty500": {
-        "1M": -30.1542,
-        "3M": -26.6172,
-        "YTD": -54.2941,
-        "1Y": -44.9017
+        "1M": -26.733,
+        "3M": -32.0613,
+        "YTD": -55.0351,
+        "1Y": -58.8234
       },
       "momentum_label": "underperforming"
     },
     "MAPMYINDIA.NS": {
       "name": "C.E. Info Systems (MapmyIndia)",
       "rel_nifty50": {
-        "1M": -17.0781,
-        "3M": -19.134,
-        "YTD": -47.2419,
-        "1Y": -50.5634
+        "1M": -14.9321,
+        "3M": -13.3185,
+        "YTD": -44.7714,
+        "1Y": -44.9261
       },
       "rel_nifty500": {
-        "1M": -12.6723,
-        "3M": -16.1871,
-        "YTD": -49.7741,
-        "1Y": -52.2035
+        "1M": -11.4825,
+        "3M": -10.7147,
+        "YTD": -48.0292,
+        "1Y": -47.4221
       },
       "momentum_label": "underperforming"
     },
     "TANLA.NS": {
       "name": "Tanla Platforms",
       "rel_nifty50": {
-        "1M": 20.9971,
-        "3M": 4.3144,
-        "YTD": 29.245,
-        "1Y": 9.3164
+        "1M": 17.8627,
+        "3M": 22.7228,
+        "YTD": 44.424,
+        "1Y": 22.1266
       },
       "rel_nifty500": {
-        "1M": 25.4029,
-        "3M": 7.2613,
-        "YTD": 26.7128,
-        "1Y": 7.6763
+        "1M": 21.3123,
+        "3M": 25.3266,
+        "YTD": 41.1662,
+        "1Y": 19.6306
       },
       "momentum_label": "outperforming"
     },
     "ROUTE.NS": {
       "name": "Route Mobile",
       "rel_nifty50": {
-        "1M": -4.8771,
-        "3M": -16.4081,
-        "YTD": -30.8743,
-        "1Y": -34.1373
+        "1M": -8.4427,
+        "3M": -12.5955,
+        "YTD": -30.4123,
+        "1Y": -32.9194
       },
       "rel_nifty500": {
-        "1M": -0.4713,
-        "3M": -13.4612,
-        "YTD": -33.4065,
-        "1Y": -35.7774
+        "1M": -4.9931,
+        "3M": -9.9917,
+        "YTD": -33.6701,
+        "1Y": -35.4154
       },
       "momentum_label": "underperforming"
     },
     "INTELLECT.NS": {
       "name": "Intellect Design Arena",
       "rel_nifty50": {
-        "1M": -23.6584,
-        "3M": -30.4839,
-        "YTD": -41.397,
-        "1Y": -52.6788
+        "1M": -29.507,
+        "3M": -28.2727,
+        "YTD": -40.783,
+        "1Y": -50.3112
       },
       "rel_nifty500": {
-        "1M": -19.2526,
-        "3M": -27.537,
-        "YTD": -43.9292,
-        "1Y": -54.3189
+        "1M": -26.0574,
+        "3M": -25.6689,
+        "YTD": -44.0408,
+        "1Y": -52.8072
       },
       "momentum_label": "underperforming"
     },
     "LATENTVIEW.NS": {
       "name": "Latent View Analytics",
       "rel_nifty50": {
-        "1M": -21.6654,
-        "3M": -32.914,
-        "YTD": -50.6942,
-        "1Y": -54.5584
+        "1M": -25.6638,
+        "3M": -30.2103,
+        "YTD": -50.4246,
+        "1Y": -54.0117
       },
       "rel_nifty500": {
-        "1M": -17.2596,
-        "3M": -29.9671,
-        "YTD": -53.2264,
-        "1Y": -56.1985
+        "1M": -22.2142,
+        "3M": -27.6065,
+        "YTD": -53.6824,
+        "1Y": -56.5077
       },
       "momentum_label": "underperforming"
     }
